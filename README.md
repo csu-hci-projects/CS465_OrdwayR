@@ -30,10 +30,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/RosyTCosy/RosysWizards465">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/RosyTCosy/RosysWizards465/blob/main/Images/Logo.png?raw=true" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Rosy's Wizard 465</h3>
+<h3 align="center">Rosy's Wizards 465</h3>
 
   <p align="center">
     Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User Interfaces.
@@ -79,7 +79,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
 
@@ -94,7 +94,7 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 
 <!-- GETTING STARTED -->
 
-## Getting Started
+<!-- ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
@@ -106,9 +106,9 @@ This is an example of how to list things you need to use the software and how to
 - npm
   ```sh
   npm install npm@latest -g
-  ```
+  ``` -->
 
-### Installation
+<!-- ### Installation
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -127,33 +127,33 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
-   ```
+   ``` -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+<!-- ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- ROADMAP -->
-
+<!--
 ## Roadmap
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues). -->
+<!--
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- CONTRIBUTING -->
 
-## Contributing
+<!-- ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -172,15 +172,15 @@ Don't forget to give the project a star! Thanks again!
 
 <a href="https://github.com/github_username/repo_name/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
-</a>
+</a> -->
 
 <!-- LICENSE -->
 
-## License
+<!-- ## License
 
 Distributed under the project_license. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- CONTACT -->
 
@@ -194,13 +194,13 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
+<!-- ## Acknowledgments
 
 - []()
 - []()
 - []()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
