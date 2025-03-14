@@ -92,6 +92,78 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## Systems
+
+### Main Menu & Input Selection
+- Users choose their input method (**gesture-based or controller-based (one or two hannded**).
+- Starting the game bring them to the **"classroom"**
+
+### Spell Creation System (Weaving)
+- Weaving is the process of combining threads to create glyphs to create spells.
+- Users will perform a basic input and speak a phrase to start the weaving process.
+- Each of these step will be visually confirmed to the use
+
+#### Basic Glyph System
+- There are **four basic glyphs**:
+  - 🛡️ **Defense**
+  - ⚔️  **Attack**
+  - ❤️ **Healing**
+  - ✨  **Buff**
+- In the **"classroom"** users will learn to create **glyphs** using three basic gestures or inputs.
+- **Examples of glyph inputs**:
+  - `A, B, A` (button-based example)
+  - `Peace sign, rocker sign, fist` (gesture-based example)
+- These inputs are called **threads**.
+
+- **Spells are created by combining two glyphs**, making each spell a **six-input sequence**.
+- This system simplifies gameplay while still allowing for **16 unique spells**.
+- Users won't need to learn all 16 spells just those needed to complete their lesson.
+
+### Wizard Room Lesson & Gameplay
+- Players are given **spells on a blackboard** with the required thread inputs.
+- They must **replicate the spell correctly**.
+- **Accuracy and time to complete each spell** are measured.
+- **Goal:** Each lesson should take **around 2 minutes**.
+  - This time objective is to make sure experiment testing with every control type can be met in a timely manner.
+- Lessons will randomize the spell for objective completion.
+  - The range of spells per lesson will be 8-12 as to challenge the user but not overwhelm them.
+
+## Objective (Users will...)
+- Learn to form glyphs by **performing three-input threads**.
+- Understand the **four basic glyphs** (Defense, Attack, Healing, Buff).
+- Learn to create spells by **Combine two glyphs** .
+- **Practice accuracy and speed** in casting spells correctly.
+- **Complete the class lesson** combining the information they have learned.
+
+## Additional Considerations
+
+### Balancing Complexity vs. Usability
+- **Reducing from nine to six inputs per spell (3 Glyphs -> 2 Glyphs)** improves spell speed and reduces complexity. **(3/12/25)**
+  - **Limits total spells from 64 to 16**
+
+### User Accessibility
+- Players only need to focus on **gesture learning and execution**; the game handles interactivity.
+
+### Performance Tracking
+- Measures **glyph creation accuracy**
+- Time Measurments (Time taken..)
+  - **per input**
+  - **per glyph**
+  - **per spell**
+  - **to complete the lesson**
+- Measures **user enjoyment**
+
+
+---
+
+## Repository Information
+- **Videos:** [Video Links]
+- **Documentation:** [Overleaf Link]
+
+---
+
+
 <!-- GETTING STARTED -->
 
 <!-- ## Getting Started
