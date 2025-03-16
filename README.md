@@ -33,7 +33,7 @@
     <img src="https://github.com/RosyTCosy/RosysWizards465/blob/main/Images/Logo.png?raw=true" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Rosy's Wizards 465</h3>
+<h3 align="center">🪄Rosy's Wizards 465🪄</h3>
 
   <p align="center">
     Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User Interfaces.
@@ -77,22 +77,23 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+## 📖 About The Project
 
 This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User Interfaces. The objective of this project is to create a VR spell-based casting system that utilizes gestures and controller inputs. These control systems will be compared to determine which is the most effective and user-friendly. Experiments will be conducted on the accuracy, user satisfaction, and completion time of control systems. VR is inherently about the development of immersive experiences, and knowing the most intuitive and pleasant aspects of the user experience will enhance immersion in an experience. This project aims to identify a more immersive method of interacting with the digital space by using the Meta Quest 3 hand tracking technology.
 
-### Project Documentation
+### 📜 Project Documentation
 
 [Click here](https://www.overleaf.com/read/xtvfkdhzhxnz#eec795) to see the most recent LaTeX report progress update on how the project is going!
 
-### Latest Updates
+### 🎥 Latest Updates
 
-YouTube Playlist: Click here!
-Latest Demo: Watch the newest video!
+- YouTube Playlist: [Click here!](https://www.overleaf.com/read/xtvfkdhzhxnz#eec795)
+- Latest Demo: [Watch the newest video!](https://www.overleaf.com/read/xtvfkdhzhxnz#eec795)
+- Latest Code Breakdown: [Watch the newest video!](https://www.overleaf.com/read/xtvfkdhzhxnz#eec795)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
+### 🛠️ Built With
 
 - [![Unity][Unity.com]][Unity-url]
 - [![C#][CS]][Unity-url]
@@ -101,18 +102,18 @@ Latest Demo: Watch the newest video!
 
 ## Systems
 
-### Main Menu & Input Selection
+### 🏠 Main Menu & Input Selection
 
 - Users choose their input method (**gesture-based or controller-based (one or two hannded**).
 - Starting the game bring them to the **"classroom"**
 
-### Spell Creation System (Weaving)
+### 🪄 Spell Creation System (Weaving) 🪄
 
 - Weaving is the process of combining threads to create glyphs to create spells.
 - Users will perform a basic input and speak a phrase to start the weaving process.
 - Each of these step will be visually confirmed to the use
 
-#### Basic Glyph System
+#### ✨ Basic Glyph System ✨
 
 - There are **four basic glyphs**:
   - 🛡️ **Defense**
@@ -129,7 +130,7 @@ Latest Demo: Watch the newest video!
 - This system simplifies gameplay while still allowing for **16 unique spells**.
 - Users won't need to learn all 16 spells just those needed to complete their lesson.
 
-### Wizard Room Lesson & Gameplay
+### 🔮 Wizard Room Lesson & Gameplay 🔮
 
 - Players are given **spells on a blackboard** with the required thread inputs.
 - They must **replicate the spell correctly**.
@@ -139,7 +140,7 @@ Latest Demo: Watch the newest video!
 - Lessons will randomize the spell for objective completion.
   - The range of spells per lesson will be 8-12 as to challenge the user but not overwhelm them.
 
-## Objective (Users will...)
+## 📖 Objective (Users will...)
 
 - Learn to form glyphs by **performing three-input threads**.
 - Understand the **four basic glyphs** (Defense, Attack, Healing, Buff).
@@ -147,18 +148,18 @@ Latest Demo: Watch the newest video!
 - **Practice accuracy and speed** in casting spells correctly.
 - **Complete the class lesson** combining the information they have learned.
 
-## Additional Considerations
+## 💭 Additional Considerations
 
-### Balancing Complexity vs. Usability
+### ⚖️ Balancing Complexity vs. Usability
 
 - **Reducing from nine to six inputs per spell (3 Glyphs -> 2 Glyphs)** improves spell speed and reduces complexity. **(3/12/25)**
   - **Limits total spells from 64 to 16**
 
-### User Accessibility
+### 🎯 User Accessibility
 
 - Players only need to focus on **gesture learning and execution**; the game handles interactivity.
 
-### Performance Tracking
+### ⚡ Performance Tracking
 
 - Measures **glyph creation accuracy**
 - Time Measurments (Time taken..)
@@ -166,14 +167,7 @@ Latest Demo: Watch the newest video!
   - **per glyph**
   - **per spell**
   - **to complete the lesson**
-- Measures **user enjoyment**
-
----
-
-## Repository Information
-
-- **Videos:** [Video Links]
-- **Documentation:** [Overleaf Link]
+- Measures **user enjoyment** after activity
 
 ---
 
@@ -269,11 +263,11 @@ Distributed under the project_license. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 
-## Contact
+## ✉️ Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Rose Ordway - cosyrosy@colostate.edu
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/RosyTCosy/RosysWizards465](https://github.com/RosyTCosy/RosysWizards465)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
