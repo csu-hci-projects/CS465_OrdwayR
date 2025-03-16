@@ -975,6 +975,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "CustomButton",
+                    "type": "Button",
+                    "id": "4eb3bbe0-d4bc-4310-afc6-11ded4e65461",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftHold",
+                    "type": "Button",
+                    "id": "04a01ca2-953b-4245-80a7-93513dd0af51",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1261,6 +1279,28 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "",
                     "action": "Translate Manipulation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b608ff7-61c8-47fa-8fb9-5a36e5385e41",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CustomButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "03971527-f2b5-47ac-ba02-1cab6df8358a",
+                    "path": "<XRController>{LeftHand}/gripPressed",
+                    "interactions": "Hold(duration=4)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftHold",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -2046,6 +2086,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "RightHold",
+                    "type": "Button",
+                    "id": "a36690d3-07d3-4212-a86e-8ef965291b7b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -2156,6 +2205,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Select Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c2e446b5-7122-4332-b85d-79d340436771",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "Hold(duration=4)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightHold",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
