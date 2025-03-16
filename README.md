@@ -79,9 +79,16 @@
 
 ## About The Project
 
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User Interfaces. The objective of this project is to create a VR spell-based casting system that utilizes gestures and controller inputs. These control systems will be compared to determine which is the most effective and user-friendly. Experiments will be conducted on the accuracy, user satisfaction, and completion time of control systems. VR is inherently about the development of immersive experiences, and knowing the most intuitive and pleasant aspects of the user experience will enhance immersion in an experience. This project aims to identify a more immersive method of interacting with the digital space by using the Meta Quest 3 hand tracking technology.
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+### Project Documentation
+
+[Click here](https://www.overleaf.com/read/xtvfkdhzhxnz#eec795) to see the most recent LaTeX report progress update on how the project is going!
+
+### Latest Updates
+
+YouTube Playlist: Click here!
+Latest Demo: Watch the newest video!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,24 +99,26 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## Systems
 
 ### Main Menu & Input Selection
+
 - Users choose their input method (**gesture-based or controller-based (one or two hannded**).
 - Starting the game bring them to the **"classroom"**
 
 ### Spell Creation System (Weaving)
+
 - Weaving is the process of combining threads to create glyphs to create spells.
 - Users will perform a basic input and speak a phrase to start the weaving process.
 - Each of these step will be visually confirmed to the use
 
 #### Basic Glyph System
+
 - There are **four basic glyphs**:
   - 🛡️ **Defense**
-  - ⚔️  **Attack**
+  - ⚔️ **Attack**
   - ❤️ **Healing**
-  - ✨  **Buff**
+  - ✨ **Buff**
 - In the **"classroom"** users will learn to create **glyphs** using three basic gestures or inputs.
 - **Examples of glyph inputs**:
   - `A, B, A` (button-based example)
@@ -121,6 +130,7 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 - Users won't need to learn all 16 spells just those needed to complete their lesson.
 
 ### Wizard Room Lesson & Gameplay
+
 - Players are given **spells on a blackboard** with the required thread inputs.
 - They must **replicate the spell correctly**.
 - **Accuracy and time to complete each spell** are measured.
@@ -130,6 +140,7 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
   - The range of spells per lesson will be 8-12 as to challenge the user but not overwhelm them.
 
 ## Objective (Users will...)
+
 - Learn to form glyphs by **performing three-input threads**.
 - Understand the **four basic glyphs** (Defense, Attack, Healing, Buff).
 - Learn to create spells by **Combine two glyphs** .
@@ -139,13 +150,16 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 ## Additional Considerations
 
 ### Balancing Complexity vs. Usability
+
 - **Reducing from nine to six inputs per spell (3 Glyphs -> 2 Glyphs)** improves spell speed and reduces complexity. **(3/12/25)**
   - **Limits total spells from 64 to 16**
 
 ### User Accessibility
+
 - Players only need to focus on **gesture learning and execution**; the game handles interactivity.
 
 ### Performance Tracking
+
 - Measures **glyph creation accuracy**
 - Time Measurments (Time taken..)
   - **per input**
@@ -154,15 +168,14 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
   - **to complete the lesson**
 - Measures **user enjoyment**
 
-
 ---
 
 ## Repository Information
+
 - **Videos:** [Video Links]
 - **Documentation:** [Overleaf Link]
 
 ---
-
 
 <!-- GETTING STARTED -->
 
