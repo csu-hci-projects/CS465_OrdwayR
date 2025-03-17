@@ -79,7 +79,7 @@
 
 ## 📖 About The Project
 
-This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User Interfaces. The objective of this project is to create a VR spell-based casting system that utilizes gestures and controller inputs. These control systems will be compared to determine which is the most effective and user-friendly. Experiments will be conducted on the accuracy, user satisfaction, and completion time of control systems. VR is inherently about the development of immersive experiences, and knowing the most intuitive and pleasant aspects of the user experience will enhance immersion in an experience. This project aims to identify a more immersive method of interacting with the digital space by using the Meta Quest 3 hand tracking technology.
+This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User Interfaces. The objective of this project is to create a VR spell-based casting system that utilizes gestures and controller inputs. These control systems will be compared to determine which is the most effective and user-friendly. Experiments will be conducted on the accuracy, user satisfaction, and completion time of control systems. VR is inherently about the development of immersive experiences, and knowing the most intuitive and pleasant aspects of the user experience will enhance immersion in an experience. This project aims to identify a more immersive method of interacting with the digital space by using the Meta Quest 3 hand-tracking technology.
 
 ### 📜 Project Documentation
 
@@ -88,8 +88,8 @@ This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User
 ### 🎥 Latest Updates
 
 - YouTube Playlist: [Click here!](https://www.overleaf.com/read/xtvfkdhzhxnz#eec795)
-- Latest Demo: [Watch the newest video!](https://www.overleaf.com/read/xtvfkdhzhxnz#eec795)
-- Latest Code Breakdown: [Watch the newest video!](https://www.overleaf.com/read/xtvfkdhzhxnz#eec795)
+- Latest Demo: [Watch the latest demo!](https://www.overleaf.com/read/xtvfkdhzhxnz#eec795)
+- Latest Code Breakdown: [Watch the latest code breakdown!](https://www.overleaf.com/read/xtvfkdhzhxnz#eec795)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,13 +105,13 @@ This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User
 ### 🏠 Main Menu & Input Selection
 
 - Users choose their input method (**gesture-based or controller-based (one or two hannded**).
-- Starting the game bring them to the **"classroom"**
+- Starting the game brings them to the **"classroom"**
 
 ### 🪄 Spell Creation System (Weaving) 🪄
 
 - Weaving is the process of combining threads to create glyphs to create spells.
-- Users will perform a basic input and speak a phrase to start the weaving process.
-- Each of these step will be visually confirmed to the use
+- Users will provide basic input and speak a phrase to start the weaving process.
+- Each of these steps will be visually confirmed to the user.
 
 #### ✨ Basic Glyph System ✨
 
@@ -128,7 +128,7 @@ This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User
 
 - **Spells are created by combining two glyphs**, making each spell a **six-input sequence**.
 - This system simplifies gameplay while still allowing for **16 unique spells**.
-- Users won't need to learn all 16 spells just those needed to complete their lesson.
+- Users won't need to learn all 16 spells, just those needed to complete their lesson.
 
 ### 🔮 Wizard Room Lesson & Gameplay 🔮
 
@@ -144,7 +144,7 @@ This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User
 
 - Learn to form glyphs by **performing three-input threads**.
 - Understand the **four basic glyphs** (Defense, Attack, Healing, Buff).
-- Learn to create spells by **Combine two glyphs** .
+- Learn to create spells by **combining two glyphs**.
 - **Practice accuracy and speed** in casting spells correctly.
 - **Complete the class lesson** combining the information they have learned.
 
@@ -162,7 +162,7 @@ This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User
 ### ⚡ Performance Tracking
 
 - Measures **glyph creation accuracy**
-- Time Measurments (Time taken..)
+- Time Measurements (Time taken..)
   - **per input**
   - **per glyph**
   - **per spell**
