@@ -1650,6 +1650,7 @@ MonoBehaviour:
   waveAmplitude: 0.5
   waveFrequency: 2
   waveSpeed: 2
+  lineRenderer: {fileID: 0}
 --- !u!64 &90786883
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1713,7 +1714,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -25550,6 +25551,7 @@ MonoBehaviour:
   waveAmplitude: 0.5
   waveFrequency: 2
   waveSpeed: 2
+  lineRenderer: {fileID: 0}
 --- !u!64 &118153033
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25613,7 +25615,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -51885,6 +51887,7 @@ MonoBehaviour:
   waveAmplitude: 0.5
   waveFrequency: 2
   waveSpeed: 2
+  lineRenderer: {fileID: 0}
 --- !u!64 &283329961
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51949,7 +51952,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -79838,6 +79841,7 @@ MonoBehaviour:
   threshold: 1
   increaseRate: 1
   decreaseDuration: 7
+  currentLerp: 0
 --- !u!1001 &483339805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85920,7 +85924,7 @@ PrefabInstance:
     - target: {fileID: 5849765079216124530, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0043038186
+      value: 0.0037634827
       objectReference: {fileID: 0}
     - target: {fileID: 5849765079944474460, guid: fd28f23af44f73f4a95e33435872ad15,
         type: 3}
@@ -97271,6 +97275,7 @@ MonoBehaviour:
   waveAmplitude: 0.5
   waveFrequency: 2
   waveSpeed: 2
+  lineRenderer: {fileID: 0}
 --- !u!64 &1330046337
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -97334,7 +97339,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89

@@ -15,8 +15,6 @@ public class FloorStabilize : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         transform.SetPositionAndRotation(new Vector3(camera.transform.position.x, transform.position.y, camera.transform.position.z), Quaternion.Euler(0f, 0f, 0f));
     }
 }
