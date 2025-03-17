@@ -9,10 +9,11 @@ namespace Samples.Whisper
         [SerializeField] private Button recordButton;
         [SerializeField] private Image progressBar;
         [SerializeField] public Text message;
+        [SerializeReference] public string outputText;
         [SerializeField] private Dropdown dropdown;
 
         private readonly string fileName = "output.wav";
-        private readonly int duration = 5;
+        private readonly int duration = 3;
 
         private AudioClip clip;
         private bool isRecording;
@@ -74,6 +75,7 @@ namespace Samples.Whisper
 
             progressBar.fillAmount = 0;
             message.text = res.Text;
+            outputText = res.Text;
             recordButton.enabled = true;
         }
 

@@ -15,7 +15,7 @@ C:/Users/Rose/OneDrive/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-55289
+55627
 Successfully changed project path to: C:/Users/Rose/OneDrive/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
 C:/Users/Rose/OneDrive/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Rose/OneDrive/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [43192] Host "[IP] 10.0.0.179 [Port] 0 [Flags] 2 [Guid] 1616728320 [EditorId] 1616728320 [Version] 1048832 [Id] WindowsEditor(7,Rosy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [26728] Host "[IP] 10.0.0.179 [Port] 0 [Flags] 2 [Guid] 1450289383 [EditorId] 1450289383 [Version] 1048832 [Id] WindowsEditor(7,Rosy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [43192] Host "[IP] 10.0.0.179 [Port] 0 [Flags] 2 [Guid] 1616728320 [EditorId] 1616728320 [Version] 1048832 [Id] WindowsEditor(7,Rosy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [26728] Host "[IP] 10.0.0.179 [Port] 0 [Flags] 2 [Guid] 1450289383 [EditorId] 1450289383 [Version] 1048832 [Id] WindowsEditor(7,Rosy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 40.92 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 55.66 ms, found 13 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.18f1 (d29bea25151d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -71,49 +71,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56952
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56576
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010060 seconds.
-- Loaded All Assemblies, in  0.275 seconds
+Registered in 0.012421 seconds.
+- Loaded All Assemblies, in  0.429 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 219 ms
+Android Extension - Scanning For ADB Devices 350 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.488 seconds
-Domain Reload Profiling: 762ms
-	BeginReloadAssembly (87ms)
+- Finished resetting the current domain, in  0.728 seconds
+Domain Reload Profiling: 1155ms
+	BeginReloadAssembly (139ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (104ms)
-		LoadAssemblies (86ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (173ms)
+		LoadAssemblies (138ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (102ms)
-			TypeCache.Refresh (101ms)
-				TypeCache.ScanAssembly (92ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (488ms)
+		AnalyzeDomain (171ms)
+			TypeCache.Refresh (168ms)
+				TypeCache.ScanAssembly (151ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (729ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (449ms)
+		SetupLoadedEditorAssemblies (672ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (325ms)
+			InitializePlatformSupportModulesInManaged (484ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (86ms)
-			ProcessInitializeOnLoadMethodAttributes (34ms)
+			ProcessInitializeOnLoadAttributes (132ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -122,8 +122,8 @@ Domain Reload Profiling: 762ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.802 seconds
-Refreshing native plugins compatible for Editor in 40.24 ms, found 13 plugins.
+- Loaded All Assemblies, in  0.830 seconds
+Refreshing native plugins compatible for Editor in 38.34 ms, found 13 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -163,48 +163,48 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.245 seconds
-Domain Reload Profiling: 2040ms
-	BeginReloadAssembly (121ms)
+- Finished resetting the current domain, in  1.172 seconds
+Domain Reload Profiling: 1993ms
+	BeginReloadAssembly (127ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (603ms)
-		LoadAssemblies (381ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (622ms)
+		LoadAssemblies (392ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (297ms)
-			TypeCache.Refresh (236ms)
-				TypeCache.ScanAssembly (217ms)
-			ScanForSourceGeneratedMonoScriptInfo (40ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (1246ms)
+		AnalyzeDomain (309ms)
+			TypeCache.Refresh (248ms)
+				TypeCache.ScanAssembly (227ms)
+			ScanForSourceGeneratedMonoScriptInfo (41ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1173ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (959ms)
+		SetupLoadedEditorAssemblies (968ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (126ms)
-			ProcessInitializeOnLoadAttributes (730ms)
-			ProcessInitializeOnLoadMethodAttributes (70ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (748ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 30.62 ms, found 13 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 43.88 ms, found 13 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10251 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 322 unused Assets / (15.8 MB). Loaded Objects now: 10591.
-Memory consumption went from 449.5 MB to 433.7 MB.
-Total: 9.566700 ms (FindLiveObjects: 0.541300 ms CreateObjectMapping: 0.413700 ms MarkObjects: 5.437000 ms  DeleteObjects: 3.174000 ms)
+Unloading 10256 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 322 unused Assets / (16.1 MB). Loaded Objects now: 10596.
+Memory consumption went from 451.1 MB to 434.9 MB.
+Total: 9.352700 ms (FindLiveObjects: 0.671000 ms CreateObjectMapping: 0.379600 ms MarkObjects: 4.994400 ms  DeleteObjects: 3.307200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -220,6 +220,1118 @@ AssetImportParameters requested are different than current active one (requested
   custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 43978.959835 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/DemoScene_Content.unity
+  artifactKey: Guid(940e6238d481e9847a6a7d9ea2e5daee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/DemoScene_Content.unity using Guid(940e6238d481e9847a6a7d9ea2e5daee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a86b192a05855148f43ca6eeb052d11') in 0.001811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.059875 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/DemoScene.unity
+  artifactKey: Guid(3156da10c4d31e3449334747a0f47f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/DemoScene.unity using Guid(3156da10c4d31e3449334747a0f47f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b92b2caf7c5cd462ab0ede7d02b0573') in 0.000616 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.907471 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures
+  artifactKey: Guid(4419b3af18963da4cade89a1f0200176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures using Guid(4419b3af18963da4cade89a1f0200176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8a24d855cc35ec2fb7a01a178b58b9') in 0.000382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.035716 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Column_ambientocclusion.png
+  artifactKey: Guid(f35944ee58a240a41a38c24e8073a368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Column_ambientocclusion.png using Guid(f35944ee58a240a41a38c24e8073a368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '845debdf9ca06e44db213140861771bc') in 0.065418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorC_roughness.png
+  artifactKey: Guid(73fdfb36d5339db40843c30bd5e71960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorC_roughness.png using Guid(73fdfb36d5339db40843c30bd5e71960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51897643ac65d79a0e3262dcc39b941') in 0.017329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorJ_ambientocclusion.png
+  artifactKey: Guid(fdd42d6f5e0211748b302014b65cd350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorJ_ambientocclusion.png using Guid(fdd42d6f5e0211748b302014b65cd350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d40d566fb99eeb8cb2296535ec4fa8') in 0.017854 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorA_normal.png
+  artifactKey: Guid(2b102723e68ba5e4e9d8f10a4240fb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorA_normal.png using Guid(2b102723e68ba5e4e9d8f10a4240fb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3baa3dbbb7268d80f8b3f6feabd52f36') in 0.027266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorE_roughness.png
+  artifactKey: Guid(bba396ad63d0d854da2ab5349b2a73f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorE_roughness.png using Guid(bba396ad63d0d854da2ab5349b2a73f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ddd1c6ee1762abcf94a8ab8e94efa4f') in 0.016838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorC_normal.png
+  artifactKey: Guid(97a9665ca88b3664f94990ad8c5f64a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorC_normal.png using Guid(97a9665ca88b3664f94990ad8c5f64a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e47525a76dc6d126beb2f43028631fce') in 0.020636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorF_ambientocclusion.png
+  artifactKey: Guid(e774e590b60027e4297edcd31edfe258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorF_ambientocclusion.png using Guid(e774e590b60027e4297edcd31edfe258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5abd628397ae74622c5a1385d2906c6') in 0.021682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Staircase_Upper_ambientocclusion.png
+  artifactKey: Guid(1dee6ccee33aa3b46807d1e14813d921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Staircase_Upper_ambientocclusion.png using Guid(1dee6ccee33aa3b46807d1e14813d921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc58e41fc6e1eceaa1a7e03edc8449e1') in 0.022138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorI_roughness.png
+  artifactKey: Guid(0c10dcde77966d141a412b2db508a964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorI_roughness.png using Guid(0c10dcde77966d141a412b2db508a964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b87bd7090b4f00b7c6bf7f3857b562a') in 0.019358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorG_normal.png
+  artifactKey: Guid(3950c80803ef4924493e3d849426466b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorG_normal.png using Guid(3950c80803ef4924493e3d849426466b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e5c18e9c0aa48e6e24d0b21b83833aa') in 0.022337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorK_normal.png
+  artifactKey: Guid(f30073b5db706ea4e92523afd56af8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorK_normal.png using Guid(f30073b5db706ea4e92523afd56af8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780a8f4b86b6008fde8755f02b5e28e8') in 0.025750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorH_diffuse.png
+  artifactKey: Guid(2bbaab5b870bec54798fec59588b291b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorH_diffuse.png using Guid(2bbaab5b870bec54798fec59588b291b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e9ce30cb6ebb60ef7a7fc18342fa47') in 0.022383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorC_diffuse.png
+  artifactKey: Guid(ed6aed80c81ae2d4a913b067172d06fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorC_diffuse.png using Guid(ed6aed80c81ae2d4a913b067172d06fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013440874407371c250697f2b7b871d7') in 0.023366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorB_normal.png
+  artifactKey: Guid(5e490241ea8ce1b4bb41df8db07e0277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorB_normal.png using Guid(5e490241ea8ce1b4bb41df8db07e0277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f077e0e8682e1efc98775d4df7dc032f') in 0.022880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorK_ambientocclusion.png
+  artifactKey: Guid(a9b2eef206cfa7e43811ac7e26d69592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorK_ambientocclusion.png using Guid(a9b2eef206cfa7e43811ac7e26d69592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f0088bc3df5bf268e58f579bdff445f') in 0.022134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorJ_diffuse.png
+  artifactKey: Guid(fd0933fc33fe9734a964e081eddb7104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorJ_diffuse.png using Guid(fd0933fc33fe9734a964e081eddb7104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee76e85d854e801fe8cc25356d35ca23') in 0.021447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorA_metallic.png
+  artifactKey: Guid(93efe958cf6a72649b642706a2ba53a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorA_metallic.png using Guid(93efe958cf6a72649b642706a2ba53a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f24d14670ecc977227ad4ef24b9fe0') in 0.018754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorG_metallic.png
+  artifactKey: Guid(098c59d31ccfae444b4d81e06abe5197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorG_metallic.png using Guid(098c59d31ccfae444b4d81e06abe5197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb53b07823c204cf5dd464f8b1a0d84') in 0.021385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorJ_normal.png
+  artifactKey: Guid(6fad7d7d910247b43baeee1dd3a72c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorJ_normal.png using Guid(6fad7d7d910247b43baeee1dd3a72c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a74e5b4dff394a7f4ddc850570209e1a') in 0.022512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Staircase_roughness.png
+  artifactKey: Guid(3bffe051239ab4040b0202ad1ec7cf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Staircase_roughness.png using Guid(3bffe051239ab4040b0202ad1ec7cf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8009894663d8f4c28a3cba00df47107f') in 0.026514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorA_diffuse.png
+  artifactKey: Guid(0a08d9a7210c1c441b96d1ef0a2aaab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorA_diffuse.png using Guid(0a08d9a7210c1c441b96d1ef0a2aaab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f9052e451c3165bc9d212f84524418') in 0.021366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorF_roughness.png
+  artifactKey: Guid(609a2e705addbfd4684cb27d86183f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorF_roughness.png using Guid(609a2e705addbfd4684cb27d86183f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0012e15244136db6ef4cb24f38f173c9') in 0.017687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Door_roughness.png
+  artifactKey: Guid(13c973d482486774b8fa25c55415805c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Door_roughness.png using Guid(13c973d482486774b8fa25c55415805c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3876f2fd0b452b6eff4680c02f439aac') in 0.021478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorD_diffuse.png
+  artifactKey: Guid(723e9897259fa77468c228fefb2986fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorD_diffuse.png using Guid(723e9897259fa77468c228fefb2986fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b9aa5c08f2c991d9bf0e9a7f52d897') in 0.019553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Floor_roughness.png
+  artifactKey: Guid(e325b50600d38e248833775e752db45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Floor_roughness.png using Guid(e325b50600d38e248833775e752db45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a4ac8ec968baa25473de2ebf1100ae') in 0.017802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorG_ambientocclusion.png
+  artifactKey: Guid(7d3364e8e8f095b40bcb33785b984f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorG_ambientocclusion.png using Guid(7d3364e8e8f095b40bcb33785b984f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2468ccfb7323cf2741794c8e50084f94') in 0.021231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorD_roughness.png
+  artifactKey: Guid(d00e76236dea16c4091fcf6846c2a334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorD_roughness.png using Guid(d00e76236dea16c4091fcf6846c2a334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13d71c15854ce71790ca959bf3d970d') in 0.021668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorI_diffuse.png
+  artifactKey: Guid(477b73590cd0a3b47affe4d40f081a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorI_diffuse.png using Guid(477b73590cd0a3b47affe4d40f081a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077be497da2c46ec44d20090bc002598') in 0.021645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorB_metallic.png
+  artifactKey: Guid(3e6691fd4465675458d2e763590a784d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorB_metallic.png using Guid(3e6691fd4465675458d2e763590a784d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd4034a013c7ad3abc3da508856d48d') in 0.018337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Door_metallic.png
+  artifactKey: Guid(80fc641b8206c26408be64a6ad51f26a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Door_metallic.png using Guid(80fc641b8206c26408be64a6ad51f26a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fcdb6333653fe576beb922e75459f52') in 0.025033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorI_metallic.png
+  artifactKey: Guid(bc8ec1480191fdd42b4d35ba2d1a734e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorI_metallic.png using Guid(bc8ec1480191fdd42b4d35ba2d1a734e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39162078ddba8f0c994355b963e0322') in 0.021881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorG_diffuse.png
+  artifactKey: Guid(a499ba367efdeff47b179925597cb62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorG_diffuse.png using Guid(a499ba367efdeff47b179925597cb62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '452adfc094ce83812e043ecab2c731ad') in 0.022533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorE_diffuse.png
+  artifactKey: Guid(9d6078f78ce56cf41892fd3019a38aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorE_diffuse.png using Guid(9d6078f78ce56cf41892fd3019a38aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6cf70a8560e6f2f472b1fbe7cf9d68b') in 0.018997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Floor_metallic.png
+  artifactKey: Guid(c3c34f7e6a7f7ca429d906398f1361cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Floor_metallic.png using Guid(c3c34f7e6a7f7ca429d906398f1361cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55b31a08e173966409b949439d5bf773') in 0.020738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Door_normal.png
+  artifactKey: Guid(43978a76cbf94fa40bbdfe76d516868c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Door_normal.png using Guid(43978a76cbf94fa40bbdfe76d516868c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ca01d9fc7f0180fc2ad9c5f2a1c443') in 0.022019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorB_ambientocclusion.png
+  artifactKey: Guid(845479e902baa82498b8ca8919853841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorB_ambientocclusion.png using Guid(845479e902baa82498b8ca8919853841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d2f046a60cbefc1897a2c518f2e1d61') in 0.023530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorA_roughness.png
+  artifactKey: Guid(d66e5eb520d927445a1e90a54fda9040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorA_roughness.png using Guid(d66e5eb520d927445a1e90a54fda9040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074ad5670fe8bae1383318b52b1d62a4') in 0.019888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Staircase_normal.png
+  artifactKey: Guid(3f81741d7cab8bb4bb208fd3b4542237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Staircase_normal.png using Guid(3f81741d7cab8bb4bb208fd3b4542237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d07f7ea6b085e6c19ec936b571542b4') in 0.020012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorK_metallic.png
+  artifactKey: Guid(56c9e6c5bc77a044693d6ab0e80eaebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_FloorK_metallic.png using Guid(56c9e6c5bc77a044693d6ab0e80eaebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb38a4aedb0d0709271fb08201c82ecf') in 0.018799 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.832867 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab
+  artifactKey: Guid(67f4dfc4405cdf648a5d9ddb278f07e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab using Guid(67f4dfc4405cdf648a5d9ddb278f07e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7749ecf84dcbd9e792c7f2c1c05de574') in 0.001028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.033468 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_Chimney.prefab
+  artifactKey: Guid(f33d19a36a1920a478a28c8923836934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_Chimney.prefab using Guid(f33d19a36a1920a478a28c8923836934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15512b5a55369faf3028085fc13a07f5') in 0.419646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 224
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowB_01.prefab
+  artifactKey: Guid(86a9c79075c6e734f865245d4943a02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowB_01.prefab using Guid(86a9c79075c6e734f865245d4943a02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7886ad85939fc0be7769fbf1cd6dd4c9') in 0.125245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 61
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorJ.prefab
+  artifactKey: Guid(76223cda446a1474aada16c69947dd04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorJ.prefab using Guid(76223cda446a1474aada16c69947dd04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9da109a10d1e8abe3f0a2cf4198e4a0') in 0.049649 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_SideTable.prefab
+  artifactKey: Guid(3baf861e22c359445829933eb8b4228b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_SideTable.prefab using Guid(3baf861e22c359445829933eb8b4228b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c1f6b6a2646f3d4da36f32c992245b') in 0.042194 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorH.prefab
+  artifactKey: Guid(fae5c229c9f6e1041baa6d3d75401ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorH.prefab using Guid(fae5c229c9f6e1041baa6d3d75401ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc0563f974c6fd34c7cc21fb57992b5') in 0.046024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_Map.prefab
+  artifactKey: Guid(beba5d357bce30f48b4efc3fcb9f8f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_Map.prefab using Guid(beba5d357bce30f48b4efc3fcb9f8f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22357b40be04cfdb77fa69c525bdc09a') in 0.031553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorF.prefab
+  artifactKey: Guid(2ee6448362b89114bb19760d22eea5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorF.prefab using Guid(2ee6448362b89114bb19760d22eea5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6fa6aa76afe4f02340990b5b0dfafc') in 0.042728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowD_00.prefab
+  artifactKey: Guid(453e860b539429c468fe192fa5b1b973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowD_00.prefab using Guid(453e860b539429c468fe192fa5b1b973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c0ca4235d365ebb69a2040333311be3') in 0.107361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 65
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_Desk.prefab
+  artifactKey: Guid(a71cd5d308afc974cbd10c9465cedee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_Desk.prefab using Guid(a71cd5d308afc974cbd10c9465cedee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '066f6cf626d1646748d2d5924eb575f0') in 0.041971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_GlassBottles.prefab
+  artifactKey: Guid(18cc0fdaaebe94d47933d0ff4888bba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_GlassBottles.prefab using Guid(18cc0fdaaebe94d47933d0ff4888bba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa31332b0434c3946b369cd6fd1755ea') in 0.045407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_SmallBookcase.prefab
+  artifactKey: Guid(f1bdd7fa760e5894fa3c6b9cc42395f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_SmallBookcase.prefab using Guid(f1bdd7fa760e5894fa3c6b9cc42395f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '118762a0ad5207c39149403aee26bd16') in 0.028350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.002504 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_WallLight.prefab
+  artifactKey: Guid(424283edcb650694abecd69198341cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_WallLight.prefab using Guid(424283edcb650694abecd69198341cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4018b7ec03ce672365977347df89222a') in 0.038788 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_FlatDrawerRack.prefab
+  artifactKey: Guid(7d3ad300825e4f6468096ebbbb3dd2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_FlatDrawerRack.prefab using Guid(7d3ad300825e4f6468096ebbbb3dd2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f7e6abb4946e2a43860e0b44cdac5c') in 0.024371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_ProbesIngot_01.prefab
+  artifactKey: Guid(fb2f0c66901be88409e11b9129462db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_ProbesIngot_01.prefab using Guid(fb2f0c66901be88409e11b9129462db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9fcb1373ce13e0b68bac5c023b0533') in 0.046206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowA.prefab
+  artifactKey: Guid(df71872d983eec940bbfc5a1b456c379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowA.prefab using Guid(df71872d983eec940bbfc5a1b456c379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cadbd22c52bb11d5d00a5718c77800b') in 0.093053 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_Rug.prefab
+  artifactKey: Guid(1c60bdd243befbc4993c88f728f2ca95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_Rug.prefab using Guid(1c60bdd243befbc4993c88f728f2ca95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a2b248b46099868aedcc4a700dd308') in 0.035431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_BookPileA.prefab
+  artifactKey: Guid(ddfccc51a1ac0484b8a28551e5092ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_BookPileA.prefab using Guid(ddfccc51a1ac0484b8a28551e5092ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915820f5366811468bb324370483a086') in 0.051814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_Floor.prefab
+  artifactKey: Guid(270e08fc864302742a32b13a109c807c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_Floor.prefab using Guid(270e08fc864302742a32b13a109c807c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e1e8cbb6c1229b0211e23bfb6a3be2') in 0.032307 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_BookStand.prefab
+  artifactKey: Guid(f28c571a47002c447a43547404ed5d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_BookStand.prefab using Guid(f28c571a47002c447a43547404ed5d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5247cf758b3643260aef3f12bbfda98') in 0.031195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_Shelf.prefab
+  artifactKey: Guid(ce91f1d60563738449cd5968fc74dad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Furn_Shelf.prefab using Guid(ce91f1d60563738449cd5968fc74dad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed68084650b5fb7075ac4c032ac8e68') in 0.032751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_FlaskBox.prefab
+  artifactKey: Guid(f50e677da56dfcf4fa68bd0deb7e5eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_FlaskBox.prefab using Guid(f50e677da56dfcf4fa68bd0deb7e5eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a30e3b24db810bd3e092d87fae2bc8') in 0.035520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_ChalkBoard_01.prefab
+  artifactKey: Guid(c57ac89e3c02d6e48a062b93191fa121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_ChalkBoard_01.prefab using Guid(c57ac89e3c02d6e48a062b93191fa121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde66fc64f1249465113cbb1c7879ae6') in 0.048457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_Staircase_Upper.prefab
+  artifactKey: Guid(5a4d135a37c32484a9625f7e5a39284b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_Staircase_Upper.prefab using Guid(5a4d135a37c32484a9625f7e5a39284b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '619ab68587fd366b938cb5b01a1e73bc') in 0.048756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorB.prefab
+  artifactKey: Guid(729579e076183914683eff0bb360dbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorB.prefab using Guid(729579e076183914683eff0bb360dbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b41d8f802a8990d4e6812da1cfd7cd') in 0.043623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowE.prefab
+  artifactKey: Guid(a7cf1b0797a694043acc50f6a9b69c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowE.prefab using Guid(a7cf1b0797a694043acc50f6a9b69c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e1faf29543891836f03a29732669f2') in 0.065985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorI.prefab
+  artifactKey: Guid(65c418f26e2af974dbdf71e204c8b3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorI.prefab using Guid(65c418f26e2af974dbdf71e204c8b3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51707e8a685644cbfa0fb5d7bd146ff3') in 0.033833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Meshes
+  artifactKey: Guid(f75600213001bcf47a98cf715888add8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Meshes using Guid(f75600213001bcf47a98cf715888add8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdc275df366c13ea1eadf0e680d774b9') in 0.000541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorC.prefab
+  artifactKey: Guid(9009239ce3f1ea946b60f7648913f33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_FloorC.prefab using Guid(9009239ce3f1ea946b60f7648913f33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19645a5085ee144487f9cfa4d1d5c304') in 0.040698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowD_01.prefab
+  artifactKey: Guid(2ff4651f8206e1e4f8a8c95d40987354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowD_01.prefab using Guid(2ff4651f8206e1e4f8a8c95d40987354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda25e1def4f248430f6d574c17e8f51') in 0.083847 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 65
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_MortarAndPestal.prefab
+  artifactKey: Guid(388b54bdc9a67c34cacff36d9bdcaca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_MortarAndPestal.prefab using Guid(388b54bdc9a67c34cacff36d9bdcaca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e466279092391c0d529e459e5e0f70') in 0.037613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_SmallChest.prefab
+  artifactKey: Guid(a838821247c44b54bba06d23797eb846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Clut_SmallChest.prefab using Guid(a838821247c44b54bba06d23797eb846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe57e3e3755835fca4ff7186ee530e4') in 0.035767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowB_00.prefab
+  artifactKey: Guid(e3316bbd04f96a442bab7ce28b5bbf19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_WindowB_00.prefab using Guid(e3316bbd04f96a442bab7ce28b5bbf19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc092dc0519f153c0db5621901e52780') in 0.062609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 0.967784 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Column.mat
+  artifactKey: Guid(ae21bfe9e7d9cd243b3407c5fbf87bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Column.mat using Guid(ae21bfe9e7d9cd243b3407c5fbf87bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a06d094b6ca78b9ee64a651e9a7a032') in 0.063295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ContraptionA.mat
+  artifactKey: Guid(f7959f177a966a141aea4e068fd83f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ContraptionA.mat using Guid(f7959f177a966a141aea4e068fd83f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01dd89932129945aa29e5da240352dcd') in 0.031672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ScrollPile.mat
+  artifactKey: Guid(18964a556d6e2da4fb38a6738d679453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ScrollPile.mat using Guid(18964a556d6e2da4fb38a6738d679453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ba3b0e5b97d740d07ec0eed3757dc0') in 0.041925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorA.mat
+  artifactKey: Guid(a89a6617194016445a3ed7abe9f06b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorA.mat using Guid(a89a6617194016445a3ed7abe9f06b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61bc874f6e6086855647b8289bced9b2') in 0.021536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorC.mat
+  artifactKey: Guid(a1a722f61e1813c44b395302dc1da12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorC.mat using Guid(a1a722f61e1813c44b395302dc1da12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ee6f6f8e2b655a5ec10a34eb6e7e936') in 0.016733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowC_Glass_00.mat
+  artifactKey: Guid(02b96a464d052ee40b2ea33f50f7323b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowC_Glass_00.mat using Guid(02b96a464d052ee40b2ea33f50f7323b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ac27a3d9b10d64cbf3221a49f199ad') in 0.030855 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Staircase.mat
+  artifactKey: Guid(f470ed2cb2091ab4bab5a64be0e0ca0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Staircase.mat using Guid(f470ed2cb2091ab4bab5a64be0e0ca0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d010021ee97017d7e4c1a4640a910c1') in 0.039196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Floor.mat
+  artifactKey: Guid(eaf4aacaf3aee3043824a2e0013dadb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Floor.mat using Guid(eaf4aacaf3aee3043824a2e0013dadb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e82a390fd902856ffa330df363a7c5') in 0.019525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesIngot_01.mat
+  artifactKey: Guid(8522e162b20e7dc449d1e8aae7223e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesIngot_01.mat using Guid(8522e162b20e7dc449d1e8aae7223e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8864070653cbd471d5f0dbc37c3ab09a') in 0.034679 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_BookStand.mat
+  artifactKey: Guid(62c45b2d936929a48ab6eafc4c126574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_BookStand.mat using Guid(62c45b2d936929a48ab6eafc4c126574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b937c6930c98c3c94673a3ab8cafa3') in 0.033815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowB_Glass_00.mat
+  artifactKey: Guid(eeee4488973aeb846826803b1c6efd3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowB_Glass_00.mat using Guid(eeee4488973aeb846826803b1c6efd3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba8d168fb4579a2a82353fdaea0b5e66') in 0.019205 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowB_Glass_05.mat
+  artifactKey: Guid(69845c6d35ef7a1468456707467a5131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowB_Glass_05.mat using Guid(69845c6d35ef7a1468456707467a5131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15bbc920b7abc542fca6fd14711bb29') in 0.019934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesIngot_03.mat
+  artifactKey: Guid(233ca46ecf69da94e889aac4e7637384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesIngot_03.mat using Guid(233ca46ecf69da94e889aac4e7637384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3ec6f92a979b9f1ae245a5c351cac1') in 0.038444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorE.mat
+  artifactKey: Guid(bf2ccecfe7f85114395ca6402adb7599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorE.mat using Guid(bf2ccecfe7f85114395ca6402adb7599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d6498be25b0aae89ffeae941727567') in 0.026034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Wall_Inside.mat
+  artifactKey: Guid(47695456b7f17924887e282cb25fdfb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Wall_Inside.mat using Guid(47695456b7f17924887e282cb25fdfb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bf4f60102de952d8beee1a6539de90e') in 0.020092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_FlatDrawerRack.mat
+  artifactKey: Guid(a77d57f011bb7934dad146ebcef6cdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_FlatDrawerRack.mat using Guid(a77d57f011bb7934dad146ebcef6cdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f785800deb47a3f2f680d38fc77fc8') in 0.054714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_GlassBottles.mat
+  artifactKey: Guid(abba5c48867fb1d41bf0e9f0255914d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_GlassBottles.mat using Guid(abba5c48867fb1d41bf0e9f0255914d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7560e18bbc970a9c0c10487800a53f0') in 0.039253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_Rug.mat
+  artifactKey: Guid(acfd6f0b2c78b9c469c111bba72a5d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_Rug.mat using Guid(acfd6f0b2c78b9c469c111bba72a5d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578919e6066bf5aa0d0e4a7e1c198106') in 0.025071 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorB.mat
+  artifactKey: Guid(dd6c160861eb1254d966ab926839662a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorB.mat using Guid(dd6c160861eb1254d966ab926839662a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6249708c7ecaced1d000ead212488c29') in 0.017663 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowE_Glass.mat
+  artifactKey: Guid(06e230bd235cb9c4397890b673e3fc95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowE_Glass.mat using Guid(06e230bd235cb9c4397890b673e3fc95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ae3259f296fa6db51f38cfc63106b2') in 0.023770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ChalkBoard_01.mat
+  artifactKey: Guid(58a9d524b4defad42bed438f824f4ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ChalkBoard_01.mat using Guid(58a9d524b4defad42bed438f824f4ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef26157720a1f0a1b6d2af655aecfd0') in 0.024013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Staircase_Upper.mat
+  artifactKey: Guid(2b543562852ffd3498c2c37267ef8b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Staircase_Upper.mat using Guid(2b543562852ffd3498c2c37267ef8b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b69e6e5319cef7f6cff769f4378c70') in 0.032778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Shelf.mat
+  artifactKey: Guid(5cccb7cbbaf81c54787fe86a007677cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Shelf.mat using Guid(5cccb7cbbaf81c54787fe86a007677cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06c02c21df2c435668276c6bad9403de') in 0.029780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesCrystal.mat
+  artifactKey: Guid(dd1c100eb50cd4c498c852d2394a4890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesCrystal.mat using Guid(dd1c100eb50cd4c498c852d2394a4890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22e43b2d011e2b140cd2c7f87c6e1900') in 0.038944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowE.mat
+  artifactKey: Guid(7a3ce8ea8528c1047b26ca7889088a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowE.mat using Guid(7a3ce8ea8528c1047b26ca7889088a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeea203118fa147cb8764cda74493b40') in 0.034187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorD.mat
+  artifactKey: Guid(e8dfd3ddf54cdc74f9a48bf0fd55b6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorD.mat using Guid(e8dfd3ddf54cdc74f9a48bf0fd55b6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d4354f1f15a7670ed7f301699d65fe') in 0.018614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorJ.mat
+  artifactKey: Guid(66e7992783fc1084aa1df7da37adac69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorJ.mat using Guid(66e7992783fc1084aa1df7da37adac69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '020a66f5a8cd638e67d1acb0afb797fc') in 0.021715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_SmallBookcase.mat
+  artifactKey: Guid(5d23dddd42f73a548810b009f1e0e4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_SmallBookcase.mat using Guid(5d23dddd42f73a548810b009f1e0e4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd05dec53e27df29dfb8c93b831ea12') in 0.030208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Desk.mat
+  artifactKey: Guid(71c891467a7b4dd4797494aeefd11c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Desk.mat using Guid(71c891467a7b4dd4797494aeefd11c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a06016e9887215a0edf3115b0667cdd0') in 0.035123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ContraptionB.mat
+  artifactKey: Guid(77584e6d9e5aebd4a8d1ec534ff007cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ContraptionB.mat using Guid(77584e6d9e5aebd4a8d1ec534ff007cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce53cd294704cd2c28ad3871e3faf7c9') in 0.031435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_WallLight.mat
+  artifactKey: Guid(7762a91aab1eb9a47b66d5081c9f8fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_WallLight.mat using Guid(7762a91aab1eb9a47b66d5081c9f8fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651f038837576087107be790386fb835') in 0.049515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_SmallCauldron.mat
+  artifactKey: Guid(7217fda5b498da04cb6cb7f38cc396c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_SmallCauldron.mat using Guid(7217fda5b498da04cb6cb7f38cc396c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd926aa262712f0f7d6a554dcc052bb63') in 0.033126 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 120.795700 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Column.mat
+  artifactKey: Guid(ae21bfe9e7d9cd243b3407c5fbf87bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Column.mat using Guid(ae21bfe9e7d9cd243b3407c5fbf87bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e913d153eac3048fa47dbf3f9300a8fc') in 0.670291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ContraptionA.mat
+  artifactKey: Guid(f7959f177a966a141aea4e068fd83f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ContraptionA.mat using Guid(f7959f177a966a141aea4e068fd83f08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6e8f58c4c0bc885392fc672cc0e6d3f') in 0.041467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Bookcase.mat
+  artifactKey: Guid(1b5cf21bb0150594c92c3b7e520412a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Bookcase.mat using Guid(1b5cf21bb0150594c92c3b7e520412a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '032503342f2df882c805ae88fced4c08') in 0.084261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_BookPile.mat
+  artifactKey: Guid(e33215d51ca934d4c83b6443930b9b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_BookPile.mat using Guid(e33215d51ca934d4c83b6443930b9b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca6a8fd43b864b8d10c1d49771520f2') in 0.051400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_Map.mat
+  artifactKey: Guid(3f10423cecf773b488d39d65eae0c8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_Map.mat using Guid(3f10423cecf773b488d39d65eae0c8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd2694be9be54a553661e220b079f6f') in 0.028934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Staircase.mat
+  artifactKey: Guid(f470ed2cb2091ab4bab5a64be0e0ca0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Staircase.mat using Guid(f470ed2cb2091ab4bab5a64be0e0ca0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad9881611f7d65a42c6066a17b42e228') in 0.042740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Floor.mat
+  artifactKey: Guid(eaf4aacaf3aee3043824a2e0013dadb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Floor.mat using Guid(eaf4aacaf3aee3043824a2e0013dadb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ddc8c03af890fced9eadd482f093b55') in 0.020955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesIngot_01.mat
+  artifactKey: Guid(8522e162b20e7dc449d1e8aae7223e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesIngot_01.mat using Guid(8522e162b20e7dc449d1e8aae7223e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638b45124f7293dd42e307ed6a3e5558') in 0.036172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_BookStand.mat
+  artifactKey: Guid(62c45b2d936929a48ab6eafc4c126574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_BookStand.mat using Guid(62c45b2d936929a48ab6eafc4c126574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a74e5f7bec2e1831b6ee72323383db') in 0.031616 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorF.mat
+  artifactKey: Guid(a90bb720ff0326b43bcf3f0f387dee26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorF.mat using Guid(a90bb720ff0326b43bcf3f0f387dee26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a015120a4dd05710f204a371e21227ef') in 0.022892 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowB_Glass_01.mat
+  artifactKey: Guid(2ab013322b31b7d4dad12469893ac8c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowB_Glass_01.mat using Guid(2ab013322b31b7d4dad12469893ac8c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fbc3e6ef4c35977b2f77b8855484ae2') in 0.022499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesIngot_03.mat
+  artifactKey: Guid(233ca46ecf69da94e889aac4e7637384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesIngot_03.mat using Guid(233ca46ecf69da94e889aac4e7637384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed6c50e951bc2b018e8972adeaf401b') in 0.025667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorE.mat
+  artifactKey: Guid(bf2ccecfe7f85114395ca6402adb7599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorE.mat using Guid(bf2ccecfe7f85114395ca6402adb7599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033ee397b70585a653cf74b2a37dafdf') in 0.015222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Wall_Inside.mat
+  artifactKey: Guid(47695456b7f17924887e282cb25fdfb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Wall_Inside.mat using Guid(47695456b7f17924887e282cb25fdfb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49fba63306dc9c5d37ff8b5c179c3b3a') in 0.017290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_FlatDrawerRack.mat
+  artifactKey: Guid(a77d57f011bb7934dad146ebcef6cdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_FlatDrawerRack.mat using Guid(a77d57f011bb7934dad146ebcef6cdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8de1b6e8f001a47c25660e3b7a47a3d') in 0.026523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_GlassBottles.mat
+  artifactKey: Guid(abba5c48867fb1d41bf0e9f0255914d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_GlassBottles.mat using Guid(abba5c48867fb1d41bf0e9f0255914d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1416834159391be37ab5253b1765ef4') in 0.029579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_Rug.mat
+  artifactKey: Guid(acfd6f0b2c78b9c469c111bba72a5d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_Rug.mat using Guid(acfd6f0b2c78b9c469c111bba72a5d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2cac91525e4ec79d714c7d43233564') in 0.025283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorB.mat
+  artifactKey: Guid(dd6c160861eb1254d966ab926839662a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorB.mat using Guid(dd6c160861eb1254d966ab926839662a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27138aee0181a00f8b4a1f138165d926') in 0.018926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowE_Glass.mat
+  artifactKey: Guid(06e230bd235cb9c4397890b673e3fc95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowE_Glass.mat using Guid(06e230bd235cb9c4397890b673e3fc95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70947b9bfdedff024c91a3185685117b') in 0.020108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ChalkBoard_01.mat
+  artifactKey: Guid(58a9d524b4defad42bed438f824f4ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ChalkBoard_01.mat using Guid(58a9d524b4defad42bed438f824f4ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e6e15a49b500dfc8c7e09e4543a6cc') in 0.024436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Staircase_Upper.mat
+  artifactKey: Guid(2b543562852ffd3498c2c37267ef8b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Staircase_Upper.mat using Guid(2b543562852ffd3498c2c37267ef8b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8184e99686acff7b1fa8073a3e1dab43') in 0.033173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Shelf.mat
+  artifactKey: Guid(5cccb7cbbaf81c54787fe86a007677cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Shelf.mat using Guid(5cccb7cbbaf81c54787fe86a007677cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15b57c30f13a007bbb52ccdc20bd1db') in 0.035063 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesCrystal.mat
+  artifactKey: Guid(dd1c100eb50cd4c498c852d2394a4890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ProbesCrystal.mat using Guid(dd1c100eb50cd4c498c852d2394a4890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe047a67561ad65f084310d1a89771d') in 0.032892 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowE.mat
+  artifactKey: Guid(7a3ce8ea8528c1047b26ca7889088a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_WindowE.mat using Guid(7a3ce8ea8528c1047b26ca7889088a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c833c6ecdabf66c9870a49c94632cc') in 0.030437 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorD.mat
+  artifactKey: Guid(e8dfd3ddf54cdc74f9a48bf0fd55b6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorD.mat using Guid(e8dfd3ddf54cdc74f9a48bf0fd55b6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83c762faa9490b796de863b4e18f2ca4') in 0.017674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorJ.mat
+  artifactKey: Guid(66e7992783fc1084aa1df7da37adac69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_FloorJ.mat using Guid(66e7992783fc1084aa1df7da37adac69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42025aac94624de8dbfa731384fe25e') in 0.019581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_SmallBookcase.mat
+  artifactKey: Guid(5d23dddd42f73a548810b009f1e0e4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_SmallBookcase.mat using Guid(5d23dddd42f73a548810b009f1e0e4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a8ddec96539b47f96415df5cc811906') in 0.025046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Desk.mat
+  artifactKey: Guid(71c891467a7b4dd4797494aeefd11c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Desk.mat using Guid(71c891467a7b4dd4797494aeefd11c73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4082bb92efcfb5b941aa58d9f709bb') in 0.028252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ContraptionB.mat
+  artifactKey: Guid(77584e6d9e5aebd4a8d1ec534ff007cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_ContraptionB.mat using Guid(77584e6d9e5aebd4a8d1ec534ff007cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc0acc2b31ddad8096a5c57ecb701a1') in 0.034990 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_FlaskBox.mat
+  artifactKey: Guid(ec25192028e1f1447acd6557688ffe21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Clut_FlaskBox.mat using Guid(ec25192028e1f1447acd6557688ffe21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6467cb45d5e1b6496ce5dc1df19e86c9') in 0.032223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Table.mat
+  artifactKey: Guid(4da1ebeaf38500a4cb264de6f329da72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Furn_Table.mat using Guid(4da1ebeaf38500a4cb264de6f329da72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cae75838387950ffe663d83b964ad9c0') in 0.057455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 9.937825 seconds.
+  path: Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Wall_diffuse.png
+  artifactKey: Guid(9d43fa00883bf224697e3959b12beebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Wall_diffuse.png using Guid(9d43fa00883bf224697e3959b12beebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d783e6bca5e4708947ba4713f2b5cac') in 0.030142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server

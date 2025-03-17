@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class CustomInputAction : MonoBehaviour
 {
-    public InputActionReference rightHold;
-    public InputActionReference leftHold;
-    public MeshRenderer mesh;
-    public GameObject magicCircle;
+    [SerializeField] public InputActionReference rightHold;
+    [SerializeField] public InputActionReference leftHold;
+    [SerializeField] public MeshRenderer mesh;
+    [SerializeField] public GameObject magicCircle;
+    [SerializeField] private Button recordButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,8 @@ public class CustomInputAction : MonoBehaviour
         {
             mesh.material.color = Color.red;
             magicCircle.SetActive(true);
+            Debug.Log("Right and Left are pressed");
+            recordButton.onClick.Invoke();
         }
     }
 
@@ -33,8 +37,12 @@ public class CustomInputAction : MonoBehaviour
         {
             mesh.material.color = Color.red;
             magicCircle.SetActive(true);
+            Debug.Log("Right and Left are pressed");
+            recordButton.onClick.Invoke();
         }
     }
+
+    
 
     void onRelease(InputAction.CallbackContext context)
     {

@@ -95,7 +95,7 @@ public class MicFadeIn : MonoBehaviour
             currentLerp -= Time.deltaTime / decreaseDuration;
             currentLerp = Mathf.Clamp01(currentLerp);
         }
-        Debug.Log("Current Lerp: " + currentLerp);
+        // Debug.Log("Current Lerp: " + currentLerp);
     }
 
 

@@ -33,7 +33,7 @@
     <img src="https://github.com/RosyTCosy/RosysWizards465/blob/main/Images/Logo.png?raw=true" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">🪄Rosy's Wizards 465🪄</h3>
+<h3 align="center">🪄 Rosy's Wizards 465 🪄</h3>
 
   <p align="center">
     Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User Interfaces.
