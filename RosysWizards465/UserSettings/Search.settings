@@ -8,9 +8,9 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"picker_window_position_offset.D845A788" = "325;52;320;550"
-	"picker_search_text.D845A788" = "hol "
-	"last_search.D845A788" = "hol "
+	"picker_window_position_offset.D845A788" = "-633;279;320;550"
+	"picker_search_text.D845A788" = "XRI Right Interaction/RG "
+	"last_search.D845A788" = "XRI Right Interaction/RG "
 	"OpenInspectorPreview.D845A788" = "0"
 	"currentGroup.D845A788" = "all"
 }
@@ -64,6 +64,8 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	" "
+	"XRI L Interaction/A "
 ]
 searchItemFavorites = [
 ]
