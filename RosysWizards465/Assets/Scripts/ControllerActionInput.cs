@@ -5,41 +5,104 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
 using Oculus.Interaction.Input;
+using System.IO.MemoryMappedFiles;
 
 public class ControllerActionInput : MonoBehaviour
 {
-    [SerializeField] public InputActionReference A;
-    [SerializeField] public InputActionReference B;
-    [SerializeField] public InputActionReference X;
-    [SerializeField] public InputActionReference Y;
+    [SerializeField] private InputActionReference A;
+    [SerializeField] private InputActionReference B;
+    [SerializeField] private InputActionReference X;
+    [SerializeField] private InputActionReference Y;
 
-    [SerializeField] public InputActionReference LT;
-    [SerializeField] public InputActionReference LG;
-    [SerializeField] public InputActionReference RT;
-    [SerializeField] public InputActionReference RG;
+    [SerializeField] private InputActionReference LT;
+    [SerializeField] private InputActionReference LG;
+    [SerializeField] private InputActionReference RT;
+    [SerializeField] private InputActionReference RG;
 
-    [SerializeField] public Text message;
+    [SerializeField] private BoardUI studentBoardUI;
 
-    [SerializeField] public Boolean twoHanded = false;
 
-    private List<List<string>> spellList = new List<List<string>>(){
-        new List<string>(){"Primary", "Trigger", "Trigger", "Spell 1"},
-        new List<string>(){"Primary", "Trigger", "Grab", "Spell 2"},
-        new List<string>(){"Primary", "Grab", "Trigger", "Spell 3"},
-        new List<string>(){"Primary", "Grab", "Grab", "Spell 4"},
-        new List<string>(){"Secondary", "Trigger", "Trigger", "Spell 5"},
-        new List<string>(){"Secondary", "Trigger", "Grab", "Spell 6"},
-        new List<string>(){"Secondary", "Grab", "Trigger", "Spell 7"},
-        new List<string>(){"Secondary", "Grab", "Grab", "Spell 8"},
-        new List<string>(){"Trigger", "Trigger", "Trigger", "Spell 9"},
-        new List<string>(){"Trigger", "Trigger", "Grab", "Spell 10"},
-        new List<string>(){"Trigger", "Grab", "Trigger", "Spell 11"},
-        new List<string>(){"Trigger", "Grab", "Grab", "Spell 12"},
-        new List<string>(){"Grab", "Trigger", "Trigger", "Spell 13"},
-        new List<string>(){"Grab", "Trigger", "Grab", "Spell 14"},
-        new List<string>(){"Grab", "Grab", "Trigger", "Spell 15"},
-        new List<string>(){"Grab", "Grab", "Grab", "Spell 16"},
+
+
+    public Text message;
+    public Text spellName;
+    public bool isTwoHanded = false;
+
+    private enum ButtonType
+    {
+        Primary,
+        Secondary,
+        Trigger,
+        Grab,
+        Unknown
+    }
+
+    class Spell
+    {
+        public ButtonType button1;
+        public ButtonType button2;
+        public ButtonType button3;
+        public string spellName;
+        public Spell(ButtonType button1, ButtonType button2, ButtonType button3, string spellName)
+        {
+            this.button1 = button1;
+            this.button2 = button2;
+            this.button3 = button3;
+            this.spellName = spellName;
+        }
+
+        public string getSpellName()
+        {
+            return spellName;
+        }
+
+        public Boolean MatchesButtonSequence(List<ButtonType> buttonsPressedList)
+        {
+            if (buttonsPressedList.Count < 3)
+            {
+                return false;
+            }
+            return buttonsPressedList[0] == button1 && buttonsPressedList[1] == button2 && buttonsPressedList[2] == button3;
+        }
+    }
+
+    private List<Spell> spellList = new List<Spell>()
+    {
+        new Spell(ButtonType.Grab, ButtonType.Primary, ButtonType.Grab, "Spell 1"),
+        new Spell(ButtonType.Grab, ButtonType.Primary, ButtonType.Trigger, "Spell 2"),
+        new Spell(ButtonType.Grab, ButtonType.Primary, ButtonType.Primary, "Spell 3"),
+        new Spell(ButtonType.Grab, ButtonType.Primary, ButtonType.Secondary, "Spell 4"),
+        new Spell(ButtonType.Grab, ButtonType.Secondary, ButtonType.Grab, "Spell 5"),
+        new Spell(ButtonType.Grab, ButtonType.Secondary, ButtonType.Trigger, "Spell 6"),
+        new Spell(ButtonType.Grab, ButtonType.Secondary, ButtonType.Primary, "Spell 7"),
+        new Spell(ButtonType.Grab, ButtonType.Secondary, ButtonType.Secondary, "Spell 8"),
+        new Spell(ButtonType.Trigger, ButtonType.Primary, ButtonType.Grab, "Spell 9"),
+        new Spell(ButtonType.Trigger, ButtonType.Primary, ButtonType.Trigger, "Spell 10"),
+        new Spell(ButtonType.Trigger, ButtonType.Primary, ButtonType.Primary, "Spell 11"),
+        new Spell(ButtonType.Trigger, ButtonType.Primary, ButtonType.Secondary, "Spell 12"),
+        new Spell(ButtonType.Trigger, ButtonType.Secondary, ButtonType.Grab, "Spell 13"),
+        new Spell(ButtonType.Trigger, ButtonType.Secondary, ButtonType.Trigger, "Spell 14"),
+        new Spell(ButtonType.Trigger, ButtonType.Secondary, ButtonType.Primary, "Spell 15"),
+        new Spell(ButtonType.Trigger, ButtonType.Secondary, ButtonType.Secondary, "Spell 16"),
+        new Spell(ButtonType.Primary, ButtonType.Primary, ButtonType.Grab, "Spell 17"),
+        new Spell(ButtonType.Primary, ButtonType.Primary, ButtonType.Trigger, "Spell 18"),
+        new Spell(ButtonType.Primary, ButtonType.Primary, ButtonType.Primary, "Spell 19"),
+        new Spell(ButtonType.Primary, ButtonType.Primary, ButtonType.Secondary, "Spell 20"),
+        new Spell(ButtonType.Primary, ButtonType.Secondary, ButtonType.Grab, "Spell 21"),
+        new Spell(ButtonType.Primary, ButtonType.Secondary, ButtonType.Trigger, "Spell 22"),
+        new Spell(ButtonType.Primary, ButtonType.Secondary, ButtonType.Primary, "Spell 23"),
+        new Spell(ButtonType.Primary, ButtonType.Secondary, ButtonType.Secondary, "Spell 24"),
+        new Spell(ButtonType.Secondary, ButtonType.Primary, ButtonType.Grab, "Spell 25"),
+        new Spell(ButtonType.Secondary, ButtonType.Primary, ButtonType.Trigger, "Spell 26"),
+        new Spell(ButtonType.Secondary, ButtonType.Primary, ButtonType.Primary, "Spell 27"),
+        new Spell(ButtonType.Secondary, ButtonType.Primary, ButtonType.Secondary, "Spell 28"),
+        new Spell(ButtonType.Secondary, ButtonType.Secondary, ButtonType.Grab, "Spell 29"),
+        new Spell(ButtonType.Secondary, ButtonType.Secondary, ButtonType.Trigger, "Spell 30"),
+        new Spell(ButtonType.Secondary, ButtonType.Secondary, ButtonType.Primary, "Spell 31"),
+        new Spell(ButtonType.Secondary, ButtonType.Secondary, ButtonType.Secondary, "Spell 32")
     };
+
+    private List<ButtonType> buttonsPressedList = new List<ButtonType>();
 
     void Start()
     {
@@ -55,10 +118,9 @@ public class ControllerActionInput : MonoBehaviour
 
     private void OnButtonPressed(string button, InputActionReference pairedButton = null)
     {
-
-        if (!twoHanded || (pairedButton != null && pairedButton.action != null && pairedButton.action.phase == InputActionPhase.Performed))
+        if (!isTwoHanded || (pairedButton != null && pairedButton.action != null && pairedButton.action.phase == InputActionPhase.Performed))
         {
-            buttonUpdate(button);
+            ButtonUpdate(button);
         }
     }
 
@@ -82,54 +144,85 @@ public class ControllerActionInput : MonoBehaviour
         OnButtonPressed("Y", B);
     }
 
-    void onLTPressed(InputAction.CallbackContext context)
+    private void onLTPressed(InputAction.CallbackContext context)
     {
         OnButtonPressed("LT", RT);
     }
 
-    void onLGPressed(InputAction.CallbackContext context)
+    private void onLGPressed(InputAction.CallbackContext context)
     {
         OnButtonPressed("LG", RG);
     }
 
-    void onRTPressed(InputAction.CallbackContext context)
+    private void onRTPressed(InputAction.CallbackContext context)
     {
         OnButtonPressed("RT", LT);
     }
 
-    void onRGPressed(InputAction.CallbackContext context)
+    private void onRGPressed(InputAction.CallbackContext context)
     {
         OnButtonPressed("RG", LG);
     }
 
-    private List<string> buttonsPressedList = new List<string>();
-
-    void buttonUpdate(string button)
+    private void ButtonUpdate(string button)
     {
-        button = getButtonType(button);
+        ButtonType mappedButton = MapButtonToType(button);
 
-        buttonsPressedList.Add(button);
+        buttonsPressedList.Add(mappedButton);
         message.text = button + " Pressed\r\n" + arrayListToString(buttonsPressedList);
+        spellName.text = "";
+        UpdateStudentBoardUI();
+
         if (buttonsPressedList.Count >= 3)
         {
             checkSpellList();
             Debug.Log(arrayListToString(buttonsPressedList));
-            buttonsPressedList.Clear();
+            buttonsPressedList.Clear(); // Reuse the list instead of creating a new one
         }
     }
 
+    private GlyphType MapButtonToGlyphType(ButtonType mappedButton)
+    {
+        return mappedButton switch
+        {
+            ButtonType.Primary => GlyphType.Attack,
+            ButtonType.Secondary => GlyphType.Defense,
+            ButtonType.Trigger => GlyphType.Health,
+            ButtonType.Grab => GlyphType.Buff,
+            _ => GlyphType.None
+        };
+    }
 
+    private ConnectorType MapButtonToConnectorType(ButtonType mappedButton)
+    {
+        return mappedButton switch
+        {
+            ButtonType.Primary => ConnectorType.Link,
+            ButtonType.Secondary => ConnectorType.Weave,
+            _ => ConnectorType.None
+        };
+    }
+
+    private void UpdateStudentBoardUI()
+    {
+        GlyphType glyph1 = buttonsPressedList.Count > 0 ? MapButtonToGlyphType(buttonsPressedList[0]) : GlyphType.None;
+        ConnectorType connector = buttonsPressedList.Count > 1 ? MapButtonToConnectorType(buttonsPressedList[1]) : ConnectorType.None;
+        GlyphType glyph2 = buttonsPressedList.Count > 2 ? MapButtonToGlyphType(buttonsPressedList[2]) : GlyphType.None;
+
+        Debug.Log("Glyph1: " + glyph1 + ", Connector: " + connector + ", Glyph2: " + glyph2);
+
+        studentBoardUI.UpdateBoardUI(glyph1, connector, glyph2);
+    }
 
     private void checkSpellList()
     {
         bool spellFound = false;
         foreach (var spell in spellList)
         {
-            if (spell[0] == buttonsPressedList[0] &&
-                spell[1] == buttonsPressedList[1] &&
-                spell[2] == buttonsPressedList[2])
+            if (spell.MatchesButtonSequence(buttonsPressedList))
             {
-                message.text += "\r\nSpell Cast: " + spell[3];
+                message.text += "\r\nSpell Cast: " + spell.getSpellName();
+                spellName.text = "Spell Cast: " + spell.getSpellName();
                 spellFound = true;
                 break;
             }
@@ -140,33 +233,37 @@ public class ControllerActionInput : MonoBehaviour
         }
     }
 
-    private static string getButtonType(string button)
+
+
+    private ButtonType MapButtonToType(string button)
     {
-        switch (button)
+        if (buttonsPressedList.Count == 1)
         {
-            case "A":
-            case "X":
-                return "Primary";
-            case "B":
-            case "Y":
-                return "Secondary";
-            case "LT":
-            case "RT":
-                return "Trigger";
-            case "LG":
-            case "RG":
-                return "Grab";
-            default:
-                return button;
+            return button switch
+            {
+                "LT" or "RT" or "A" or "X" => ButtonType.Primary,
+                "LG" or "RG" or "B" or "Y" => ButtonType.Secondary,
+                _ => ButtonType.Unknown
+            };
         }
+
+        return button switch
+        {
+            "A" or "X" => ButtonType.Primary,
+            "B" or "Y" => ButtonType.Secondary,
+            "LT" or "RT" => ButtonType.Trigger,
+            "LG" or "RG" => ButtonType.Grab,
+            _ => ButtonType.Unknown
+        };
     }
 
-    private string arrayListToString(List<string> list)
+
+    private string arrayListToString(List<ButtonType> list)
     {
         string result = "[";
         for (int i = 0; i < list.Count; i++)
         {
-            result += list[i];
+            result += list[i].ToString();
             if (i < list.Count - 1)
             {
                 result += ", ";
@@ -176,8 +273,5 @@ public class ControllerActionInput : MonoBehaviour
         return result;
     }
 
-    void Update()
-    {
 
-    }
 }

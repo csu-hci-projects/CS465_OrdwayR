@@ -15,7 +15,7 @@ C:/Users/Rose/OneDrive/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
 -logFile
 Logs/AssetImportWorker7.log
 -srvPort
-64720
+55036
 Successfully changed project path to: C:/Users/Rose/OneDrive/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
 C:/Users/Rose/OneDrive/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Rose/OneDrive/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [38868] Host "[IP] 10.0.0.179 [Port] 0 [Flags] 2 [Guid] 3227512171 [EditorId] 3227512171 [Version] 1048832 [Id] WindowsEditor(7,Rosy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [44716] Host "[IP] 10.0.0.179 [Port] 0 [Flags] 2 [Guid] 752789443 [EditorId] 752789443 [Version] 1048832 [Id] WindowsEditor(7,Rosy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [38868] Host "[IP] 10.0.0.179 [Port] 0 [Flags] 2 [Guid] 3227512171 [EditorId] 3227512171 [Version] 1048832 [Id] WindowsEditor(7,Rosy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [44716] Host "[IP] 10.0.0.179 [Port] 0 [Flags] 2 [Guid] 752789443 [EditorId] 752789443 [Version] 1048832 [Id] WindowsEditor(7,Rosy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 87.44 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 82.06 ms, found 13 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.18f1 (d29bea25151d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -71,49 +71,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010453 seconds.
-- Loaded All Assemblies, in  0.287 seconds
+Registered in 0.010352 seconds.
+- Loaded All Assemblies, in  0.264 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 253 ms
+Android Extension - Scanning For ADB Devices 212 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.538 seconds
-Domain Reload Profiling: 824ms
-	BeginReloadAssembly (86ms)
+- Finished resetting the current domain, in  0.490 seconds
+Domain Reload Profiling: 752ms
+	BeginReloadAssembly (81ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (114ms)
-		LoadAssemblies (84ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (99ms)
+		LoadAssemblies (80ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (112ms)
-			TypeCache.Refresh (111ms)
-				TypeCache.ScanAssembly (102ms)
+		AnalyzeDomain (97ms)
+			TypeCache.Refresh (96ms)
+				TypeCache.ScanAssembly (88ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (538ms)
+	FinalizeReload (490ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (493ms)
+		SetupLoadedEditorAssemblies (447ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (360ms)
+			InitializePlatformSupportModulesInManaged (307ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (92ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
+			ProcessInitializeOnLoadAttributes (91ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -122,8 +122,8 @@ Domain Reload Profiling: 824ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.979 seconds
-Refreshing native plugins compatible for Editor in 57.40 ms, found 13 plugins.
+- Loaded All Assemblies, in  0.751 seconds
+Refreshing native plugins compatible for Editor in 58.50 ms, found 13 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -163,48 +163,48 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.126 seconds
-Domain Reload Profiling: 2089ms
-	BeginReloadAssembly (204ms)
+- Finished resetting the current domain, in  1.114 seconds
+Domain Reload Profiling: 1857ms
+	BeginReloadAssembly (115ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (45ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (30ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (664ms)
-		LoadAssemblies (473ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (551ms)
+		LoadAssemblies (350ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (319ms)
-			TypeCache.Refresh (250ms)
-				TypeCache.ScanAssembly (228ms)
-			ScanForSourceGeneratedMonoScriptInfo (44ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (1127ms)
+		AnalyzeDomain (268ms)
+			TypeCache.Refresh (211ms)
+				TypeCache.ScanAssembly (193ms)
+			ScanForSourceGeneratedMonoScriptInfo (38ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1114ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (923ms)
+		SetupLoadedEditorAssemblies (921ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
+			InitializePlatformSupportModulesInManaged (20ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (108ms)
-			ProcessInitializeOnLoadAttributes (717ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (716ms)
 			ProcessInitializeOnLoadMethodAttributes (65ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 58.13 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 57.54 ms, found 13 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10258 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 322 unused Assets / (15.8 MB). Loaded Objects now: 10598.
-Memory consumption went from 451.0 MB to 435.2 MB.
-Total: 9.479800 ms (FindLiveObjects: 0.559500 ms CreateObjectMapping: 0.393800 ms MarkObjects: 5.477500 ms  DeleteObjects: 3.048200 ms)
+Unloading 10264 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 322 unused Assets / (15.9 MB). Loaded Objects now: 10604.
+Memory consumption went from 452.6 MB to 436.7 MB.
+Total: 9.207100 ms (FindLiveObjects: 0.574800 ms CreateObjectMapping: 0.387800 ms MarkObjects: 5.217800 ms  DeleteObjects: 3.026200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -217,581 +217,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/NewBehaviourScript.cs: b21687ddb03d73bd9f0c1daecb9714de -> 
+  custom:scripting/monoscript/fileName/GlyphSelectorEditor.cs: 0cfaccb3306f616bc4998f4a632ad191 -> 8509361ee3049010c6f6b63e3a08393b
   custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/BoardUI.cs: eafcb531c507bef3f2ee1a4f3b9822f0 -> a48d98349acd1013777de60a01490d0b
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 118993.046966 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png
-  artifactKey: Guid(4ccf43d26c4748c792174516f4a8fcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png using Guid(4ccf43d26c4748c792174516f4a8fcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7775d22019dfbe25b94e6980bb2706ee') in 0.082176 seconds
+  Time since last request: 220959.977042 seconds.
+  path: Assets/Images/Controller Icons/Sprites/button-y-pressed.png
+  artifactKey: Guid(661f4c00f3f180847b88ef9cf5ef0186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Controller Icons/Sprites/button-y-pressed.png using Guid(661f4c00f3f180847b88ef9cf5ef0186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86c3403fa8248a2b50cfd2dc55203a3') in 0.067927 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.388212 seconds.
-  path: Assets/Imports/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Textures/Tree_bark2.png
-  artifactKey: Guid(a7594554ddcd360429d561f0eb906386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Textures/Tree_bark2.png using Guid(a7594554ddcd360429d561f0eb906386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6cd311c8283fa02d92a15ba1854cc64') in 0.114076 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Imports/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Textures/Willow_bark.png
-  artifactKey: Guid(240ce1d8a314c864fb44efc3c56a49a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Textures/Willow_bark.png using Guid(240ce1d8a314c864fb44efc3c56a49a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1944251179616332229f24dd973f04') in 0.045623 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Imports/FantasyEnvironments/Environments/Town/Textures/WoodenWall.png
-  artifactKey: Guid(0495185e035d28e4a92f01ac9cf57692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/FantasyEnvironments/Environments/Town/Textures/WoodenWall.png using Guid(0495185e035d28e4a92f01ac9cf57692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2c6795374e3b5f0c2d32f87a9a910f') in 0.049792 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 15.283499 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_SideTable_metallic.png
-  artifactKey: Guid(818780b89babe0b4ea9f4c83665401d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_SideTable_metallic.png using Guid(818780b89babe0b4ea9f4c83665401d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67ad9af846ad90669fb23eb2d71679b') in 0.026020 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_SideTable_roughness.png
-  artifactKey: Guid(c0d5e670de4c661469d49ee41fda462c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_SideTable_roughness.png using Guid(c0d5e670de4c661469d49ee41fda462c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce52f5eb05c066ce0b2809bd594beda5') in 0.016727 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.366630 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_FlatDrawerRack_normal.png
-  artifactKey: Guid(277aa9fa16d2496448d6b3f0c9c9a085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_FlatDrawerRack_normal.png using Guid(277aa9fa16d2496448d6b3f0c9c9a085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172f2f7247b8731b071b1504bf342a56') in 0.027625 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000587 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_Desk_roughness.png
-  artifactKey: Guid(087ee901b7c84d74ba8da28a01c82bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_Desk_roughness.png using Guid(087ee901b7c84d74ba8da28a01c82bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc848c5560188297c03b9a3e746b56a') in 0.020354 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_DeskChair_metallic.png
-  artifactKey: Guid(65e1ffff622b566438cf9269c073cf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_DeskChair_metallic.png using Guid(65e1ffff622b566438cf9269c073cf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed119ed25bf0e4e4f4da56f355591bd8') in 0.022812 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_DeskChair_roughness.png
-  artifactKey: Guid(fa23b1c074a523943b0bf91c7f90b82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_DeskChair_roughness.png using Guid(fa23b1c074a523943b0bf91c7f90b82f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3341ddbb31a0d741056aece022200d') in 0.015804 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.257855 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_Console_metallic.png
-  artifactKey: Guid(5686dca4e39a4e04fb581e254810f569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_Console_metallic.png using Guid(5686dca4e39a4e04fb581e254810f569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8d030e6587ef16b11bd95921614704') in 0.024696 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_Desk_diffuse.png
-  artifactKey: Guid(671e841b2e36e5e4390e2cb1234e5d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_Desk_diffuse.png using Guid(671e841b2e36e5e4390e2cb1234e5d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e853b57b7f57feeee7aa7b5f7c9c4045') in 0.031815 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.010182 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_TestTubeStand_roughness.png
-  artifactKey: Guid(162beb2983ba22140b6817f86fce54df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_TestTubeStand_roughness.png using Guid(162beb2983ba22140b6817f86fce54df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e694054d629891d8c33dfafde7de28') in 0.018386 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_Bookcase_ambientocclusion.png
-  artifactKey: Guid(a6c4e1a694917594993d25a214408dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_Bookcase_ambientocclusion.png using Guid(a6c4e1a694917594993d25a214408dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1ee620728270a38fed9a3efd5de8f9') in 0.027303 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_ApothecaryRack_diffuse.png
-  artifactKey: Guid(700449ac9d899154281cc4605bda1a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Furn_ApothecaryRack_diffuse.png using Guid(700449ac9d899154281cc4605bda1a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc30553a02d2122df1c0364e2eb4a50') in 0.029973 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.084952 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_TestTubeStand_normal.png
-  artifactKey: Guid(07680c9bddc98b04f9fb464913e5a913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_TestTubeStand_normal.png using Guid(07680c9bddc98b04f9fb464913e5a913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81db541ee8980319572d3d5b77f2179') in 0.030646 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_ScrollPile_roughness.png
-  artifactKey: Guid(162b7d56069d8ca4897b127fc162def7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_ScrollPile_roughness.png using Guid(162b7d56069d8ca4897b127fc162def7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e3e2aa121d01750d151cc0468fc273') in 0.015503 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.043437 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_ScrollPile_normal.png
-  artifactKey: Guid(968b6cc7a94aec94c958e2ef938784c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_ScrollPile_normal.png using Guid(968b6cc7a94aec94c958e2ef938784c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a36b4f59d6cf75b00048f9a4f0207b') in 0.030686 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.225569 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_ProbesIngot_diffuse_3.png
-  artifactKey: Guid(750fc11639e4da54998b4905c2a3947a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_ProbesIngot_diffuse_3.png using Guid(750fc11639e4da54998b4905c2a3947a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8970816e05fbdae2bc821531332da75') in 0.027761 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_ProbesCrystal_normal.png
-  artifactKey: Guid(255fa0c3328824446b728bf3be7bf555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_ProbesCrystal_normal.png using Guid(255fa0c3328824446b728bf3be7bf555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c201333f7554bc511f92551c703f5d64') in 0.020692 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_MortarAndPestal_roughness.png
-  artifactKey: Guid(d6d326277abfc154b90cc864f3023eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_MortarAndPestal_roughness.png using Guid(d6d326277abfc154b90cc864f3023eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b632c962b12a1bb6dcfc885a7362f7a1') in 0.018180 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_Map_normal.png
-  artifactKey: Guid(c94e0d32563a0aa42a7b8510913c29be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_Map_normal.png using Guid(c94e0d32563a0aa42a7b8510913c29be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9553392a1951d76db1fe1fff00d56f92') in 0.018437 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_ProbesIngot_normal.png
-  artifactKey: Guid(5a5bede71cea4bb4db6e2469a7768ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_ProbesIngot_normal.png using Guid(5a5bede71cea4bb4db6e2469a7768ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed81e9929801f51d2501c4546853dca') in 0.023109 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_Map_ambientocclusion.png
-  artifactKey: Guid(3b891ee28cd30494f9805fc36e0bea25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_Map_ambientocclusion.png using Guid(3b891ee28cd30494f9805fc36e0bea25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f863a8fa31539bf28d1bb9ef35874e1') in 0.021708 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.016465 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_FlaskBox_normal.png
-  artifactKey: Guid(50ee5d1dc07f48e49b6de986460e7b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_FlaskBox_normal.png using Guid(50ee5d1dc07f48e49b6de986460e7b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6238519a3b527924336b1e52011241ec') in 0.029535 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_GlassBottles_diffuse.png
-  artifactKey: Guid(980ff57d630ae76478daf7080c4214aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Clut_GlassBottles_diffuse.png using Guid(980ff57d630ae76478daf7080c4214aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18efc9d16895c8301e18869507a36480') in 0.026313 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.078399 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowE_Glass_opactiy.png
-  artifactKey: Guid(c75472db7bcfaf24caa7fb0734543ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowE_Glass_opactiy.png using Guid(c75472db7bcfaf24caa7fb0734543ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f841b10108252791aa2ff43d75cafda') in 0.020755 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowE_metallic.png
-  artifactKey: Guid(915827a2700ed4644b7a45529d103d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowE_metallic.png using Guid(915827a2700ed4644b7a45529d103d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5352ec91bf82c58a924ecc88550e2b59') in 0.018001 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowF_Glass_roughness.png
-  artifactKey: Guid(778de72aa5c8b824ba449061da6e60ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowF_Glass_roughness.png using Guid(778de72aa5c8b824ba449061da6e60ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d8a1f526f5c3d3194746bd2465b764') in 0.017142 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowD_Glass_00_opactiy.png
-  artifactKey: Guid(af8ae5cd058b6b84882c3bba973794a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowD_Glass_00_opactiy.png using Guid(af8ae5cd058b6b84882c3bba973794a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a64c8acd13708e1a49b64533b0f64fe') in 0.022032 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowD_Glass_01_diffuse.png
-  artifactKey: Guid(ba4c596a88769b34e8af737f3cd647c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowD_Glass_01_diffuse.png using Guid(ba4c596a88769b34e8af737f3cd647c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0897d6b5aaa418fdb785fcb374218c0') in 0.021188 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowC_Glass_01_diffuse.png
-  artifactKey: Guid(9d16654520c80354e8e854a6926dbbc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowC_Glass_01_diffuse.png using Guid(9d16654520c80354e8e854a6926dbbc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c136ce37cab7fcc22319dca6b00bb3e2') in 0.019020 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowB_Glass_00_normal.png
-  artifactKey: Guid(f1037cc44a57abf4fb47fe3924996dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowB_Glass_00_normal.png using Guid(f1037cc44a57abf4fb47fe3924996dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2d58e315b970a90aa0927c68f9cb3b') in 0.020077 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowB_Glass_00_opactiy.png
-  artifactKey: Guid(8d8f7f76a259a8148b51824b3b5a1c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowB_Glass_00_opactiy.png using Guid(8d8f7f76a259a8148b51824b3b5a1c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9835a7c757dfc40f1991248e691d5daf') in 0.017939 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowB_Glass_00_diffuse.png
-  artifactKey: Guid(10e0658d2f0d4ed429dfec1df64c0fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowB_Glass_00_diffuse.png using Guid(10e0658d2f0d4ed429dfec1df64c0fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76feb90b66ae089393aead29f2cc214b') in 0.019676 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowA_Glass_roughness.png
-  artifactKey: Guid(f3834ab08dd1e5143827a3e8eec68877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowA_Glass_roughness.png using Guid(f3834ab08dd1e5143827a3e8eec68877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e2d39f647883bd58bf1a9b3039c2e6') in 0.014738 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowE_roughness.png
-  artifactKey: Guid(14705e60673588745976017d52ff99ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_WindowE_roughness.png using Guid(14705e60673588745976017d52ff99ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c831adbda2536241fc291722615cdd9') in 0.019315 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.088869 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Staircase_Upper_roughness.png
-  artifactKey: Guid(d46f347b97ea94d409df5e392dc33142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Textures/DS_WizLab_Arch_Staircase_Upper_roughness.png using Guid(d46f347b97ea94d409df5e392dc33142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e2e2b3377c668cfd2a6eec2dd4489f') in 0.018436 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.692 seconds
-Refreshing native plugins compatible for Editor in 64.70 ms, found 13 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.TypeInitializationException: The type initializer for 'UnityEditor.XR.Interaction.Toolkit.Samples.Hands.Editor.HandsSampleProjectValidation' threw an exception. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.CoreUtils.Editor.PackageVersionUtility.UpdatePackageVersions () [0x00034] in .\Library\PackageCache\com.unity.xr.core-utils@2.2.3\Editor\ProjectValidation\PackageVersionUtility.cs:46 
-  at Unity.XR.CoreUtils.Editor.PackageVersionUtility.GetPackageVersion (System.String packageName) [0x00011] in .\Library\PackageCache\com.unity.xr.core-utils@2.2.3\Editor\ProjectValidation\PackageVersionUtility.cs:67 
-  at UnityEditor.XR.Interaction.Toolkit.Samples.Hands.Editor.HandsSampleProjectValidation..cctor () [0x00041] in C:\Users\Rose\OneDrive\Desktop\Coding\GitHub\CS465_OrdwayR\RosysWizards465\Assets\Samples\XR Interaction Toolkit\3.0.7\Hands Interaction Demo\Editor\Scripts\HandsSampleProjectValidation.cs:34 
-   --- End of inner exception stack trace ---
-  at (wrapper managed-to-native) System.Object.__icall_wrapper_mono_gc_wbarrier_generic_nostore_internal(intptr)
-  at (wrapper write-barrier) System.Object.wbarrier_conc(intptr)
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <bfbc89a04b6b4dd49c3614d03fc31ce8>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <bfbc89a04b6b4dd49c3614d03fc31ce8>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <bfbc89a04b6b4dd49c3614d03fc31ce8>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <8e887700cd7e4674989da7b046e8eaa6>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.833 seconds
-Domain Reload Profiling: 3515ms
-	BeginReloadAssembly (182ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (55ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (428ms)
-		LoadAssemblies (393ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (114ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (70ms)
-			ResolveRequiredComponents (31ms)
-	FinalizeReload (2834ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (979ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (128ms)
-			ProcessInitializeOnLoadAttributes (734ms)
-			ProcessInitializeOnLoadMethodAttributes (73ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 93.18 ms, found 13 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9862 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 261 unused Assets / (15.6 MB). Loaded Objects now: 10610.
-Memory consumption went from 369.3 MB to 353.7 MB.
-Total: 9.375400 ms (FindLiveObjects: 0.572700 ms CreateObjectMapping: 0.293800 ms MarkObjects: 5.213400 ms  DeleteObjects: 3.294900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 653.135322 seconds.
-  path: Assets/Images/Controller Icons/Materials/Shader Graphs_Icon.mat
-  artifactKey: Guid(30ece6f48a9c67b49ae44fcd8dee89c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Controller Icons/Materials/Shader Graphs_Icon.mat using Guid(30ece6f48a9c67b49ae44fcd8dee89c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492578162d718adea5a9063a596ad508') in 0.960543 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 274
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.636 seconds
-Refreshing native plugins compatible for Editor in 89.34 ms, found 13 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.TypeInitializationException: The type initializer for 'UnityEditor.XR.Interaction.Toolkit.Samples.Hands.Editor.HandsSampleProjectValidation' threw an exception. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.CoreUtils.Editor.PackageVersionUtility.UpdatePackageVersions () [0x00034] in .\Library\PackageCache\com.unity.xr.core-utils@2.2.3\Editor\ProjectValidation\PackageVersionUtility.cs:46 
-  at Unity.XR.CoreUtils.Editor.PackageVersionUtility.GetPackageVersion (System.String packageName) [0x00011] in .\Library\PackageCache\com.unity.xr.core-utils@2.2.3\Editor\ProjectValidation\PackageVersionUtility.cs:67 
-  at UnityEditor.XR.Interaction.Toolkit.Samples.Hands.Editor.HandsSampleProjectValidation..cctor () [0x00041] in C:\Users\Rose\OneDrive\Desktop\Coding\GitHub\CS465_OrdwayR\RosysWizards465\Assets\Samples\XR Interaction Toolkit\3.0.7\Hands Interaction Demo\Editor\Scripts\HandsSampleProjectValidation.cs:34 
-   --- End of inner exception stack trace ---
-  at (wrapper managed-to-native) System.Object.__icall_wrapper_mono_gc_wbarrier_generic_nostore_internal(intptr)
-  at (wrapper write-barrier) System.Object.wbarrier_conc(intptr)
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <bfbc89a04b6b4dd49c3614d03fc31ce8>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <bfbc89a04b6b4dd49c3614d03fc31ce8>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <bfbc89a04b6b4dd49c3614d03fc31ce8>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <8e887700cd7e4674989da7b046e8eaa6>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.393 seconds
-Domain Reload Profiling: 3020ms
-	BeginReloadAssembly (187ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (378ms)
-		LoadAssemblies (354ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (90ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (56ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (2393ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (884ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (124ms)
-			ProcessInitializeOnLoadAttributes (651ms)
-			ProcessInitializeOnLoadMethodAttributes (71ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 87.02 ms, found 13 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9864 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 261 unused Assets / (15.6 MB). Loaded Objects now: 10785.
-Memory consumption went from 399.1 MB to 383.5 MB.
-Total: 8.971500 ms (FindLiveObjects: 0.532600 ms CreateObjectMapping: 0.251600 ms MarkObjects: 4.990100 ms  DeleteObjects: 3.196800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 349.436160 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/DemoScene/DemoScene_Walls.mat
-  artifactKey: Guid(7508e4df5f42e164090789a2ace8bfa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/DemoScene/DemoScene_Walls.mat using Guid(7508e4df5f42e164090789a2ace8bfa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8d5e16dc5416721fdcbcd43edda43f') in 0.417866 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 270
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Column.mat
-  artifactKey: Guid(ae21bfe9e7d9cd243b3407c5fbf87bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Material/DS_WizLab_Arch_Column.mat using Guid(ae21bfe9e7d9cd243b3407c5fbf87bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ebbaef1882725ceb285b90c0512e05b') in 0.071851 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Imports/Hovl Studio/Magic effects pack/Prefabs/Sparks/Sparks explode white.prefab
-  artifactKey: Guid(830e92a3f95c4b04caf8edd648aed9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Hovl Studio/Magic effects pack/Prefabs/Sparks/Sparks explode white.prefab using Guid(830e92a3f95c4b04caf8edd648aed9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a943d05e43e7473e445747c4a84bf09') in 0.036254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Meshes/DS_WizLab_Arch_Column.fbx
-  artifactKey: Guid(b68e38ff62e843d4c8f518f9de87d470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Meshes/DS_WizLab_Arch_Column.fbx using Guid(b68e38ff62e843d4c8f518f9de87d470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289b87c176d801e708eb04cc1ffe2b93') in 0.062259 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_Door.prefab
-  artifactKey: Guid(75d18c2208fcb0240a8075aeb0040cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_Door.prefab using Guid(75d18c2208fcb0240a8075aeb0040cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff1ba31bae791f79da5c58f3d6b7e86c') in 0.114129 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 46
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Imports/Hovl Studio/Magic effects pack/Prefabs/Sparks/Sparks flashing white.prefab
-  artifactKey: Guid(45c1a9f607b571349b0186f437fb0702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Hovl Studio/Magic effects pack/Prefabs/Sparks/Sparks flashing white.prefab using Guid(45c1a9f607b571349b0186f437fb0702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01950eb6cfc395d4f201fb89cffd6832') in 0.015652 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Meshes/DS_WizLab_Arch_Door.fbx
-  artifactKey: Guid(63b05b46fb1ce4d4298fcaf647fd0fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Meshes/DS_WizLab_Arch_Door.fbx using Guid(63b05b46fb1ce4d4298fcaf647fd0fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966193a006acc10041618b621a6629e3') in 0.070066 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 41
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_Chimney.prefab
-  artifactKey: Guid(f33d19a36a1920a478a28c8923836934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/DuoDraconis Dungeon Set - Wizard Laboratory/Prefab/DS_WizLab_Arch_Chimney.prefab using Guid(f33d19a36a1920a478a28c8923836934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590906f4696d361431b82e2fa73e7b3a') in 0.026357 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 18
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
