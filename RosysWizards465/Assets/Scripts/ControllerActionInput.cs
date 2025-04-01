@@ -21,6 +21,8 @@ public class ControllerActionInput : MonoBehaviour
 
     [SerializeField] private BoardUI studentBoardUI;
 
+    [SerializeField] private BoardUI teacherBoardUI;
+
 
 
 
@@ -164,8 +166,16 @@ public class ControllerActionInput : MonoBehaviour
         OnButtonPressed("RG", LG);
     }
 
+    private bool isBoardUpdating = false;
+
     private void ButtonUpdate(string button)
     {
+        if (isBoardUpdating)
+        {
+            Debug.Log("Board is updating, ignoring button press.");
+            return;
+        }
+
         ButtonType mappedButton = MapButtonToType(button);
 
         buttonsPressedList.Add(mappedButton);
@@ -175,10 +185,31 @@ public class ControllerActionInput : MonoBehaviour
 
         if (buttonsPressedList.Count >= 3)
         {
+            bool isValidSpell = teacherBoardUI.isCorrectSpell(
+                    MapButtonToGlyphType(buttonsPressedList[0]),
+                    MapButtonToConnectorType(buttonsPressedList[1]),
+                    MapButtonToGlyphType(buttonsPressedList[2]));
+
             checkSpellList();
+            StartCoroutine(CheckBoardsCoroutine(isValidSpell));
+
             Debug.Log(arrayListToString(buttonsPressedList));
-            buttonsPressedList.Clear(); // Reuse the list instead of creating a new one
+            buttonsPressedList.Clear(); 
         }
+    }
+
+    private IEnumerator CheckBoardsCoroutine(bool isValidSpell)
+    {
+        isBoardUpdating = true;
+        CheckBoards(isValidSpell);
+        yield return new WaitForSeconds(3f); 
+        isBoardUpdating = false;
+    }
+
+    private void CheckBoards(bool isValidSpell)
+    {
+        teacherBoardUI.CheckAndRandomize(isValidSpell);
+        studentBoardUI.CheckAndClear(isValidSpell);
     }
 
     private GlyphType MapButtonToGlyphType(ButtonType mappedButton)

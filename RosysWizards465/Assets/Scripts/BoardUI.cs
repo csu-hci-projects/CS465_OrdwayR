@@ -1,8 +1,10 @@
 
 using UnityEngine;
 using Image = UnityEngine.UI.Image;
+using System.Collections;
 
-public class BoardUI : MonoBehaviour
+public class
+BoardUI : MonoBehaviour
 {
     public GlyphType primaryGlyph;
     public ConnectorType connector;
@@ -66,6 +68,67 @@ public class BoardUI : MonoBehaviour
         this.connector = connector;
         this.secondaryGlyph = secondaryGlyph;
     }
+
+    public void CheckAndClear(bool status)
+    {
+        StartCoroutine(ChangeColorAndClear(status));
+    }
+
+    public void CheckAndRandomize(bool status)
+    {
+        StartCoroutine(ChangeColorAndRandomize(status));
+    }
+
+    private IEnumerator ChangeColorAndClear(bool status)
+    {
+        Color targetColor = status ? Color.green : Color.red;
+        changeGlyphColors(targetColor);
+        yield return new WaitForSeconds(3);
+        clearBoardUI();
+        changeGlyphColors(Color.white); 
+    }
+
+    private IEnumerator ChangeColorAndRandomize(bool status)
+    {
+        Color targetColor = status ? Color.green : Color.red;
+        changeGlyphColors(targetColor);
+        yield return new WaitForSeconds(3);
+        randomizeBoardUI();
+        changeGlyphColors(Color.white);
+    }
+
+
+    public void clearBoardUI()
+    {
+        primaryGlyph = GlyphType.None;
+        connector = ConnectorType.None;
+        secondaryGlyph = GlyphType.None;
+    }
+
+
+
+
+    public void changeGlyphColors(Color color)
+    {
+        primaryGlyphImage.color = color;
+        connectorImage.color = color;
+        secondaryGlyphImage.color = color;
+    }
+
+    public void randomizeBoardUI()
+    {
+        primaryGlyph = (GlyphType)Random.Range(0, 4);
+        connector = (ConnectorType)Random.Range(0, 2);
+        secondaryGlyph = (GlyphType)Random.Range(0, 4);
+    }
+
+    public bool isCorrectSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
+    {
+        return this.primaryGlyph == primaryGlyph && this.connector == connector && this.secondaryGlyph == secondaryGlyph;
+    }
+
+
+
 
 
 
