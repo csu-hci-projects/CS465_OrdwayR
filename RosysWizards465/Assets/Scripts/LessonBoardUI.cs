@@ -4,33 +4,59 @@ using Image = UnityEngine.UI.Image;
 using System.Collections;
 using System.Collections.Generic;
 
-public class
-BoardUI : MonoBehaviour
+
+
+
+public class BoardUI : MonoBehaviour
 {
+    [System.Serializable]
+    public class InputLessonImages
+    {
+        public Image controllerImage;
+        public Image equalImage;
+        public Image glyphImage;
+    }
+
+    [System.Serializable]
+    public class GlyphLessonImages
+    {
+        public Image primaryGlyphImage;
+        public Image connectorImage;
+        public Image secondaryGlyphImage;
+    }
+    
+
     public GlyphType primaryGlyph;
     public ConnectorType connector;
     public GlyphType secondaryGlyph;
-    [SerializeField] private Image primaryGlyphImage;
-    [SerializeField] private Image connectorImage;
-    [SerializeField] private Image secondaryGlyphImage;
+
+    [Header("Lesson Image Connectors")]
+    [SerializeField] private InputLessonImages inputLessonImages;
+
+
+    [SerializeField] private GlyphLessonImages glyphLessonImages;
+
+
+
+    [Header("Managers")]
     [SerializeField] private SpriteManager spriteManager;
+
+
 
 
     void Start()
     {
-        primaryGlyphImage.sprite = spriteManager.GetSprite(primaryGlyph);
-        connectorImage.sprite = spriteManager.GetSprite(connector);
-        secondaryGlyphImage.sprite = spriteManager.GetSprite(secondaryGlyph);
+        glyphLessonImages.primaryGlyphImage.sprite = spriteManager.GetSprite(primaryGlyph);
+        glyphLessonImages.connectorImage.sprite = spriteManager.GetSprite(connector);
+        glyphLessonImages.secondaryGlyphImage.sprite = spriteManager.GetSprite(secondaryGlyph);
     }
 
     void Update()
     {
-        primaryGlyphImage.sprite = spriteManager.GetSprite(primaryGlyph);
-        connectorImage.sprite = spriteManager.GetSprite(connector);
-        secondaryGlyphImage.sprite = spriteManager.GetSprite(secondaryGlyph);
+        glyphLessonImages.primaryGlyphImage.sprite = spriteManager.GetSprite(primaryGlyph);
+        glyphLessonImages.connectorImage.sprite = spriteManager.GetSprite(connector);
+        glyphLessonImages.secondaryGlyphImage.sprite = spriteManager.GetSprite(secondaryGlyph);
     }
-
-
 
     public void UpdateBoardUI(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
     {
@@ -76,9 +102,9 @@ BoardUI : MonoBehaviour
 
     public void changeGlyphColors(Color color)
     {
-        primaryGlyphImage.color = color;
-        connectorImage.color = color;
-        secondaryGlyphImage.color = color;
+        glyphLessonImages.primaryGlyphImage.color = color;
+        glyphLessonImages.connectorImage.color = color;
+        glyphLessonImages.secondaryGlyphImage.color = color;
     }
 
     public void randomizeBoardUI()

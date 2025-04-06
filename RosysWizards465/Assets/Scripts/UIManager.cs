@@ -47,7 +47,6 @@ public class UIManager : MonoBehaviour
         GlyphType glyph2 = buttonsPressedList.Count > 2 ? ButtonMapping.MapButtonToGlyphType(buttonsPressedList[2]) : GlyphType.None;
 
         Debug.Log("Glyph1: " + glyph1 + ", Connector: " + connector + ", Glyph2: " + glyph2);
-
         studentBoardUI.UpdateBoardUI(glyph1, connector, glyph2);
     }
 
