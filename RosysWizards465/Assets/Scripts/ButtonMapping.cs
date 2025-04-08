@@ -23,7 +23,7 @@ public class ButtonMapping
         };
     }
 
-    public static ButtonType MapButtonToType(string button, bool isConnector)
+    public static ButtonType MapButtonToType(string button, bool isConnector = false)
     {
         if (isConnector)
         {

@@ -24,15 +24,21 @@ public class BoardUI : MonoBehaviour
         public Image connectorImage;
         public Image secondaryGlyphImage;
     }
-    
 
+
+
+    [Header("Input Lesson")]
+    public ControlSet button;
+    public GlyphType inputGlyph;
+
+    [SerializeField] private InputLessonImages inputLessonImages;
+
+
+
+    [Header("Glyph Lesson")]
     public GlyphType primaryGlyph;
     public ConnectorType connector;
     public GlyphType secondaryGlyph;
-
-    [Header("Lesson Image Connectors")]
-    [SerializeField] private InputLessonImages inputLessonImages;
-
 
     [SerializeField] private GlyphLessonImages glyphLessonImages;
 

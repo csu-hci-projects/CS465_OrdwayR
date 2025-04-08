@@ -8,15 +8,15 @@ public class InputRouter : MonoBehaviour
 
     public enum Lessons
     {
+        Input,
         Glyph,
-        Connector,
         Spell,
         Test
     }
 
 
 
-    public Lessons currentLesson = Lessons.Connector;
+    public Lessons currentLesson = Lessons.Glyph;
 
     public UIManager UIManager;
     private List<ButtonType> buttonsPressedList = new List<ButtonType>();
@@ -26,10 +26,10 @@ public class InputRouter : MonoBehaviour
     {
         switch (currentLesson)
         {
-            case Lessons.Glyph:
+            case Lessons.Input:
                 InputLesson(button);
                 break;
-            case Lessons.Connector:
+            case Lessons.Glyph:
                 GlyphLesson(button);
                 break;
             case Lessons.Spell:
@@ -51,12 +51,11 @@ public class InputRouter : MonoBehaviour
             return;
         }
 
-        
+        ButtonType mappedButton = ButtonMapping.MapButtonToType(button);
 
-        // bool isConnector = buttonsPressedList.Count == 1;
-        // ButtonType mappedButton = ButtonMapping.MapButtonToType(button, isConnector);
+        UIManager.setMessage(button);
 
-        // buttonsPressedList.Add(mappedButton);
+
         // UIManager.setMessage(button + " Pressed\r\n" + ArrayHandler.arrayListToString(buttonsPressedList));
         // UIManager.setSpellName("");
         // UIManager.UpdateStudentBoardUI(buttonsPressedList);
