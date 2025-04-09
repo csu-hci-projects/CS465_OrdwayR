@@ -4,18 +4,18 @@ OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 15775 
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2022.3.18f1-x86_64\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker3
 -projectPath
 C:/Users/ordwa/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker3.log
 -srvPort
-53081
+53352
 Successfully changed project path to: C:/Users/ordwa/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
 C:/Users/ordwa/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,15 +49,15 @@ C:/Users/ordwa/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [14032] Host "[IP] 172.16.62.210 [Port] 0 [Flags] 2 [Guid] 4001259950 [EditorId] 4001259950 [Version] 1048832 [Id] WindowsEditor(7,Roses-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [29956] Host "[IP] 172.16.62.224 [Port] 0 [Flags] 2 [Guid] 231080071 [EditorId] 231080071 [Version] 1048832 [Id] WindowsEditor(7,Roses-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [14032] Host "[IP] 172.16.62.210 [Port] 0 [Flags] 2 [Guid] 4001259950 [EditorId] 4001259950 [Version] 1048832 [Id] WindowsEditor(7,Roses-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [29956] Host "[IP] 172.16.62.224 [Port] 0 [Flags] 2 [Guid] 231080071 [EditorId] 231080071 [Version] 1048832 [Id] WindowsEditor(7,Roses-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 1188.61 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 1381.88 ms, found 13 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.18f1 (d29bea25151d)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.18f1-x86_64/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/ordwa/Desktop/Coding/GitHub/CS465_OrdwayR/RosysWizards465/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
@@ -68,50 +68,50 @@ Direct3D:
     Driver:   31.0.15.4680
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1-x86_64/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1-x86_64/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1-x86_64/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1-x86_64/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1-x86_64/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.016640 seconds.
-- Loaded All Assemblies, in  0.473 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.016456 seconds.
+- Loaded All Assemblies, in  1.413 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 417 ms
+Android Extension - Scanning For ADB Devices 369 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.848 seconds
-Domain Reload Profiling: 1317ms
-	BeginReloadAssembly (157ms)
+- Finished resetting the current domain, in  0.810 seconds
+Domain Reload Profiling: 2220ms
+	BeginReloadAssembly (205ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (84ms)
-	LoadAllAssembliesAndSetupDomain (176ms)
-		LoadAssemblies (154ms)
+	RebuildCommonClasses (298ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (83ms)
+	LoadAllAssembliesAndSetupDomain (813ms)
+		LoadAssemblies (203ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (173ms)
-			TypeCache.Refresh (171ms)
-				TypeCache.ScanAssembly (155ms)
+		AnalyzeDomain (810ms)
+			TypeCache.Refresh (809ms)
+				TypeCache.ScanAssembly (511ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (848ms)
+	FinalizeReload (810ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (781ms)
+		SetupLoadedEditorAssemblies (751ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (578ms)
+			InitializePlatformSupportModulesInManaged (517ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (140ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (157ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,8 +120,8 @@ Domain Reload Profiling: 1317ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.303 seconds
-Refreshing native plugins compatible for Editor in 26.03 ms, found 13 plugins.
+- Loaded All Assemblies, in  4.540 seconds
+Refreshing native plugins compatible for Editor in 596.00 ms, found 13 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -131,7 +131,7 @@ Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-E0408 13:41:22.326317 12136 TigonCurlRequestAdapter.cpp:671] [039f99314ef71ff9]  Request failed from curl: curl (60): SSL peer certificate or SSH remote key was not OK: SSL certificate problem: self signed certificate in certificate chain
+E0409 14:48:33.430704  6552 TigonCurlRequestAdapter.cpp:671] [92188d8982f16719]  Request failed from curl: curl (60): SSL peer certificate or SSH remote key was not OK: SSL certificate problem: self signed certificate in certificate chain
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -161,50 +161,50 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.602 seconds
-Domain Reload Profiling: 3895ms
-	BeginReloadAssembly (170ms)
+- Finished resetting the current domain, in  2.589 seconds
+Domain Reload Profiling: 7113ms
+	BeginReloadAssembly (204ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (2031ms)
-		LoadAssemblies (1720ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (4202ms)
+		LoadAssemblies (3448ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (414ms)
-			TypeCache.Refresh (327ms)
-				TypeCache.ScanAssembly (294ms)
-			ScanForSourceGeneratedMonoScriptInfo (57ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (1602ms)
+		AnalyzeDomain (874ms)
+			TypeCache.Refresh (714ms)
+				TypeCache.ScanAssembly (491ms)
+			ScanForSourceGeneratedMonoScriptInfo (127ms)
+			ResolveRequiredComponents (30ms)
+	FinalizeReload (2590ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1254ms)
+		SetupLoadedEditorAssemblies (2276ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
+			InitializePlatformSupportModulesInManaged (32ms)
 			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (179ms)
-			ProcessInitializeOnLoadAttributes (925ms)
-			ProcessInitializeOnLoadMethodAttributes (101ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			BeforeProcessingInitializeOnLoad (215ms)
+			ProcessInitializeOnLoadAttributes (1915ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-E0408 13:41:23.359301 12136 TigonCurlRequestAdapter.cpp:671] [ce9f1f0d1b259a3c]  Request failed from curl: curl (60): SSL peer certificate or SSH remote key was not OK: SSL certificate problem: self signed certificate in certificate chain
+		AwakeInstancesAfterBackupRestoration (6ms)
+E0409 14:48:34.450731  6552 TigonCurlRequestAdapter.cpp:671] [78bb8573c937df2d]  Request failed from curl: curl (60): SSL peer certificate or SSH remote key was not OK: SSL certificate problem: self signed certificate in certificate chain
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-E0408 13:41:28.379144 12136 TigonCurlRequestAdapter.cpp:671] [3c055af33ba087a5]  Request failed from curl: curl (60): SSL peer certificate or SSH remote key was not OK: SSL certificate problem: self signed certificate in certificate chain
-Refreshing native plugins compatible for Editor in 25.36 ms, found 13 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+E0409 14:48:39.481275  6552 TigonCurlRequestAdapter.cpp:671] [0a80b6935db49958]  Request failed from curl: curl (60): SSL peer certificate or SSH remote key was not OK: SSL certificate problem: self signed certificate in certificate chain
+Refreshing native plugins compatible for Editor in 61.40 ms, found 13 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10267 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 325 unused Assets / (15.2 MB). Loaded Objects now: 10587.
-Memory consumption went from 442.9 MB to 427.7 MB.
-Total: 12.752400 ms (FindLiveObjects: 0.930900 ms CreateObjectMapping: 0.429700 ms MarkObjects: 6.566800 ms  DeleteObjects: 4.823700 ms)
+Unloading 10268 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 325 unused Assets / (15.2 MB). Loaded Objects now: 10588.
+Memory consumption went from 443.3 MB to 428.1 MB.
+Total: 14.204700 ms (FindLiveObjects: 1.141500 ms CreateObjectMapping: 0.631000 ms MarkObjects: 7.539500 ms  DeleteObjects: 4.891200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -221,50 +221,26 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 13504.055908 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoSceneAssets/Sprites/Checkmark.png
-  artifactKey: Guid(db3e7b7c8db355e499429545071a0321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoSceneAssets/Sprites/Checkmark.png using Guid(db3e7b7c8db355e499429545071a0321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc0144d1b747bf359ac1d6d34f829cd') in 0.121577 seconds
+  Time since last request: 89627.250044 seconds.
+  path: Assets/Images/Controller Icons/Sprites/trigger-right-pressed.png
+  artifactKey: Guid(e600880dff2b25c4d804478c8fc60883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Controller Icons/Sprites/trigger-right-pressed.png using Guid(e600880dff2b25c4d804478c8fc60883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8d2a769556774dc6c216faa6001ab17') in 0.149162 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Images/Icons/UI Images/Buff.png
-  artifactKey: Guid(fa249404039c42341867d9eeb36d1289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Icons/UI Images/Buff.png using Guid(fa249404039c42341867d9eeb36d1289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747f414e8276ed250df9a5ffd64e0dc8') in 0.058265 seconds
+  Time since last request: 0.000039 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/3.0.7/XR Device Simulator/UI/HeadDevice/xr_hmd.png
+  artifactKey: Guid(08548d5ac6b7bc64da0b332636c5cc91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/3.0.7/XR Device Simulator/UI/HeadDevice/xr_hmd.png using Guid(08548d5ac6b7bc64da0b332636c5cc91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a74edabce40aebc51ba282377a444b00') in 0.050286 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/3.0.7/XR Device Simulator/UI/General/CloseWindow.png
-  artifactKey: Guid(c76518a5819794083a346812c0906b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/3.0.7/XR Device Simulator/UI/General/CloseWindow.png using Guid(c76518a5819794083a346812c0906b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4739bec75a32a06b36a9a3d499ea9c9d') in 0.042650 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/3.0.7/XR Device Simulator/UI/General/btn_bgbottom.png
-  artifactKey: Guid(89cb99e3e22696848a1cbce7b320f520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/3.0.7/XR Device Simulator/UI/General/btn_bgbottom.png using Guid(89cb99e3e22696848a1cbce7b320f520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08986663e0f42e89b40a4ae15a2eae6') in 0.052139 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Button - Circular BG.png
-  artifactKey: Guid(7347b6042ec9e40c4a3cbd7077c91e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Button - Circular BG.png using Guid(7347b6042ec9e40c4a3cbd7077c91e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '558ae53b70d491d1faca0b2f94c5b668') in 0.041278 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Images/Controller Icons/Sprites/button-b.png
-  artifactKey: Guid(957b93b5b6141cf4aa4572048cc37c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/Controller Icons/Sprites/button-b.png using Guid(957b93b5b6141cf4aa4572048cc37c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803067e5513f167e0dbf6872b7cab8c6') in 0.050504 seconds
+  Time since last request: 0.000018 seconds.
+  path: Assets/Images/Icons/UI Images/Weave.png
+  artifactKey: Guid(be44e91e73d7bff499656ddfa215e39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Icons/UI Images/Weave.png using Guid(be44e91e73d7bff499656ddfa215e39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0234426240398c6a2feef52b64d70035') in 0.036029 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

@@ -51,9 +51,11 @@ public class InputRouter : MonoBehaviour
             return;
         }
 
-        ButtonType mappedButton = ButtonMapping.MapButtonToType(button);
+        ControlSet mappedButton = ButtonMapping.MapButtonToSet(button);
 
         UIManager.setMessage(button);
+
+        UIManager.studentInputUpdate(mappedButton, ButtonMapping.MapButtonToGlyphType(ButtonMapping.MapButtonToType(button)));
 
 
         // UIManager.setMessage(button + " Pressed\r\n" + ArrayHandler.arrayListToString(buttonsPressedList));
@@ -99,7 +101,7 @@ public class InputRouter : MonoBehaviour
         buttonsPressedList.Add(mappedButton);
         UIManager.setMessage(button + " Pressed\r\n" + ArrayHandler.arrayListToString(buttonsPressedList));
         UIManager.setSpellName("");
-        UIManager.UpdateStudentBoardUI(buttonsPressedList);
+        UIManager.studentGlyphUpdate(buttonsPressedList);
 
         if (buttonsPressedList.Count >= 3)
         {

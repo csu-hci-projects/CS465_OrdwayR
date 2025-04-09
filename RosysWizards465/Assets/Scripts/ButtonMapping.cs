@@ -23,6 +23,22 @@ public class ButtonMapping
         };
     }
 
+    public static ControlSet MapButtonToSet(string button)
+    {
+        return button switch
+        {
+            "A" => ControlSet.ButtonA,
+            "B" => ControlSet.ButtonB,
+            "X" => ControlSet.ButtonX,
+            "Y" => ControlSet.ButtonY,
+            "LG" => ControlSet.GripLeft,
+            "RG" => ControlSet.GripRight,
+            "LT" => ControlSet.TriggerLeft,
+            "RT" => ControlSet.TriggerRight,
+            _ => ControlSet.None
+        };
+    }
+
     public static ButtonType MapButtonToType(string button, bool isConnector = false)
     {
         if (isConnector)

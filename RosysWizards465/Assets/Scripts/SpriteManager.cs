@@ -20,6 +20,7 @@ public class SpriteManager : MonoBehaviour
     private Sprite buffImage => glyphs[3];
     private Sprite linkImage => connectors[0];
     private Sprite weaveImage => connectors[1];
+    private Sprite equalImage => connectors[2];
     private Sprite buttonAImage => controls[0];
     private Sprite buttonAPressedImage => controls[1];
     private Sprite buttonBImage => controls[2];
@@ -60,9 +61,14 @@ public class SpriteManager : MonoBehaviour
         };
     }
 
+    public Sprite GetEqualSprite()
+    {
+        return equalImage;
+    }
 
 
-    public Sprite GetControlSprite(ControlSet controlSet)
+
+    public Sprite GetSprite(ControlSet controlSet)
     {
         return controlSet switch
         {

@@ -1,8 +1,8 @@
-
 using UnityEngine;
 using Image = UnityEngine.UI.Image;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 
 
@@ -62,13 +62,22 @@ public class BoardUI : MonoBehaviour
         glyphLessonImages.primaryGlyphImage.sprite = spriteManager.GetSprite(primaryGlyph);
         glyphLessonImages.connectorImage.sprite = spriteManager.GetSprite(connector);
         glyphLessonImages.secondaryGlyphImage.sprite = spriteManager.GetSprite(secondaryGlyph);
+        inputLessonImages.controllerImage.sprite = spriteManager.GetSprite(button);
+        inputLessonImages.equalImage.sprite = spriteManager.GetEqualSprite();
+        inputLessonImages.glyphImage.sprite = spriteManager.GetSprite(inputGlyph);
     }
 
-    public void UpdateBoardUI(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
+    public void UpdateGlyphUI(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
     {
         this.primaryGlyph = primaryGlyph;
         this.connector = connector;
         this.secondaryGlyph = secondaryGlyph;
+    }
+
+    public void UpdateInputUI(ControlSet button, GlyphType inputGlyph)
+    {
+        this.button = button;
+        this.inputGlyph = inputGlyph;
     }
 
     public void CheckAndClear(bool status)
