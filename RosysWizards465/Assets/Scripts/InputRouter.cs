@@ -8,10 +8,31 @@ public class InputRouter : MonoBehaviour
 
     public enum Lessons
     {
+        Intro,
         Input,
+        InputToGlyph,
         Glyph,
+        GlyphToSpell,
         Spell,
+        SpellToExit,
         Test
+    }
+
+    void Update()
+    {
+         if (currentLesson == Lessons.Input)
+        {
+            UIManager.setupIntroUI();
+        }
+        if (currentLesson == Lessons.Input)
+        {
+            UIManager.setupInputLessonUI();
+        }
+
+        if (currentLesson == Lessons.Glyph)
+        {
+            UIManager.setupGlyphLessonUI();
+        }
     }
 
 
@@ -51,31 +72,23 @@ public class InputRouter : MonoBehaviour
             return;
         }
 
-        ControlSet mappedButton = ButtonMapping.MapButtonToSet(button);
+        ControlSet mappedButton = ButtonMapping.MapRawToControlSet(button);
 
         UIManager.setMessage(button);
 
-        UIManager.studentInputUpdate(mappedButton, ButtonMapping.MapButtonToGlyphType(ButtonMapping.MapButtonToType(button)));
-
-
-        // UIManager.setMessage(button + " Pressed\r\n" + ArrayHandler.arrayListToString(buttonsPressedList));
-        // UIManager.setSpellName("");
-        // UIManager.UpdateStudentBoardUI(buttonsPressedList);
-
-        // if (buttonsPressedList.Count >= 3)
-        // {
-        //     bool isValidSpell = UIManager.isCorrectSpell(
-        //         ButtonMapping.MapButtonToGlyphType(buttonsPressedList[0]),
-        //         ButtonMapping.MapButtonToConnectorType(buttonsPressedList[1]),
-        //        ButtonMapping.MapButtonToGlyphType(buttonsPressedList[2]));
-
-        //     UIManager.checkSpellList(buttonsPressedList);
-        //     StartCoroutine(CheckBoardsCoroutine(isValidSpell));
-
-        //     Debug.Log(ArrayHandler.arrayListToString(buttonsPressedList));
-        //     buttonsPressedList.Clear();
-        // }
+        UIManager.studentInputUpdate(mappedButton, ButtonMapping.MapButtonTypeToGlyphType(ButtonMapping.MapRawToButtonType(button)));
+        StartCoroutine(CheckInputBoardsCoroutine(UIManager.isCorrectInput(mappedButton)));
     }
+
+    public IEnumerator CheckInputBoardsCoroutine(bool isValidSpell)
+    {
+        isBoardUpdating = true;
+        UIManager.CheckInputBoards(isValidSpell);
+        yield return new WaitForSeconds(2f);
+        isBoardUpdating = false;
+    }
+
+
 
     private void SpellLesson(string button)
     {
@@ -96,7 +109,7 @@ public class InputRouter : MonoBehaviour
         }
 
         bool isConnector = buttonsPressedList.Count == 1;
-        ButtonType mappedButton = ButtonMapping.MapButtonToType(button, isConnector);
+        ButtonType mappedButton = ButtonMapping.MapRawToButtonType(button, isConnector);
 
         buttonsPressedList.Add(mappedButton);
         UIManager.setMessage(button + " Pressed\r\n" + ArrayHandler.arrayListToString(buttonsPressedList));
@@ -106,22 +119,22 @@ public class InputRouter : MonoBehaviour
         if (buttonsPressedList.Count >= 3)
         {
             bool isValidSpell = UIManager.isCorrectSpell(
-                ButtonMapping.MapButtonToGlyphType(buttonsPressedList[0]),
+                ButtonMapping.MapButtonTypeToGlyphType(buttonsPressedList[0]),
                 ButtonMapping.MapButtonToConnectorType(buttonsPressedList[1]),
-                ButtonMapping.MapButtonToGlyphType(buttonsPressedList[2]));
+                ButtonMapping.MapButtonTypeToGlyphType(buttonsPressedList[2]));
 
             UIManager.checkSpellList(buttonsPressedList);
-            StartCoroutine(CheckBoardsCoroutine(isValidSpell));
+            StartCoroutine(CheckGlyphBoardsCoroutine(isValidSpell));
 
             Debug.Log(ArrayHandler.arrayListToString(buttonsPressedList));
             buttonsPressedList.Clear();
         }
     }
 
-    public IEnumerator CheckBoardsCoroutine(bool isValidSpell)
+    public IEnumerator CheckGlyphBoardsCoroutine(bool isValidSpell)
     {
         isBoardUpdating = true;
-        UIManager.CheckBoards(isValidSpell);
+        UIManager.CheckGlyphBoards(isValidSpell);
         yield return new WaitForSeconds(3f);
         isBoardUpdating = false;
     }

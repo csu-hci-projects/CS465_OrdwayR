@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 using Unity.VisualScripting;
+using System;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private BoardUI studentBoardUI;
@@ -23,9 +24,15 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public void CheckBoards(bool isValidSpell)
+    public void CheckGlyphBoards(bool isValidSpell)
     {
-        teacherBoardUI.CheckAndRandomize(isValidSpell);
+        teacherBoardUI.CheckAndRandomizeGlyph(isValidSpell);
+        studentBoardUI.CheckAndClear(isValidSpell);
+    }
+
+    public void CheckInputBoards(bool isValidSpell)
+    {
+        teacherBoardUI.CheckAndNextInput(isValidSpell);
         studentBoardUI.CheckAndClear(isValidSpell);
     }
 
@@ -41,13 +48,18 @@ public class UIManager : MonoBehaviour
 
     }
 
+    public bool isCorrectInput(ControlSet button)
+    {
+        return teacherBoardUI.isCorrectInput(button);
+    }
+
 
 
     public void studentGlyphUpdate(List<ButtonType> buttonsPressedList)
     {
-        GlyphType glyph1 = buttonsPressedList.Count > 0 ? ButtonMapping.MapButtonToGlyphType(buttonsPressedList[0]) : GlyphType.None;
+        GlyphType glyph1 = buttonsPressedList.Count > 0 ? ButtonMapping.MapButtonTypeToGlyphType(buttonsPressedList[0]) : GlyphType.None;
         ConnectorType connector = buttonsPressedList.Count > 1 ? ButtonMapping.MapButtonToConnectorType(buttonsPressedList[1]) : ConnectorType.None;
-        GlyphType glyph2 = buttonsPressedList.Count > 2 ? ButtonMapping.MapButtonToGlyphType(buttonsPressedList[2]) : GlyphType.None;
+        GlyphType glyph2 = buttonsPressedList.Count > 2 ? ButtonMapping.MapButtonTypeToGlyphType(buttonsPressedList[2]) : GlyphType.None;
 
         Debug.Log("Glyph1: " + glyph1 + ", Connector: " + connector + ", Glyph2: " + glyph2);
         studentBoardUI.UpdateGlyphUI(glyph1, connector, glyph2);
@@ -78,7 +90,21 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void setupInputLessonUI()
+    {
+        studentBoardUI.InputLayout();
+        teacherBoardUI.InputLayout();
+    }
 
+    public void setupGlyphLessonUI()
+    {
+        studentBoardUI.GlyphLayout();
+        teacherBoardUI.GlyphLayout();
+    }
 
-
+    internal void setupIntroUI()
+    {
+        studentBoardUI.IntroLayout();
+        teacherBoardUI.IntroLayout();
+    }
 }

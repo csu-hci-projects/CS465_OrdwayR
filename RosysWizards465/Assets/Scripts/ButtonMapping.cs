@@ -1,7 +1,7 @@
 public class ButtonMapping
 {
 
-    public static GlyphType MapButtonToGlyphType(ButtonType mappedButton)
+    public static GlyphType MapButtonTypeToGlyphType(ButtonType mappedButton)
     {
         return mappedButton switch
         {
@@ -23,7 +23,7 @@ public class ButtonMapping
         };
     }
 
-    public static ControlSet MapButtonToSet(string button)
+    public static ControlSet MapRawToControlSet(string button)
     {
         return button switch
         {
@@ -39,7 +39,7 @@ public class ButtonMapping
         };
     }
 
-    public static ButtonType MapButtonToType(string button, bool isConnector = false)
+    public static ButtonType MapRawToButtonType(string button, bool isConnector = false)
     {
         if (isConnector)
         {
