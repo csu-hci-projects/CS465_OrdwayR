@@ -47,7 +47,7 @@ public class WhisperWordDetection : MonoBehaviour
 
     void ShowObjects()
     {
-        TMPro.TextMeshProUGUI[] textObjects = FindObjectsOfType<TMPro.TextMeshProUGUI>();
+        TMPro.TextMeshProUGUI[] textObjects = FindObjectsByType<TMPro.TextMeshProUGUI>(FindObjectsSortMode.None);
         foreach (TMPro.TextMeshProUGUI text in textObjects)
         {
             text.enabled = true;
@@ -56,7 +56,7 @@ public class WhisperWordDetection : MonoBehaviour
             text.color = color;
         }
 
-        Renderer[] renderers = FindObjectsOfType<Renderer>();
+        Renderer[] renderers = FindObjectsByType<Renderer>(FindObjectsSortMode.None);
         foreach (Renderer renderer in renderers)
         {
             if (renderer.material.HasProperty("_Color"))

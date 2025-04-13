@@ -90,21 +90,12 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void setupInputLessonUI()
+    public void SetUILayout(string layout)
     {
-        studentBoardUI.InputLayout();
-        teacherBoardUI.InputLayout();
+        studentBoardUI.SetLayout(layout);
+        teacherBoardUI.SetLayout(layout);
     }
 
-    public void setupGlyphLessonUI()
-    {
-        studentBoardUI.GlyphLayout();
-        teacherBoardUI.GlyphLayout();
-    }
 
-    internal void setupIntroUI()
-    {
-        studentBoardUI.IntroLayout();
-        teacherBoardUI.IntroLayout();
-    }
+
 }

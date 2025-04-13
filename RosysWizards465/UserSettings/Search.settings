@@ -1,5 +1,6 @@
 trackSelection = true
 refreshSearchWindowsInPlayMode = false
+pickerAdvancedUI = false
 fetchPreview = true
 defaultFlags = 0
 keepOpen = false
@@ -13,6 +14,10 @@ scopes = {
 	"last_search.D845A788" = "XRI Right Interaction/RG "
 	"OpenInspectorPreview.D845A788" = "0"
 	"currentGroup.D845A788" = "all"
+	"picker_window_position_offset.075BCD15" = "-1536;-48;1464;1349"
+	"picker_visibility_flags.075BCD15" = "264"
+	"picker_item_size.075BCD15" = "32"
+	"picker_inspector.075BCD15" = "0"
 }
 providers = {
 	packages = {
@@ -60,10 +65,26 @@ providers = {
 		priority = 25
 		defaultAction = null
 	}
+	presets_provider = {
+		active = false
+		priority = -10
+		defaultAction = null
+	}
 }
 objectSelectors = {
 }
 recentSearches = [
+	"Xri Right/g"
+	"Xri Right/"
+	"Xri Left/"
+	"Xri Left/Y"
+	"X"
+	"Xri L"
+	"Tri"
+	"XRI Rig"
+	"XRI Left"
+	"left"
+	"p"
 	" "
 	"XRI L Interaction/A "
 ]

@@ -13,6 +13,7 @@ public class InputRouter : MonoBehaviour
         InputToGlyph,
         Glyph,
         GlyphToSpell,
+        SpellIntro,
         Spell,
         SpellToExit,
         Test
@@ -20,18 +21,23 @@ public class InputRouter : MonoBehaviour
 
     void Update()
     {
-         if (currentLesson == Lessons.Input)
+        string layout = currentLesson switch
         {
-            UIManager.setupIntroUI();
-        }
-        if (currentLesson == Lessons.Input)
-        {
-            UIManager.setupInputLessonUI();
-        }
+            Lessons.Intro => "Intro",
+            Lessons.Input => "InputLesson",
+            Lessons.InputToGlyph => "InputToGlyph", 
+            Lessons.Glyph => "GlyphLesson",
+            Lessons.GlyphToSpell => "GlyphToSpell",
+            Lessons.SpellIntro => "SpellIntro",
+            Lessons.Spell => "SpellLesson",
+            Lessons.SpellToExit => "SpellToExit",
+            Lessons.Test => "Test",
+            _ => ""
+        };
 
-        if (currentLesson == Lessons.Glyph)
+        if (!string.IsNullOrEmpty(layout))
         {
-            UIManager.setupGlyphLessonUI();
+            UIManager.SetUILayout(layout);
         }
     }
 

@@ -22,7 +22,7 @@ public class TextUpdater : MonoBehaviour
     private float angle = 0f; 
     void Update()
     {
-        Whisper whisperScript = FindObjectOfType<Whisper>();
+        Whisper whisperScript = FindFirstObjectByType<Whisper>();
         if (whisperScript != null)
         {
 

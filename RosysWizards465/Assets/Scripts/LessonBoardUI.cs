@@ -48,48 +48,16 @@ public class BoardUI : MonoBehaviour
     [Header("Managers")]
     [SerializeField] private SpriteManager spriteManager;
 
-    public void InputLayout()
+    public void SetLayout(string layoutName)
     {
         foreach (Transform child in transform)
         {
-            child.gameObject.SetActive(false);
-        }
-
-        Transform inputLesson = transform.Find("InputLesson");
-        if (inputLesson != null)
-        {
-            inputLesson.gameObject.SetActive(true);
+            child.gameObject.SetActive(
+                child.name == layoutName || 
+            (layoutName is "Input" or "InputToGlyph" or "GlyphToSpell" or "SpellIntro" or "SpellToExit" 
+            && child.name == "Start"));
         }
     }
-
-    public void GlyphLayout()
-    {
-        foreach (Transform child in transform)
-        {
-            child.gameObject.SetActive(false);
-        }
-
-        Transform inputLesson = transform.Find("GlyphLesson");
-        if (inputLesson != null)
-        {
-            inputLesson.gameObject.SetActive(true);
-        }
-    }
-
-    public void IntroLayout()
-    {
-        foreach (Transform child in transform)
-        {
-            child.gameObject.SetActive(false);
-        }
-
-        Transform inputLesson = transform.Find("GlyphLesson");
-        if (inputLesson != null)
-        {
-            inputLesson.gameObject.SetActive(true);
-        }
-    }
-
 
 
     void Start()
