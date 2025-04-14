@@ -3,6 +3,7 @@ using Image = UnityEngine.UI.Image;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 
 
@@ -53,11 +54,16 @@ public class BoardUI : MonoBehaviour
         foreach (Transform child in transform)
         {
             child.gameObject.SetActive(
-                child.name == layoutName || 
-            (layoutName is "Input" or "InputToGlyph" or "GlyphToSpell" or "SpellIntro" or "SpellToExit" 
-            && child.name == "Start"));
+                child.name == layoutName ||
+            (layoutName is "Intro" or "InputToGlyph"
+            or "GlyphToSpell" or "SpellIntro" or "SpellToExit"
+            && child.name == "Start")
+            || (layoutName is "InputLesson" or "GlyphLesson" or "SpellLesson"
+            && child.name == "Input Progress"));
         }
     }
+
+
 
 
     void Start()

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InputRouter : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class InputRouter : MonoBehaviour
         {
             Lessons.Intro => "Intro",
             Lessons.Input => "InputLesson",
-            Lessons.InputToGlyph => "InputToGlyph", 
+            Lessons.InputToGlyph => "InputToGlyph",
             Lessons.Glyph => "GlyphLesson",
             Lessons.GlyphToSpell => "GlyphToSpell",
             Lessons.SpellIntro => "SpellIntro",
@@ -41,9 +42,30 @@ public class InputRouter : MonoBehaviour
         }
     }
 
+    public void NextLesson()
+    {
+        currentLesson = currentLesson switch
+        {
+            Lessons.Intro => Lessons.Input,
+            Lessons.Input => Lessons.InputToGlyph,
+            Lessons.InputToGlyph => Lessons.Glyph,
+            Lessons.Glyph => Lessons.GlyphToSpell,
+            Lessons.GlyphToSpell => Lessons.SpellIntro,
+            Lessons.SpellIntro => Lessons.Spell,
+            Lessons.Spell => Lessons.SpellToExit,
+            _ => currentLesson
+        };
+
+        if (currentLesson == Lessons.SpellToExit)
+        {
+            currentLesson = Lessons.Intro;
+            SceneManager.LoadScene(0);
+        }
+
+    }
 
 
-    public Lessons currentLesson = Lessons.Glyph;
+    public Lessons currentLesson = Lessons.Intro;
 
     public UIManager UIManager;
     private List<ButtonType> buttonsPressedList = new List<ButtonType>();
@@ -70,6 +92,7 @@ public class InputRouter : MonoBehaviour
 
     }
 
+    int correctValue = 0;
     private void InputLesson(string button)
     {
         if (isBoardUpdating)
@@ -80,8 +103,12 @@ public class InputRouter : MonoBehaviour
 
         ControlSet mappedButton = ButtonMapping.MapRawToControlSet(button);
 
-        UIManager.setMessage(button);
-
+        // UIManager.setMessage(button);
+        if (UIManager.isCorrectInput(mappedButton))
+        {
+            correctValue++;
+            UIManager.SetTopText("Lesson Progress: " + correctValue + "/8");
+        }
         UIManager.studentInputUpdate(mappedButton, ButtonMapping.MapButtonTypeToGlyphType(ButtonMapping.MapRawToButtonType(button)));
         StartCoroutine(CheckInputBoardsCoroutine(UIManager.isCorrectInput(mappedButton)));
     }
@@ -92,6 +119,12 @@ public class InputRouter : MonoBehaviour
         UIManager.CheckInputBoards(isValidSpell);
         yield return new WaitForSeconds(2f);
         isBoardUpdating = false;
+        if (correctValue >= 8)
+        {
+            correctValue = 0;
+            UIManager.CheckGlyphBoards(false);
+            NextLesson();
+        }
     }
 
 
@@ -118,8 +151,8 @@ public class InputRouter : MonoBehaviour
         ButtonType mappedButton = ButtonMapping.MapRawToButtonType(button, isConnector);
 
         buttonsPressedList.Add(mappedButton);
-        UIManager.setMessage(button + " Pressed\r\n" + ArrayHandler.arrayListToString(buttonsPressedList));
-        UIManager.setSpellName("");
+        // UIManager.setMessage(button + " Pressed\r\n" + ArrayHandler.arrayListToString(buttonsPressedList));
+        // UIManager.setSpellName("");
         UIManager.studentGlyphUpdate(buttonsPressedList);
 
         if (buttonsPressedList.Count >= 3)
@@ -128,6 +161,12 @@ public class InputRouter : MonoBehaviour
                 ButtonMapping.MapButtonTypeToGlyphType(buttonsPressedList[0]),
                 ButtonMapping.MapButtonToConnectorType(buttonsPressedList[1]),
                 ButtonMapping.MapButtonTypeToGlyphType(buttonsPressedList[2]));
+
+            if (isValidSpell)
+            {
+                correctValue++;
+                UIManager.SetTopText("Lesson Progress: " + correctValue + "/12");
+            }
 
             UIManager.checkSpellList(buttonsPressedList);
             StartCoroutine(CheckGlyphBoardsCoroutine(isValidSpell));
@@ -143,6 +182,12 @@ public class InputRouter : MonoBehaviour
         UIManager.CheckGlyphBoards(isValidSpell);
         yield return new WaitForSeconds(3f);
         isBoardUpdating = false;
+        if (correctValue >= 3)
+        {
+            correctValue = 0;
+            NextLesson();
+
+        }
     }
 
     public void changeLesson(Lessons lesson)

@@ -11,18 +11,23 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private BoardUI teacherBoardUI;
 
-    public Text message;
-    public Text spellName;
+    // public Text message;
+    // public Text spellName;
 
-    public void setMessage(string message)
-    {
-        this.message.text = message;
-    }
-    public void setSpellName(string spellName)
-    {
-        this.spellName.text = spellName;
-    }
+    // public void setMessage(string message)
+    // {
+    //     this.message.text = message;
+    // }
+    // public void setSpellName(string spellName)
+    // {
+    //     this.spellName.text = spellName;
+    // }
+    public Text topText;
 
+    public void SetTopText(string text)
+    {
+        topText.text = text;
+    }
 
     public void CheckGlyphBoards(bool isValidSpell)
     {
@@ -78,15 +83,15 @@ public class UIManager : MonoBehaviour
         {
             if (spell.MatchesButtonSequence(buttonsPressedList))
             {
-                message.text += "\r\nSpell Cast: " + spell.getSpellName();
-                spellName.text = "Spell Cast: " + spell.getSpellName();
+                // message.text += "\r\nSpell Cast: " + spell.getSpellName();
+                // spellName.text = "Spell Cast: " + spell.getSpellName();
                 spellFound = true;
                 break;
             }
         }
         if (!spellFound)
         {
-            message.text += "\r\nInvalid Spell: " + ArrayHandler.arrayListToString(buttonsPressedList);
+            // message.text += "\r\nInvalid Spell: " + ArrayHandler.arrayListToString(buttonsPressedList);
         }
     }
 
