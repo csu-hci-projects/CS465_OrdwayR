@@ -61,6 +61,11 @@ public class InputRouter : MonoBehaviour
             _ => currentLesson
         };
 
+        if (currentLesson == Lessons.Spell)
+        {
+            EvironmentManager.PlayTableLift();
+        }
+        UIManager.SetTopText("Lesson Progress: 0/16");
 
 
     }
@@ -70,6 +75,8 @@ public class InputRouter : MonoBehaviour
 
     public UIManager UIManager;
     private List<ButtonType> buttonsPressedList = new List<ButtonType>();
+
+    public EvironmentManager EvironmentManager;
 
     private bool isBoardUpdating = false;
     public void ButtonUpdate(string button)
@@ -93,6 +100,8 @@ public class InputRouter : MonoBehaviour
 
 
     }
+
+
 
     int correctValue = 0;
     private void InputLesson(string button)
@@ -121,7 +130,7 @@ public class InputRouter : MonoBehaviour
         {
             correctValue = 0;
             UIManager.CheckGlyphBoards(false);
-            
+
             NextLesson();
         }
         isBoardUpdating = true;
