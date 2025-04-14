@@ -63,7 +63,12 @@ public class InputRouter : MonoBehaviour
 
         if (currentLesson == Lessons.Spell)
         {
-            EvironmentManager.PlayTableLift();
+            isBoardUpdating = true;
+            EnvironmentManager.PlayTableLift();
+            EnvironmentManager.PlayChairMove();
+            EnvironmentManager.PlayMoveBoards();
+            isBoardUpdating = false;
+
         }
         UIManager.SetTopText("Lesson Progress: 0/16");
 
@@ -76,7 +81,7 @@ public class InputRouter : MonoBehaviour
     public UIManager UIManager;
     private List<ButtonType> buttonsPressedList = new List<ButtonType>();
 
-    public EvironmentManager EvironmentManager;
+    public EnvironmentManager EnvironmentManager;
 
     private bool isBoardUpdating = false;
     public void ButtonUpdate(string button)
@@ -235,13 +240,16 @@ public class InputRouter : MonoBehaviour
     public IEnumerator CheckSpellsBoardsCoroutine(bool isValidSpell)
     {
         isBoardUpdating = true;
-        if (correctValue >= 3)
+        if (correctValue >= 16)
         {
             correctValue = 0;
             NextLesson();
-
         }
         UIManager.CheckGlyphBoards(isValidSpell);
+        if (isValidSpell)
+        {
+            EnvironmentManager.PlayRandomMagicEffect();
+        }
         yield return new WaitForSeconds(2f);
         isBoardUpdating = false;
 
