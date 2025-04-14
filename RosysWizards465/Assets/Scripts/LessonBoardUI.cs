@@ -26,6 +26,14 @@ public class BoardUI : MonoBehaviour
         public Image secondaryGlyphImage;
     }
 
+    [System.Serializable]
+    public class Spell
+    {
+        public Image primaryGlyphImage;
+        public Image connectorImage;
+        public Image secondaryGlyphImage;
+    }
+
 
 
     [Header("Input Lesson")]
@@ -45,23 +53,18 @@ public class BoardUI : MonoBehaviour
     [SerializeField] private GlyphLessonImages glyphLessonImages;
 
 
+    [Header("Spell Lesson")]
+    public GlyphType spellPrimaryGlyph;
+    public ConnectorType spellConnector;
+    public GlyphType spellSecondaryGlyph;
+
+    [SerializeField] private GlyphLessonImages spellLessonImages;
+
+
 
     [Header("Managers")]
     [SerializeField] private SpriteManager spriteManager;
 
-    public void SetLayout(string layoutName)
-    {
-        foreach (Transform child in transform)
-        {
-            child.gameObject.SetActive(
-                child.name == layoutName ||
-            (layoutName is "Intro" or "InputToGlyph"
-            or "GlyphToSpell" or "SpellIntro" or "SpellToExit"
-            && child.name == "Start")
-            || (layoutName is "InputLesson" or "GlyphLesson" or "SpellLesson"
-            && child.name == "Input Progress"));
-        }
-    }
 
 
 
@@ -73,6 +76,9 @@ public class BoardUI : MonoBehaviour
         glyphLessonImages.secondaryGlyphImage.sprite = spriteManager.GetSprite(secondaryGlyph);
         inputButton = Binding.inputList[currentInput].button;
         inputGlyph = Binding.inputList[currentInput].glyph;
+        spellLessonImages.primaryGlyphImage.sprite = spriteManager.GetSprite(spellPrimaryGlyph);
+        spellLessonImages.connectorImage.sprite = spriteManager.GetSprite(spellConnector);
+        spellLessonImages.secondaryGlyphImage.sprite = spriteManager.GetSprite(spellSecondaryGlyph);
     }
 
     void Update()
@@ -83,6 +89,9 @@ public class BoardUI : MonoBehaviour
         inputLessonImages.controllerImage.sprite = spriteManager.GetSprite(inputButton);
         inputLessonImages.equalImage.sprite = spriteManager.GetEqualSprite();
         inputLessonImages.glyphImage.sprite = spriteManager.GetSprite(inputGlyph);
+        spellLessonImages.primaryGlyphImage.sprite = spriteManager.GetSprite(spellPrimaryGlyph);
+        spellLessonImages.connectorImage.sprite = spriteManager.GetSprite(spellConnector);
+        spellLessonImages.secondaryGlyphImage.sprite = spriteManager.GetSprite(spellSecondaryGlyph);
 
     }
 
@@ -91,6 +100,9 @@ public class BoardUI : MonoBehaviour
         this.primaryGlyph = primaryGlyph;
         this.connector = connector;
         this.secondaryGlyph = secondaryGlyph;
+        this.spellPrimaryGlyph = primaryGlyph;
+        this.spellConnector = connector;
+        this.spellSecondaryGlyph = secondaryGlyph;
     }
 
     public void UpdateInputUI(ControlSet button, GlyphType inputGlyph)
@@ -147,6 +159,9 @@ public class BoardUI : MonoBehaviour
         primaryGlyph = GlyphType.None;
         connector = ConnectorType.None;
         secondaryGlyph = GlyphType.None;
+        spellPrimaryGlyph = GlyphType.None;
+        spellConnector = ConnectorType.None;
+        spellSecondaryGlyph = GlyphType.None;
     }
 
 
@@ -158,6 +173,9 @@ public class BoardUI : MonoBehaviour
         glyphLessonImages.primaryGlyphImage.color = color;
         glyphLessonImages.connectorImage.color = color;
         glyphLessonImages.secondaryGlyphImage.color = color;
+        spellLessonImages.primaryGlyphImage.color = color;
+        spellLessonImages.connectorImage.color = color;
+        spellLessonImages.secondaryGlyphImage.color = color;
     }
 
     public void randomizeBoardUI()
@@ -165,6 +183,9 @@ public class BoardUI : MonoBehaviour
         primaryGlyph = (GlyphType)Random.Range(0, 4);
         connector = (ConnectorType)Random.Range(0, 2);
         secondaryGlyph = (GlyphType)Random.Range(0, 4);
+        spellPrimaryGlyph = (GlyphType)Random.Range(0, 4);
+        spellConnector = (ConnectorType)Random.Range(0, 2);
+        spellSecondaryGlyph = (GlyphType)Random.Range(0, 4);
     }
 
 
@@ -182,14 +203,35 @@ public class BoardUI : MonoBehaviour
         inputGlyph = Binding.inputList[currentInput].glyph;
     }
 
-    public bool isCorrectSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
+    public bool isCorrectGlyphSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
     {
         return this.primaryGlyph == primaryGlyph && this.connector == connector && this.secondaryGlyph == secondaryGlyph;
     }
 
+    public bool isCorrectSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
+    {
+        return this.spellPrimaryGlyph == primaryGlyph && this.spellConnector == connector && this.spellSecondaryGlyph == secondaryGlyph;
+    }
+
+
     public bool isCorrectInput(ControlSet button)
     {
         return inputButton == button;
+    }
+
+
+    public void SetLayout(string layoutName)
+    {
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(
+                child.name == layoutName ||
+            (layoutName is "Intro" or "InputToGlyph"
+            or "GlyphToSpell" or "SpellIntro" or "SpellToExit"
+            && child.name == "Start")
+            || (layoutName is "InputLesson" or "GlyphLesson" or "SpellLesson"
+            && child.name == "Input Progress"));
+        }
     }
 }
 
