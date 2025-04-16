@@ -205,11 +205,15 @@ public class BoardUI : MonoBehaviour
 
     public bool isCorrectGlyphSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
     {
+        Debug.Log("Glyph: " + primaryGlyph + ", Connector: " + connector + ", Glyph2: " + secondaryGlyph);
+        Debug.Log("Glyph: " + this.primaryGlyph + ", Connector: " + this.connector + ", Glyph2: " + this.secondaryGlyph);
         return this.primaryGlyph == primaryGlyph && this.connector == connector && this.secondaryGlyph == secondaryGlyph;
     }
 
     public bool isCorrectSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
     {
+        Debug.Log("Spell: " + primaryGlyph + ", Connector: " + connector + ", Glyph2: " + secondaryGlyph);
+        Debug.Log("Spell: " + this.spellPrimaryGlyph + ", Connector: " + this.spellConnector + ", Glyph2: " + this.spellSecondaryGlyph);
         return this.spellPrimaryGlyph == primaryGlyph && this.spellConnector == connector && this.spellSecondaryGlyph == secondaryGlyph;
     }
 

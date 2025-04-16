@@ -152,6 +152,8 @@ public class InputRouter : MonoBehaviour
 
     private void GlyphLesson(string button)
     {
+
+        Debug.Log("Glyph Lesson: " + button);
         if (isBoardUpdating)
         {
             Debug.Log("Board is updating, ignoring button press.");
@@ -162,21 +164,23 @@ public class InputRouter : MonoBehaviour
         ButtonType mappedButton = ButtonMapping.MapRawToButtonType(button, isConnector);
 
         buttonsPressedList.Add(mappedButton);
-        // UIManager.setMessage(button + " Pressed\r\n" + ArrayHandler.arrayListToString(buttonsPressedList));
-        // UIManager.setSpellName("");
+
         UIManager.studentGlyphUpdate(buttonsPressedList);
 
         if (buttonsPressedList.Count >= 3)
         {
+            Debug.Log("Glyph Lesson: Checking spell: " + button);
             bool isValidSpell = UIManager.isCorrectGlyphSpell(
                 ButtonMapping.MapButtonTypeToGlyphType(buttonsPressedList[0]),
                 ButtonMapping.MapButtonToConnectorType(buttonsPressedList[1]),
                 ButtonMapping.MapButtonTypeToGlyphType(buttonsPressedList[2]));
 
+            Debug.Log("Glyph Lesson: isValidSpell: " + isValidSpell);
+
             if (isValidSpell)
             {
                 correctValue++;
-                UIManager.SetTopText("Lesson Progress: " + correctValue + "/12");
+                UIManager.SetTopText("Lesson Progress: " + correctValue + "/8");
             }
 
             UIManager.checkSpellList(buttonsPressedList);
@@ -189,7 +193,7 @@ public class InputRouter : MonoBehaviour
 
     public IEnumerator CheckGlyphBoardsCoroutine(bool isValidSpell)
     {
-        if (correctValue >= 4)
+        if (correctValue >= 8)
         {
             correctValue = 0;
 

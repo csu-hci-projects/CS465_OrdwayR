@@ -35,7 +35,7 @@ public class UIManager : MonoBehaviour
     public bool isCorrectGlyphSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
     {
 
-        return teacherBoardUI.isCorrectSpell(
+        return teacherBoardUI.isCorrectGlyphSpell(
                     primaryGlyph,
                     connector,
                     secondaryGlyph);
