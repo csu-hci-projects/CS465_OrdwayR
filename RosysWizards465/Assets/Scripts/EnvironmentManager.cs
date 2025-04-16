@@ -9,6 +9,7 @@ public class EnvironmentManager : MonoBehaviour
 
     public Animator teacherBoard;
     public Animator studentBoard;
+    public Animator controlListBoard;
 
     public GameObject magicEffect;
 
@@ -33,12 +34,27 @@ public class EnvironmentManager : MonoBehaviour
         }
     }
 
-    public void PlayMoveBoards()
+
+
+    public void PlayBoardGlyphToSpellIntro()
     {
-        teacherBoard.SetTrigger("MoveBoard");
-        studentBoard.SetTrigger("MoveBoard");
+        teacherBoard.SetTrigger("SpellLessonIntro");
+        studentBoard.SetTrigger("SpellLessonIntro");
+        controlListBoard.SetTrigger("SpellLessonIntro");
         teacherBoard.speed = speed * 10;
         studentBoard.speed = speed * 10;
+        controlListBoard.speed = speed * 10;
+    }
+    public void PlayBoardSpellIntroToSpell()
+    {
+        teacherBoard.SetTrigger("SpellLesson");
+        teacherBoard.speed = speed * 10;
+    }
+
+    public void PlayBoardSpellToExit()
+    {
+        teacherBoard.SetTrigger("SpellToExit");
+        teacherBoard.speed = speed * 10;
     }
 
 

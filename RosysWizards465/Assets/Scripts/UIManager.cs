@@ -8,7 +8,6 @@ using System;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private BoardUI studentBoardUI;
-
     [SerializeField] private BoardUI teacherBoardUI;
 
     public Text topText;

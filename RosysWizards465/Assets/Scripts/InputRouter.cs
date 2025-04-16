@@ -7,6 +7,35 @@ using UnityEngine.SceneManagement;
 public class InputRouter : MonoBehaviour
 {
 
+    public bool inTestMode = false;
+    private int InputToExit = 8;
+    private int GlyphToExit = 8;
+    private int SpellToExit = 16;
+    private int lessonTestModifier = 8;
+
+    public Lessons currentLesson = Lessons.Intro;
+
+    public UIManager UIManager;
+    private List<ButtonType> buttonsPressedList = new List<ButtonType>();
+
+    public EnvironmentManager EnvironmentManager;
+
+    public ControlType controlType = ControlType.ControllerOneHand;
+
+    private bool isBoardUpdating = false;
+
+    void Start()
+    {
+        if (inTestMode)
+        {
+            InputToExit = 8 / lessonTestModifier;
+            GlyphToExit = 8 / lessonTestModifier;
+            SpellToExit = 16 / lessonTestModifier;
+        }
+
+    }
+
+
     public enum Lessons
     {
         Intro,
@@ -44,6 +73,7 @@ public class InputRouter : MonoBehaviour
 
     public void NextLesson()
     {
+        Debug.Log("Current Lesson: " + currentLesson);
         if (currentLesson == Lessons.SpellToExit)
         {
             currentLesson = Lessons.Intro;
@@ -61,29 +91,37 @@ public class InputRouter : MonoBehaviour
             _ => currentLesson
         };
 
-        if (currentLesson == Lessons.Spell)
-        {
-            isBoardUpdating = true;
-            EnvironmentManager.PlayTableLift();
-            EnvironmentManager.PlayChairMove();
-            EnvironmentManager.PlayMoveBoards();
-            isBoardUpdating = false;
 
+
+
+        Debug.Log("Switching Lesson To: " + currentLesson);
+
+        switch (currentLesson)
+        {
+            case Lessons.SpellIntro:
+                Debug.Log("Changing to Spell Intro");
+                EnvironmentManager.PlayTableLift();
+                EnvironmentManager.PlayChairMove();
+                EnvironmentManager.PlayBoardGlyphToSpellIntro();
+                break;
+
+            case Lessons.Spell:
+                Debug.Log("Changing to Spell Lesson");
+                EnvironmentManager.PlayBoardSpellIntroToSpell();
+                break;
+
+            case Lessons.SpellToExit:
+                Debug.Log("Changing to Exit");
+                EnvironmentManager.PlayBoardSpellToExit();
+                break;
         }
+
         UIManager.SetTopText("Lesson Progress: 0/16");
 
 
     }
 
 
-    public Lessons currentLesson = Lessons.Intro;
-
-    public UIManager UIManager;
-    private List<ButtonType> buttonsPressedList = new List<ButtonType>();
-
-    public EnvironmentManager EnvironmentManager;
-
-    private bool isBoardUpdating = false;
     public void ButtonUpdate(string button)
     {
 
@@ -123,7 +161,7 @@ public class InputRouter : MonoBehaviour
         if (UIManager.isCorrectInput(mappedButton))
         {
             correctValue++;
-            UIManager.SetTopText("Lesson Progress: " + correctValue + "/8");
+            UIManager.SetTopText("Lesson Progress: " + correctValue + "/" + InputToExit);
         }
         UIManager.studentInputUpdate(mappedButton, ButtonMapping.MapButtonTypeToGlyphType(ButtonMapping.MapRawToButtonType(button)));
         StartCoroutine(CheckInputBoardsCoroutine(UIManager.isCorrectInput(mappedButton)));
@@ -131,7 +169,7 @@ public class InputRouter : MonoBehaviour
 
     public IEnumerator CheckInputBoardsCoroutine(bool isValidSpell)
     {
-        if (correctValue >= 8)
+        if (correctValue >= InputToExit)
         {
             correctValue = 0;
             UIManager.CheckGlyphBoards(false);
@@ -180,7 +218,7 @@ public class InputRouter : MonoBehaviour
             if (isValidSpell)
             {
                 correctValue++;
-                UIManager.SetTopText("Lesson Progress: " + correctValue + "/8");
+                UIManager.SetTopText("Lesson Progress: " + correctValue + "/" + GlyphToExit);
             }
 
             UIManager.checkSpellList(buttonsPressedList);
@@ -193,7 +231,7 @@ public class InputRouter : MonoBehaviour
 
     public IEnumerator CheckGlyphBoardsCoroutine(bool isValidSpell)
     {
-        if (correctValue >= 8)
+        if (correctValue >= GlyphToExit)
         {
             correctValue = 0;
 
@@ -230,7 +268,7 @@ public class InputRouter : MonoBehaviour
             if (isValidSpell)
             {
                 correctValue++;
-                UIManager.SetTopText("Lesson Progress: " + correctValue + "/16");
+                UIManager.SetTopText("Lesson Progress: " + correctValue + "/" + SpellToExit);
             }
 
             UIManager.checkSpellList(buttonsPressedList);
@@ -244,7 +282,7 @@ public class InputRouter : MonoBehaviour
     public IEnumerator CheckSpellsBoardsCoroutine(bool isValidSpell)
     {
         isBoardUpdating = true;
-        if (correctValue >= 16)
+        if (correctValue >= SpellToExit)
         {
             correctValue = 0;
             NextLesson();

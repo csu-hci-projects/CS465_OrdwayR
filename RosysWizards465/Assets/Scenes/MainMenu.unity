@@ -74697,6 +74697,53 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 322452024}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &323443290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323443292}
+  - component: {fileID: 323443291}
+  m_Layer: 0
+  m_Name: GameSettings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &323443291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323443290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f88048164af954ea66c895c7158d3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueVolume: 1
+  musicVolume: 1
+  controlType: 0
+--- !u!4 &323443292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323443290}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 306.45102, y: -7.2768493, z: 194.23392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &324933617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78293,7 +78340,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494668999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0026524065}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0096291}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78302,7 +78349,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 65, y: 16}
+  m_SizeDelta: {x: 152.5, y: 17.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494669001
 MonoBehaviour:
@@ -78337,7 +78384,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Volume
+  m_Text: 'Music Volume
 
 '
 --- !u!222 &494669002
@@ -84330,10 +84377,6 @@ PrefabInstance:
         type: 3}
       insertIndex: 3
       addedObject: {fileID: 890657970}
-    - targetCorrespondingSourceObject: {fileID: 4015128326712939855, guid: fd28f23af44f73f4a95e33435872ad15,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 890657982}
   m_SourcePrefab: {fileID: 100100000, guid: fd28f23af44f73f4a95e33435872ad15, type: 3}
 --- !u!1 &736429202 stripped
 GameObject:
@@ -87181,18 +87224,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 736429201}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &890657982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 736429202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff522d7f2ab4fc4fac6693c4459bbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &892168366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123181,7 +123212,7 @@ PrefabInstance:
     - target: {fileID: 8969571752666551113, guid: 657321a07c3561043af55547ec4b0ed7,
         type: 3}
       propertyPath: m_Name
-      value: MinMaxSlider (1)
+      value: Music Slider
       objectReference: {fileID: 0}
     - target: {fileID: 8969571752666551114, guid: 657321a07c3561043af55547ec4b0ed7,
         type: 3}
@@ -123308,6 +123339,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 657321a07c3561043af55547ec4b0ed7, type: 3}
+--- !u!114 &1580675031 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8969571752666551115, guid: 657321a07c3561043af55547ec4b0ed7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1580675030}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1595673859
 GameObject:
   m_ObjectHideFlags: 0
@@ -136543,6 +136586,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1263670933749175190, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 155.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1263670933749175190, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1263670933749175190, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1263670933749175190, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -136550,6 +136608,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587710938631219073, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
+      propertyPath: m_Name
+      value: ControlTypeDropdown
       objectReference: {fileID: 0}
     - target: {fileID: 1587710938631219102, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
@@ -136570,6 +136633,33 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587710938631219103, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
+      propertyPath: m_Options.m_Options.Array.data[0].m_Text
+      value: Controller One-Handed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587710938631219103, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
+      propertyPath: m_Options.m_Options.Array.data[1].m_Text
+      value: Controller Two-Handed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587710938631219103, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
+      propertyPath: m_Options.m_Options.Array.data[2].m_Text
+      value: Gesture One-Handed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587710938631219103, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
+      propertyPath: m_Options.m_Options.Array.data[3].m_Text
+      value: Gesture Two-Handed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2763533689271499713, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Dialogue Volume
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 3667051745010976283, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
@@ -136664,7 +136754,7 @@ PrefabInstance:
     - target: {fileID: 3667051746007278424, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3667051746007278424, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
@@ -136714,7 +136804,7 @@ PrefabInstance:
     - target: {fileID: 3667051746007278432, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
       propertyPath: m_Name
-      value: Interactive Controls (1)
+      value: MainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 3667051746007278438, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
@@ -136766,6 +136856,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6286078562336932211, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
+      propertyPath: m_Name
+      value: Dialogue Slider
+      objectReference: {fileID: 0}
     - target: {fileID: 7043520634712995685, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -136794,13 +136889,13 @@ PrefabInstance:
     - target: {fileID: 7043520634712995686, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7043520634712995686, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 134452630}
+      objectReference: {fileID: 1860731578}
     - target: {fileID: 7043520634712995686, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -136809,12 +136904,12 @@ PrefabInstance:
     - target: {fileID: 7043520634712995686, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SwitchScene
+      value: OnStartGame
       objectReference: {fileID: 0}
     - target: {fileID: 7043520634712995686, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneSwitcher, Assembly-CSharp
+      value: MainMenuUIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7043520634712995686, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
@@ -136842,6 +136937,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1860731577}
+    - targetCorrespondingSourceObject: {fileID: 3667051746007278432, guid: 630f5a5062d39114db411ff20d30272e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860731578}
     - targetCorrespondingSourceObject: {fileID: 7043520634712995684, guid: 630f5a5062d39114db411ff20d30272e,
         type: 3}
       insertIndex: -1
@@ -136853,6 +136952,30 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1860731567}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1860731569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1587710938631219103, guid: 630f5a5062d39114db411ff20d30272e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1860731567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1860731570 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6286078562336932209, guid: 630f5a5062d39114db411ff20d30272e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1860731567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1860731577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136865,6 +136988,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff522d7f2ab4fc4fac6693c4459bbf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1860731578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840653868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ae7355fd55fe84fa44a39ec7ca2a0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSlider: {fileID: 1860731570}
+  musicSlider: {fileID: 1580675031}
+  controlDropdown: {fileID: 1860731569}
 --- !u!1001 &1861027465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142258,3 +142396,4 @@ SceneRoots:
   - {fileID: 1224622938}
   - {fileID: 1242871361}
   - {fileID: 565301742}
+  - {fileID: 323443292}
