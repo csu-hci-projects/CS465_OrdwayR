@@ -32,7 +32,7 @@ public class InputRouter : MonoBehaviour
             GlyphToExit = 8 / lessonTestModifier;
             SpellToExit = 16 / lessonTestModifier;
         }
-
+        controlType = GameSettings.Instance.controlType;
     }
 
 
@@ -90,8 +90,6 @@ public class InputRouter : MonoBehaviour
             Lessons.Spell => Lessons.SpellToExit,
             _ => currentLesson
         };
-
-
 
 
         Debug.Log("Switching Lesson To: " + currentLesson);
@@ -173,7 +171,6 @@ public class InputRouter : MonoBehaviour
         {
             correctValue = 0;
             UIManager.CheckGlyphBoards(false);
-
             NextLesson();
         }
         isBoardUpdating = true;

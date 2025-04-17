@@ -17,6 +17,13 @@ public class GestureReciverTest : MonoBehaviour
         message.text = "Rocker";
     }
 
+    void Fist()
+    {
+        Debug.Log("Fist gesture received!");
+        message.text = "Fist";
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
