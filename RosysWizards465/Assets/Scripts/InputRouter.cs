@@ -20,19 +20,25 @@ public class InputRouter : MonoBehaviour
 
     public EnvironmentManager EnvironmentManager;
 
-    public ControlType controlType = ControlType.ControllerOneHand;
-
+    bool isTwoHandedController;
     private bool isBoardUpdating = false;
 
     void Start()
     {
+        isTwoHandedController = GameSettings.Instance.controlType == ControlType.ControllerTwoHand;
         if (inTestMode)
         {
             InputToExit = 8 / lessonTestModifier;
             GlyphToExit = 8 / lessonTestModifier;
             SpellToExit = 16 / lessonTestModifier;
         }
-        controlType = GameSettings.Instance.controlType;
+
+        if (isTwoHandedController)
+        {
+            InputToExit = 4;
+        }
+
+
     }
 
 
@@ -134,9 +140,7 @@ public class InputRouter : MonoBehaviour
             case Lessons.Spell:
                 SpellLesson(button);
                 break;
-            case Lessons.Test:
-                TestLesson(button);
-                break;
+
         }
 
 
@@ -144,50 +148,56 @@ public class InputRouter : MonoBehaviour
 
 
 
-    int correctValue = 0;
+    int correctCount = 0;
     private void InputLesson(string button)
     {
+        UIManager.SetTopText("Lesson Progress: " + correctCount + "/" + InputToExit);
         if (isBoardUpdating)
         {
             Debug.Log("Board is updating, ignoring button press.");
             return;
         }
 
-        ControlSet mappedButton = ButtonMapping.MapRawToControlSet(button);
+        //Mapping the button to ControlSet
+        ControlSet mappedButton = ButtonMapping.MapRawToControlSet(button); //Falls apart for gesutures
 
-        // UIManager.setMessage(button);
-        if (UIManager.isCorrectInput(mappedButton))
-        {
-            correctValue++;
-            UIManager.SetTopText("Lesson Progress: " + correctValue + "/" + InputToExit);
-        }
+        //Display the button on the UI
         UIManager.studentInputUpdate(mappedButton, ButtonMapping.MapButtonTypeToGlyphType(ButtonMapping.MapRawToButtonType(button)));
+
+        //Check if the button is correct
         StartCoroutine(CheckInputBoardsCoroutine(UIManager.isCorrectInput(mappedButton)));
     }
 
     public IEnumerator CheckInputBoardsCoroutine(bool isValidSpell)
     {
-        if (correctValue >= InputToExit)
+        //Check if the button is correct
+        if (isValidSpell)
         {
-            correctValue = 0;
-            UIManager.CheckGlyphBoards(false);
-            NextLesson();
+            correctCount++;
+            UIManager.SetTopText("Lesson Progress: " + correctCount + "/" + InputToExit);
         }
+
+        //Update the boards and showing color
         isBoardUpdating = true;
-        UIManager.CheckInputBoards(isValidSpell);
+        UIManager.UpdateInputBoards(isValidSpell);
         yield return new WaitForSeconds(2f);
         isBoardUpdating = false;
 
+        //Check if the lesson is complete
+        if (correctCount >= InputToExit)
+        {
+            correctCount = 0;
+            UIManager.CheckGlyphBoards(false);
+            NextLesson();
+        }
+
     }
 
-    private void TestLesson(string button)
-    {
 
-    }
 
     private void GlyphLesson(string button)
     {
-
+        UIManager.SetTopText("Lesson Progress: " + correctCount + "/" + GlyphToExit);
         Debug.Log("Glyph Lesson: " + button);
         if (isBoardUpdating)
         {
@@ -212,11 +222,7 @@ public class InputRouter : MonoBehaviour
 
             Debug.Log("Glyph Lesson: isValidSpell: " + isValidSpell);
 
-            if (isValidSpell)
-            {
-                correctValue++;
-                UIManager.SetTopText("Lesson Progress: " + correctValue + "/" + GlyphToExit);
-            }
+
 
             UIManager.checkSpellList(buttonsPressedList);
             StartCoroutine(CheckGlyphBoardsCoroutine(isValidSpell));
@@ -228,21 +234,26 @@ public class InputRouter : MonoBehaviour
 
     public IEnumerator CheckGlyphBoardsCoroutine(bool isValidSpell)
     {
-        if (correctValue >= GlyphToExit)
-        {
-            correctValue = 0;
 
-            NextLesson();
+        if (isValidSpell)
+        {
+            correctCount++;
+            UIManager.SetTopText("Lesson Progress: " + correctCount + "/" + GlyphToExit);
         }
         isBoardUpdating = true;
         UIManager.CheckGlyphBoards(isValidSpell);
         yield return new WaitForSeconds(2f);
         isBoardUpdating = false;
-
+        if (correctCount >= GlyphToExit)
+        {
+            correctCount = 0;
+            NextLesson();
+        }
     }
 
     private void SpellLesson(string button)
     {
+        UIManager.SetTopText("Lesson Progress: " + correctCount + "/" + SpellToExit);
         if (isBoardUpdating)
         {
             Debug.Log("Board is updating, ignoring button press.");
@@ -262,12 +273,6 @@ public class InputRouter : MonoBehaviour
                 ButtonMapping.MapButtonToConnectorType(buttonsPressedList[1]),
                 ButtonMapping.MapButtonTypeToGlyphType(buttonsPressedList[2]));
 
-            if (isValidSpell)
-            {
-                correctValue++;
-                UIManager.SetTopText("Lesson Progress: " + correctValue + "/" + SpellToExit);
-            }
-
             UIManager.checkSpellList(buttonsPressedList);
             StartCoroutine(CheckSpellsBoardsCoroutine(isValidSpell));
 
@@ -279,19 +284,21 @@ public class InputRouter : MonoBehaviour
     public IEnumerator CheckSpellsBoardsCoroutine(bool isValidSpell)
     {
         isBoardUpdating = true;
-        if (correctValue >= SpellToExit)
-        {
-            correctValue = 0;
-            NextLesson();
-        }
+
         UIManager.CheckGlyphBoards(isValidSpell);
         if (isValidSpell)
         {
+            UIManager.SetTopText("Lesson Progress: " + correctCount + "/" + SpellToExit);
+            correctCount++;
             EnvironmentManager.PlayRandomMagicEffect();
         }
         yield return new WaitForSeconds(2f);
         isBoardUpdating = false;
-
+        if (correctCount >= SpellToExit)
+        {
+            correctCount = 0;
+            NextLesson();
+        }
     }
 
 

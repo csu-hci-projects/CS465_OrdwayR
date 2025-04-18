@@ -1,3 +1,5 @@
+using System;
+
 public class ButtonMapping
 {
 
@@ -61,7 +63,19 @@ public class ButtonMapping
         };
     }
 
-
-
-
+    internal static ControlSet MapControllerToGesture(ControlSet button)
+    {
+        return button switch
+        {
+            ControlSet.ButtonA => ControlSet.FingerGunRight,
+            ControlSet.ButtonB => ControlSet.PeaceSignRight,
+            ControlSet.ButtonX => ControlSet.FingerGunLeft,
+            ControlSet.ButtonY => ControlSet.PeaceSignLeft,
+            ControlSet.GripRight => ControlSet.RockerRight,
+            ControlSet.GripLeft => ControlSet.RockerLeft,
+            ControlSet.TriggerRight => ControlSet.ShakkaRight,
+            ControlSet.TriggerLeft => ControlSet.ShakkaLeft,
+            _ => button
+        };
+    }
 }

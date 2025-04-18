@@ -1,40 +1,47 @@
 
 using UnityEngine;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 public class SpriteManager : MonoBehaviour
 {
     [SerializeField] private Sprite noneImage;
 
-    public List<Sprite> glyphs;
-    public List<Sprite> connectors;
-    public List<Sprite> controls;
+    public List<Sprite> glyphSprites;
+    public List<Sprite> connectorSprites;
+    public List<Sprite> controlSprites;
+    public List<Sprite> gestureSprites;
 
 
-    private Sprite attackImage => glyphs[0];
-    private Sprite defenseImage => glyphs[1];
-    private Sprite healthImage => glyphs[2];
-    private Sprite buffImage => glyphs[3];
-    private Sprite linkImage => connectors[0];
-    private Sprite weaveImage => connectors[1];
-    private Sprite equalImage => connectors[2];
-    private Sprite buttonAImage => controls[0];
-    private Sprite buttonAPressedImage => controls[1];
-    private Sprite buttonBImage => controls[2];
-    private Sprite buttonBPressedImage => controls[3];
-    private Sprite buttonXImage => controls[4];
-    private Sprite buttonXPressedImage => controls[5];
-    private Sprite buttonYImage => controls[6];
-    private Sprite buttonYPressedImage => controls[7];
-    private Sprite gripLeftImage => controls[8];
-    private Sprite gripLeftPressedImage => controls[9];
-    private Sprite gripRightImage => controls[10];
-    private Sprite gripRightPressedImage => controls[11];
-    private Sprite triggerLeftImage => controls[12];
-    private Sprite triggerLeftPressedImage => controls[13];
-    private Sprite triggerRightImage => controls[14];
-    private Sprite triggerRightPressedImage => controls[15];
-    public Sprite GetSprite(GlyphType glyphType)
+    private Sprite attackImage => glyphSprites[0];
+    private Sprite defenseImage => glyphSprites[1];
+    private Sprite healthImage => glyphSprites[2];
+    private Sprite buffImage => glyphSprites[3];
+    private Sprite linkImage => connectorSprites[0];
+    private Sprite weaveImage => connectorSprites[1];
+    private Sprite equalImage => connectorSprites[2];
+    private Sprite buttonAImage => controlSprites[0];
+    private Sprite buttonAPressedImage => controlSprites[1];
+    private Sprite buttonBImage => controlSprites[2];
+    private Sprite buttonBPressedImage => controlSprites[3];
+    private Sprite buttonXImage => controlSprites[4];
+    private Sprite buttonXPressedImage => controlSprites[5];
+    private Sprite buttonYImage => controlSprites[6];
+    private Sprite buttonYPressedImage => controlSprites[7];
+    private Sprite gripLeftImage => controlSprites[8];
+    private Sprite gripLeftPressedImage => controlSprites[9];
+    private Sprite gripRightImage => controlSprites[10];
+    private Sprite gripRightPressedImage => controlSprites[11];
+    private Sprite triggerLeftImage => controlSprites[12];
+    private Sprite triggerLeftPressedImage => controlSprites[13];
+    private Sprite triggerRightImage => controlSprites[14];
+    private Sprite triggerRightPressedImage => controlSprites[15];
+    private Sprite fingerGun => gestureSprites[0];
+    private Sprite peaceSign => gestureSprites[1];
+    private Sprite rocker => gestureSprites[2];
+    private Sprite shakka => gestureSprites[3];
+
+    public Sprite GetGlyphSprite(GlyphType glyphType)
     {
         return glyphType switch
         {
@@ -47,7 +54,7 @@ public class SpriteManager : MonoBehaviour
         };
     }
 
-    public Sprite GetSprite(ConnectorType connectorType)
+    public Sprite GetConnectorSprite(ConnectorType connectorType)
     {
         return connectorType switch
         {
@@ -65,7 +72,7 @@ public class SpriteManager : MonoBehaviour
 
 
 
-    public Sprite GetSprite(ControlSet controlSet)
+    public Sprite GetControlSetSprite(ControlSet controlSet)
     {
         return controlSet switch
         {
@@ -85,10 +92,23 @@ public class SpriteManager : MonoBehaviour
             ControlSet.TriggerLeftPressed => triggerLeftPressedImage,
             ControlSet.TriggerRight => triggerRightImage,
             ControlSet.TriggerRightPressed => triggerRightPressedImage,
+            ControlSet.FingerGunRight => fingerGun,
+            ControlSet.FingerGunLeft => fingerGun,
+            ControlSet.PeaceSignRight => peaceSign,
+            ControlSet.PeaceSignLeft => peaceSign,
+            ControlSet.RockerRight => rocker,
+            ControlSet.RockerLeft => rocker,
+            ControlSet.ShakkaRight => shakka,
+            ControlSet.ShakkaLeft => shakka,
+            ControlSet.HeartHands => noneImage,
+            ControlSet.Triangle => noneImage,
+            ControlSet.Cutesy => noneImage,
+            ControlSet.Clap => noneImage,
+
             _ => noneImage
         };
     }
-
+   
 
 }
 

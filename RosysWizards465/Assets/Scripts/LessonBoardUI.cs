@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine.UI;
+using Oculus.Interaction.PoseDetection;
 
 
 
@@ -37,7 +38,7 @@ public class BoardUI : MonoBehaviour
 
 
     [Header("Input Lesson")]
-    public ControlSet inputButton;
+    public ControlSet inputControlSet;
     public GlyphType inputGlyph;
     public int currentInput = 0;
 
@@ -65,33 +66,69 @@ public class BoardUI : MonoBehaviour
     [Header("Managers")]
     [SerializeField] private SpriteManager spriteManager;
 
-
-
+    public static List<Binding> bindingList = new List<Binding>();
+    public void setBindingList()
+    {
+        switch (GameSettings.Instance.controlType)
+        {
+            case ControlType.ControllerOneHand:
+                bindingList = Binding.OneHandControllerBindingList;
+                break;
+            case ControlType.ControllerTwoHand:
+                bindingList = Binding.TwoHandControllerBindingList;
+                break;
+            case ControlType.GestureOneHand:
+                bindingList = Binding.OneHandGestureBindingList;
+                break;
+            case ControlType.GestureTwoHand:
+                bindingList = Binding.TwoHandGestureBindingList;
+                break;
+            case ControlType.GestureCombined:
+                bindingList = Binding.CombinedGestureBindingList;
+                break;
+            default:
+                Debug.LogWarning("Unknown control type");
+                break;
+        }
+    }
 
 
     void Start()
     {
-        glyphLessonImages.primaryGlyphImage.sprite = spriteManager.GetSprite(primaryGlyph);
-        glyphLessonImages.connectorImage.sprite = spriteManager.GetSprite(connector);
-        glyphLessonImages.secondaryGlyphImage.sprite = spriteManager.GetSprite(secondaryGlyph);
-        inputButton = Binding.inputList[currentInput].button;
-        inputGlyph = Binding.inputList[currentInput].glyph;
-        spellLessonImages.primaryGlyphImage.sprite = spriteManager.GetSprite(spellPrimaryGlyph);
-        spellLessonImages.connectorImage.sprite = spriteManager.GetSprite(spellConnector);
-        spellLessonImages.secondaryGlyphImage.sprite = spriteManager.GetSprite(spellSecondaryGlyph);
+        setBindingList();
+
+        glyphLessonImages.primaryGlyphImage.sprite = spriteManager.GetGlyphSprite(primaryGlyph);
+        glyphLessonImages.connectorImage.sprite = spriteManager.GetConnectorSprite(connector);
+        glyphLessonImages.secondaryGlyphImage.sprite = spriteManager.GetGlyphSprite(secondaryGlyph);
+
+        inputControlSet = bindingList[currentInput].button;
+        inputGlyph = bindingList[currentInput].glyph;
+
+
+        spellLessonImages.primaryGlyphImage.sprite = spriteManager.GetGlyphSprite(spellPrimaryGlyph);
+        spellLessonImages.connectorImage.sprite = spriteManager.GetConnectorSprite(spellConnector);
+        spellLessonImages.secondaryGlyphImage.sprite = spriteManager.GetGlyphSprite(spellSecondaryGlyph);
     }
 
     void Update()
     {
-        glyphLessonImages.primaryGlyphImage.sprite = spriteManager.GetSprite(primaryGlyph);
-        glyphLessonImages.connectorImage.sprite = spriteManager.GetSprite(connector);
-        glyphLessonImages.secondaryGlyphImage.sprite = spriteManager.GetSprite(secondaryGlyph);
-        inputLessonImages.controllerImage.sprite = spriteManager.GetSprite(inputButton);
+        glyphLessonImages.primaryGlyphImage.sprite = spriteManager.GetGlyphSprite(primaryGlyph);
+        glyphLessonImages.connectorImage.sprite = spriteManager.GetConnectorSprite(connector);
+        glyphLessonImages.secondaryGlyphImage.sprite = spriteManager.GetGlyphSprite(secondaryGlyph);
+
+        inputLessonImages.controllerImage.sprite = spriteManager.GetControlSetSprite(inputControlSet);
+        float rotationY = (GameSettings.Instance.controlType is ControlType.GestureOneHand or ControlType.GestureTwoHand or ControlType.GestureCombined) && currentInput % 2 == 1 ? 180 : 0;
+        inputLessonImages.controllerImage.transform.localRotation = Quaternion.Euler(
+            inputLessonImages.controllerImage.transform.localRotation.eulerAngles.x,
+            rotationY,
+            inputLessonImages.controllerImage.transform.localRotation.eulerAngles.z
+        );
         inputLessonImages.equalImage.sprite = spriteManager.GetEqualSprite();
-        inputLessonImages.glyphImage.sprite = spriteManager.GetSprite(inputGlyph);
-        spellLessonImages.primaryGlyphImage.sprite = spriteManager.GetSprite(spellPrimaryGlyph);
-        spellLessonImages.connectorImage.sprite = spriteManager.GetSprite(spellConnector);
-        spellLessonImages.secondaryGlyphImage.sprite = spriteManager.GetSprite(spellSecondaryGlyph);
+        inputLessonImages.glyphImage.sprite = spriteManager.GetGlyphSprite(inputGlyph);
+
+        spellLessonImages.primaryGlyphImage.sprite = spriteManager.GetGlyphSprite(spellPrimaryGlyph);
+        spellLessonImages.connectorImage.sprite = spriteManager.GetConnectorSprite(spellConnector);
+        spellLessonImages.secondaryGlyphImage.sprite = spriteManager.GetGlyphSprite(spellSecondaryGlyph);
 
     }
 
@@ -107,17 +144,17 @@ public class BoardUI : MonoBehaviour
 
     public void UpdateInputUI(ControlSet button, GlyphType inputGlyph)
     {
-        this.inputButton = button;
+        this.inputControlSet = button;
         this.inputGlyph = inputGlyph;
 
     }
 
-    public void CheckAndClear(bool status)
+    public void ColorAndClear(bool status)
     {
         StartCoroutine(ChangeColorAndClear(status));
     }
 
-    public void CheckAndNextInput(bool status)
+    public void ChangeColorAndNext(bool status)
     {
         StartCoroutine(ChangeColorAndNextInput(status));
     }
@@ -159,10 +196,82 @@ public class BoardUI : MonoBehaviour
         primaryGlyph = GlyphType.None;
         connector = ConnectorType.None;
         secondaryGlyph = GlyphType.None;
+        inputControlSet = ControlSet.None;
+        inputGlyph = GlyphType.None;
         spellPrimaryGlyph = GlyphType.None;
         spellConnector = ConnectorType.None;
         spellSecondaryGlyph = GlyphType.None;
     }
+
+
+
+    public void nextInput()
+    {
+        if (currentInput < bindingList.Count - 1)
+        {
+            currentInput++;
+        }
+        else
+        {
+            currentInput = 0;
+        }
+        inputControlSet = bindingList[currentInput].button;
+        inputGlyph = bindingList[currentInput].glyph;
+    }
+
+
+    public bool isCorrectGlyphSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
+    {
+        Debug.Log("Glyph: " + primaryGlyph + ", Connector: " + connector + ", Glyph2: " + secondaryGlyph);
+        Debug.Log("Glyph: " + this.primaryGlyph + ", Connector: " + this.connector + ", Glyph2: " + this.secondaryGlyph);
+        return this.primaryGlyph == primaryGlyph && this.connector == connector && this.secondaryGlyph == secondaryGlyph;
+    }
+
+    public bool isCorrectSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
+    {
+        Debug.Log("Spell: " + primaryGlyph + ", Connector: " + connector + ", Glyph2: " + secondaryGlyph);
+        Debug.Log("Spell: " + this.spellPrimaryGlyph + ", Connector: " + this.spellConnector + ", Glyph2: " + this.spellSecondaryGlyph);
+        return this.spellPrimaryGlyph == primaryGlyph && this.spellConnector == connector && this.spellSecondaryGlyph == secondaryGlyph;
+    }
+
+
+    public bool isCorrectInput(ControlSet button)
+    {
+        if (GameSettings.Instance.controlType == ControlType.GestureOneHand ||
+            GameSettings.Instance.controlType == ControlType.GestureTwoHand ||
+            GameSettings.Instance.controlType == ControlType.GestureCombined)
+        {
+            return inputControlSet == ButtonMapping.MapControllerToGesture(button);
+        }
+        else
+        {
+            return inputControlSet == button;
+        }
+
+
+    }
+
+    public bool isCorrectInput(GlyphType glyph)
+    {
+        return inputGlyph == glyph;
+    }
+
+
+    public void SetLayout(string layoutName)
+    {
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(
+                child.name == layoutName ||
+            (layoutName is "Intro" or "InputToGlyph"
+            or "GlyphToSpell" or "SpellIntro" or "SpellToExit"
+            && child.name == "Start")
+            || (layoutName is "InputLesson" or "GlyphLesson" or "SpellLesson"
+            && child.name == "Input Progress"));
+        }
+    }
+
+
 
 
     public void changeUIColors(Color color)
@@ -187,56 +296,6 @@ public class BoardUI : MonoBehaviour
         spellConnector = (ConnectorType)Random.Range(0, 2);
         spellSecondaryGlyph = (GlyphType)Random.Range(0, 4);
     }
-
-
-    public void nextInput()
-    {
-        if (currentInput < 7)
-        {
-            currentInput++;
-        }
-        else
-        {
-            currentInput = 0;
-        }
-        inputButton = Binding.inputList[currentInput].button;
-        inputGlyph = Binding.inputList[currentInput].glyph;
-    }
-
-    public bool isCorrectGlyphSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
-    {
-        Debug.Log("Glyph: " + primaryGlyph + ", Connector: " + connector + ", Glyph2: " + secondaryGlyph);
-        Debug.Log("Glyph: " + this.primaryGlyph + ", Connector: " + this.connector + ", Glyph2: " + this.secondaryGlyph);
-        return this.primaryGlyph == primaryGlyph && this.connector == connector && this.secondaryGlyph == secondaryGlyph;
-    }
-
-    public bool isCorrectSpell(GlyphType primaryGlyph, ConnectorType connector, GlyphType secondaryGlyph)
-    {
-        Debug.Log("Spell: " + primaryGlyph + ", Connector: " + connector + ", Glyph2: " + secondaryGlyph);
-        Debug.Log("Spell: " + this.spellPrimaryGlyph + ", Connector: " + this.spellConnector + ", Glyph2: " + this.spellSecondaryGlyph);
-        return this.spellPrimaryGlyph == primaryGlyph && this.spellConnector == connector && this.spellSecondaryGlyph == secondaryGlyph;
-    }
-
-
-    public bool isCorrectInput(ControlSet button)
-    {
-        return inputButton == button;
-    }
-
-
-    public void SetLayout(string layoutName)
-    {
-        foreach (Transform child in transform)
-        {
-            child.gameObject.SetActive(
-                child.name == layoutName ||
-            (layoutName is "Intro" or "InputToGlyph"
-            or "GlyphToSpell" or "SpellIntro" or "SpellToExit"
-            && child.name == "Start")
-            || (layoutName is "InputLesson" or "GlyphLesson" or "SpellLesson"
-            && child.name == "Input Progress"));
-        }
-    }
 }
 
 public enum GlyphType
@@ -254,24 +313,7 @@ public enum ConnectorType
     None
 }
 
-public enum ControlSet
-{
-    ButtonA,
-    ButtonAPressed,
-    ButtonB,
-    ButtonBPressed,
-    ButtonX,
-    ButtonXPressed,
-    ButtonY,
-    ButtonYPressed,
-    GripLeft,
-    GripLeftPressed,
-    GripRight,
-    GripRightPressed,
-    TriggerLeft,
-    TriggerLeftPressed,
-    TriggerRight,
-    TriggerRightPressed,
-    None
-}
+
+
+
 

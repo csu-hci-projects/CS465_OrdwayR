@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private BoardUI studentBoardUI;
     [SerializeField] private BoardUI teacherBoardUI;
+    [SerializeField] private GameObject leftHandUI;
 
     public Text topText;
 
@@ -20,14 +21,16 @@ public class UIManager : MonoBehaviour
     public void CheckGlyphBoards(bool isValidSpell)
     {
         teacherBoardUI.CheckAndRandomizeGlyph(isValidSpell);
-        studentBoardUI.CheckAndClear(isValidSpell);
+        studentBoardUI.ColorAndClear(isValidSpell);
     }
 
-    public void CheckInputBoards(bool isValidSpell)
+    public void UpdateInputBoards(bool isValidSpell)
     {
-        teacherBoardUI.CheckAndNextInput(isValidSpell);
-        studentBoardUI.CheckAndClear(isValidSpell);
+        teacherBoardUI.ChangeColorAndNext(isValidSpell);
+        studentBoardUI.ColorAndClear(isValidSpell);
     }
+
+
 
 
 
@@ -55,6 +58,12 @@ public class UIManager : MonoBehaviour
     {
         return teacherBoardUI.isCorrectInput(button);
     }
+
+    public bool isCorrectInput(GlyphType glyph)
+    {
+        return teacherBoardUI.isCorrectInput(glyph);
+    }
+
 
 
 
@@ -89,6 +98,16 @@ public class UIManager : MonoBehaviour
     {
         studentBoardUI.SetLayout(layout);
         teacherBoardUI.SetLayout(layout);
+
+        if (layout is "Intro" or "InputToGlyph" or "GlyphToSpell" or "SpellIntro" or "SpellToExit")
+        {
+            leftHandUI.SetActive(true);
+        }
+        else if (layout is "InputLesson" or "GlyphLesson" or "SpellLesson")
+        {
+            leftHandUI.SetActive(false);
+        }
+
     }
 
 
