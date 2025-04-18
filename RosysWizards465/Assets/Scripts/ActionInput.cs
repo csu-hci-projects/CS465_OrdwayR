@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 using System.Collections;
 using NUnit.Framework;
 using OVR.OpenVR;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion.Comfort;
+using System;
 
 public class ActionInput : MonoBehaviour
 {
@@ -22,7 +24,7 @@ public class ActionInput : MonoBehaviour
 
     void Start()
     {
-        isTwoHanded = (GameSettings.Instance.controlType == ControlType.ControllerTwoHand) ? true : false;
+        isTwoHanded = (GameSettings.Instance.controlType is ControlType.ControllerTwoHand or ControlType.GestureTwoHand) ? true : false;
         A.action.started += OnAPressed;
         B.action.started += OnBPressed;
         X.action.started += OnXPressed;
@@ -33,11 +35,27 @@ public class ActionInput : MonoBehaviour
         RG.action.started += onRGPressed;
     }
 
+    String currentRightHandAction = "";
+    String currentLeftHandAction = "";
+
     private void OnButtonPressed(string button, InputActionReference pairedButton = null)
     {
-        if (!isTwoHanded || (pairedButton != null && pairedButton.action != null && pairedButton.action.phase == InputActionPhase.Performed))
+        if (GameSettings.Instance.controlType is ControlType.GestureTwoHand)
         {
-            inputRouter.ButtonUpdate(button);
+            Debug.Log("Right Hand: " + currentRightHandAction + ", Left Hand: " + currentLeftHandAction);
+            if (currentRightHandAction == currentLeftHandAction)
+            {
+                Debug.Log("Executing action for both hands: " + currentRightHandAction);
+                inputRouter.ButtonUpdate(button);
+            }
+
+        }
+        else
+        {
+            if (!isTwoHanded || (pairedButton != null && pairedButton.action != null && pairedButton.action.phase == InputActionPhase.Performed))
+            {
+                inputRouter.ButtonUpdate(button);
+            }
         }
     }
 
@@ -92,54 +110,94 @@ public class ActionInput : MonoBehaviour
     void RightGun()
     {
         Debug.Log("Executing RightGun action");
+        currentRightHandAction = "Gun";
         OnButtonPressed("A", X);
     }
     void LeftGun()
     {
         Debug.Log("Executing LeftGun action");
+        currentLeftHandAction = "Gun";
         OnButtonPressed("X", A);
     }
 
     void RightPeace()
     {
         Debug.Log("Executing RightPeace action");
+        currentRightHandAction = "Peace";
         OnButtonPressed("B", Y);
     }
     void LeftPeace()
     {
         Debug.Log("Executing LeftPeace action");
+        currentLeftHandAction = "Peace";
         OnButtonPressed("Y", B);
     }
 
     void RightRocker()
     {
         Debug.Log("Executing RightRocker action");
+        currentRightHandAction = "Rocker";
         OnButtonPressed("RG", LG);
     }
 
     void LeftRocker()
     {
         Debug.Log("Executing LeftRocker action");
+        currentLeftHandAction = "Rocker";
         OnButtonPressed("LG", RG);
     }
 
     void RightShakka()
     {
         Debug.Log("Executing RightShakka action");
+        currentRightHandAction = "Shakka";
         OnButtonPressed("RT", LT);
     }
     void LeftShakka()
     {
         Debug.Log("Executing LeftShakka action");
+        currentLeftHandAction = "Shakka";
         OnButtonPressed("LT", RT);
     }
+    void RightGunEnd()
+    {
+        Debug.Log("Executing RightGunEnd action");
+        currentRightHandAction = "";
+    }
+    void LeftGunEnd()
+    {
+        Debug.Log("Executing LeftGunEnd action");
+        currentLeftHandAction = "";
+    }
+    void RightPeaceEnd()
+    {
+        Debug.Log("Executing RightPeaceEnd action");
+        currentRightHandAction = "";
+    }
+    void LeftPeaceEnd()
+    {
+        Debug.Log("Executing LeftPeaceEnd action");
+        currentLeftHandAction = "";
+    }
+    void RightRockerEnd()
+    {
+        Debug.Log("Executing RightRockerEnd action");
+        currentRightHandAction = "";
+    }
+    void LeftRockerEnd()
+    {
+        Debug.Log("Executing LeftRockerEnd action");
+        currentLeftHandAction = "";
+    }
+    void RightShakkaEnd()
+    {
+        Debug.Log("Executing RightShakkaEnd action");
+        currentRightHandAction = "";
+    }
+    void LeftShakkaEnd()
+    {
+        Debug.Log("Executing LeftShakkaEnd action");
+        currentLeftHandAction = "";
+    }
 
-    void RightFist()
-    {
-        Debug.Log("Executing RightFist action");
-    }
-    void LeftFist()
-    {
-        Debug.Log("Executing LeftFist action");
-    }
 }

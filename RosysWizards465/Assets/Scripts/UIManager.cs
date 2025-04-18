@@ -59,10 +59,6 @@ public class UIManager : MonoBehaviour
         return teacherBoardUI.isCorrectInput(button);
     }
 
-    public bool isCorrectInput(GlyphType glyph)
-    {
-        return teacherBoardUI.isCorrectInput(glyph);
-    }
 
 
 

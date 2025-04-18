@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5fb3781030442f2bcc893f0dbffabc5, type: 3}
+  m_Name: Gesture 7 LH Shape
+  m_EditorClassIdentifier: 
+  m_FingerShapeConditions:
+  - m_FingerID: 0
+    m_Targets:
+    - m_ShapeType: 0
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.012624282
+    - m_ShapeType: 1
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 1
+    - m_ShapeType: 2
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.076431654
+  - m_FingerID: 1
+    m_Targets:
+    - m_ShapeType: 0
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.25032628
+    - m_ShapeType: 1
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.06597434
+    - m_ShapeType: 2
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.34250206
+    - m_ShapeType: 4
+      m_UpperTolerance: 0.28699827
+      m_LowerTolerance: 0.28699827
+      m_Tolerance: 0
+      m_Desired: 0.6221016
+  - m_FingerID: 2
+    m_Targets:
+    - m_ShapeType: 0
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.30354336
+    - m_ShapeType: 2
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.45531496
+    - m_ShapeType: 4
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.24859664
+  - m_FingerID: 3
+    m_Targets:
+    - m_ShapeType: 0
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.25249007
+    - m_ShapeType: 2
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.37873513
+    - m_ShapeType: 4
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.18944544
+  - m_FingerID: 4
+    m_Targets:
+    - m_ShapeType: 0
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.1278993
+    - m_ShapeType: 1
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.19705094
+    - m_ShapeType: 2
+      m_UpperTolerance: 0.2
+      m_LowerTolerance: 0.2
+      m_Tolerance: 0
+      m_Desired: 0.102410115

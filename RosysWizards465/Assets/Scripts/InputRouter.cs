@@ -20,12 +20,12 @@ public class InputRouter : MonoBehaviour
 
     public EnvironmentManager EnvironmentManager;
 
-    bool isTwoHandedController;
+
     private bool isBoardUpdating = false;
 
     void Start()
     {
-        isTwoHandedController = GameSettings.Instance.controlType == ControlType.ControllerTwoHand;
+        bool isTwoHandedController = GameSettings.Instance.controlType is ControlType.ControllerTwoHand or ControlType.GestureTwoHand or ControlType.GestureCombined;
         if (inTestMode)
         {
             InputToExit = 8 / lessonTestModifier;

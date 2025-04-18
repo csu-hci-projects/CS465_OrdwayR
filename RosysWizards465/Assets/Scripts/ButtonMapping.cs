@@ -1,4 +1,5 @@
 using System;
+using NUnit.Framework;
 
 public class ButtonMapping
 {
@@ -65,6 +66,21 @@ public class ButtonMapping
 
     internal static ControlSet MapControllerToGesture(ControlSet button)
     {
+        if (GameSettings.Instance.controlType == ControlType.GestureTwoHand)
+        {
+            return button switch
+            {
+                ControlSet.ButtonA => ControlSet.FingerGunRight,
+                ControlSet.ButtonB => ControlSet.PeaceSignRight,
+                ControlSet.ButtonX => ControlSet.FingerGunRight,
+                ControlSet.ButtonY => ControlSet.PeaceSignRight,
+                ControlSet.GripRight => ControlSet.RockerRight,
+                ControlSet.GripLeft => ControlSet.RockerRight,
+                ControlSet.TriggerRight => ControlSet.ShakkaRight,
+                ControlSet.TriggerLeft => ControlSet.ShakkaRight,
+                _ => button
+            };
+        }
         return button switch
         {
             ControlSet.ButtonA => ControlSet.FingerGunRight,
