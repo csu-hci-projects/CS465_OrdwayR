@@ -144,7 +144,11 @@ public class BoardUI : MonoBehaviour
 
     public void UpdateInputUI(ControlSet button, GlyphType inputGlyph)
     {
-        this.inputControlSet = button;
+        this.inputControlSet = (GameSettings.Instance.controlType == ControlType.GestureOneHand ||
+                    GameSettings.Instance.controlType == ControlType.GestureTwoHand ||
+                    GameSettings.Instance.controlType == ControlType.GestureCombined)
+                    ? ButtonMapping.MapControllerToGesture(button)
+                    : button;
         this.inputGlyph = inputGlyph;
 
     }

@@ -11,12 +11,13 @@ public class InputRouter : MonoBehaviour
     private int InputToExit = 8;
     private int GlyphToExit = 8;
     private int SpellToExit = 16;
-    private int lessonTestModifier = 4;
+    private int lessonTestModifier = 2;
 
     public Lessons currentLesson = Lessons.Intro;
 
     public UIManager UIManager;
     private List<ButtonType> buttonsPressedList = new List<ButtonType>();
+    public StatisticsBoardUI statisticsBoardUI;
 
     public EnvironmentManager EnvironmentManager;
 
@@ -76,7 +77,8 @@ public class InputRouter : MonoBehaviour
             UIManager.SetUILayout(layout);
         }
     }
-
+    float lessonStartTime = 0f;
+    float singleFrameStartTime = 0f;
     public void NextLesson()
     {
         Debug.Log("Current Lesson: " + currentLesson);
@@ -102,20 +104,42 @@ public class InputRouter : MonoBehaviour
 
         switch (currentLesson)
         {
+            case Lessons.Intro:
+                Debug.Log("Changing to Intro Lesson");
+                break;
+            case Lessons.Input:
+                Debug.Log("Changing to Input Lesson");
+                singleFrameStartTime = Time.time;
+                break;
+            case Lessons.InputToGlyph:
+                Debug.Log("Changing to \"Input to Glyph\" Lesson");
+                break;
+            case Lessons.Glyph:
+                Debug.Log("Changing to Glyph Lesson");
+                lessonStartTime = Time.time;
+                singleFrameStartTime = Time.time;
+                break;
+            case Lessons.GlyphToSpell:
+                Debug.Log("Changing to \"Glyph to Spell\" Lesson");
+                statisticsBoardUI.SetGlyphLessonCompletionTime(Time.time - lessonStartTime);
+                break;
             case Lessons.SpellIntro:
                 Debug.Log("Changing to Spell Intro");
                 EnvironmentManager.PlayTableLift();
                 EnvironmentManager.PlayChairMove();
                 EnvironmentManager.PlayBoardGlyphToSpellIntro();
                 break;
-
             case Lessons.Spell:
                 Debug.Log("Changing to Spell Lesson");
+                lessonStartTime = Time.time;
                 EnvironmentManager.PlayBoardSpellIntroToSpell();
+                singleFrameStartTime = Time.time;
                 break;
 
             case Lessons.SpellToExit:
                 Debug.Log("Changing to Exit");
+                statisticsBoardUI.SetSpellLessonCompletionTime(Time.time - lessonStartTime);
+                statisticsBoardUI.DisplayLessonStats();
                 EnvironmentManager.PlayBoardSpellToExit();
                 break;
         }
@@ -168,18 +192,26 @@ public class InputRouter : MonoBehaviour
         StartCoroutine(CheckInputBoardsCoroutine(UIManager.isCorrectInput(mappedButton)));
     }
 
-    public IEnumerator CheckInputBoardsCoroutine(bool isValidSpell)
+    public IEnumerator CheckInputBoardsCoroutine(bool isValidInput)
     {
         //Check if the button is correct
-        if (isValidSpell)
+        if (isValidInput)
         {
             correctCount++;
             UIManager.SetTopText("Lesson Progress: " + correctCount + "/" + InputToExit);
+            statisticsBoardUI.AddInputLessonTime(Time.time - singleFrameStartTime);
+            singleFrameStartTime = Time.time;
+        }
+        else
+        {
+            statisticsBoardUI.AddInputLessonMistake();
+            statisticsBoardUI.AddInputLessonTime(Time.time - singleFrameStartTime);
+            singleFrameStartTime = Time.time;
         }
 
         //Update the boards and showing color
         isBoardUpdating = true;
-        UIManager.UpdateInputBoards(isValidSpell);
+        UIManager.UpdateInputBoards(isValidInput);
         yield return new WaitForSeconds(2f);
         isBoardUpdating = false;
 
@@ -239,6 +271,14 @@ public class InputRouter : MonoBehaviour
         {
             correctCount++;
             UIManager.SetTopText("Lesson Progress: " + correctCount + "/" + GlyphToExit);
+            statisticsBoardUI.AddGlyphLessonTime(Time.time - singleFrameStartTime);
+            singleFrameStartTime = Time.time;
+        }
+        else
+        {
+            statisticsBoardUI.AddGlyphLessonMistake();
+            statisticsBoardUI.AddGlyphLessonTime(Time.time - singleFrameStartTime);
+            singleFrameStartTime = Time.time;
         }
         isBoardUpdating = true;
         UIManager.CheckGlyphBoards(isValidSpell);
@@ -291,6 +331,14 @@ public class InputRouter : MonoBehaviour
             UIManager.SetTopText("Lesson Progress: " + correctCount + "/" + SpellToExit);
             correctCount++;
             EnvironmentManager.PlayRandomMagicEffect();
+            statisticsBoardUI.AddSpellLessonTime(Time.time - singleFrameStartTime);
+            singleFrameStartTime = Time.time;
+        }
+        else
+        {
+            statisticsBoardUI.AddSpellLessonMistake();
+            statisticsBoardUI.AddSpellLessonTime(Time.time - singleFrameStartTime);
+            singleFrameStartTime = Time.time;
         }
         yield return new WaitForSeconds(2f);
         isBoardUpdating = false;

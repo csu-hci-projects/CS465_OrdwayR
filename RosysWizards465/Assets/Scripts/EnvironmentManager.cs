@@ -9,9 +9,15 @@ public class EnvironmentManager : MonoBehaviour
 
     public Animator teacherBoard;
     public Animator studentBoard;
-    public Animator controlListBoard;
 
+    public Animator controlListBoard;
+    public GameObject statisticsBoard;
     public GameObject magicEffect;
+
+    void Start()
+    {
+        statisticsBoard.SetActive(false);
+    }
 
     float speed = .1f;
 
@@ -55,6 +61,7 @@ public class EnvironmentManager : MonoBehaviour
     {
         teacherBoard.SetTrigger("SpellToExit");
         teacherBoard.speed = speed * 10;
+        statisticsBoard.SetActive(true);
     }
 
 
