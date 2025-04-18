@@ -11,7 +11,7 @@ public class InputRouter : MonoBehaviour
     private int InputToExit = 8;
     private int GlyphToExit = 8;
     private int SpellToExit = 16;
-    private int lessonTestModifier = 8;
+    private int lessonTestModifier = 4;
 
     public Lessons currentLesson = Lessons.Intro;
 

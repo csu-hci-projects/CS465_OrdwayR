@@ -54,7 +54,8 @@ public class ActionInput : MonoBehaviour
         {
             if (!isTwoHanded || (pairedButton != null && pairedButton.action != null && pairedButton.action.phase == InputActionPhase.Performed))
             {
-                inputRouter.ButtonUpdate(button);
+                string correctedForTwoHanded = !isTwoHanded ? button : ButtonMapping.MapRawToRaw(button).ToString();
+                inputRouter.ButtonUpdate(correctedForTwoHanded);
             }
         }
     }

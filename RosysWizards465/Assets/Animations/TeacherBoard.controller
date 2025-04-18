@@ -286,7 +286,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Teacher_board_idle
-  m_Speed: 0.1
+  m_Speed: 0.075
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4159322425887370380}

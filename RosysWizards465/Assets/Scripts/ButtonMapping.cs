@@ -42,6 +42,18 @@ public class ButtonMapping
         };
     }
 
+    public static string MapRawToRaw(string button)
+    {
+        return button switch
+        {
+            "X" => "A",
+            "Y" => "B",
+            "LG" => "RG",
+            "LT" => "RT",
+            _ => button
+        };
+    }
+
     public static ButtonType MapRawToButtonType(string button, bool isConnector = false)
     {
         if (isConnector)

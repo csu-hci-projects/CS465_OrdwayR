@@ -238,6 +238,7 @@ public class BoardUI : MonoBehaviour
     public bool isCorrectInput(ControlSet button)
     {
         if (GameSettings.Instance.controlType == ControlType.GestureOneHand ||
+            GameSettings.Instance.controlType == ControlType.GestureTwoHand ||
             GameSettings.Instance.controlType == ControlType.GestureCombined)
         {
             return inputControlSet == ButtonMapping.MapControllerToGesture(button);
