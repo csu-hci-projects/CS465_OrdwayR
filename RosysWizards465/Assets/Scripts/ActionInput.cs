@@ -40,7 +40,7 @@ public class ActionInput : MonoBehaviour
 
     private void OnButtonPressed(string button, InputActionReference pairedButton = null)
     {
-        if (GameSettings.Instance.controlType is ControlType.GestureTwoHand)
+        if (GameSettings.Instance.controlType is ControlType.GestureTwoHand /*or ControlType.GestureCombined /*USE THIS FOR MORE ACCURACY (HARDER)*/)
         {
             Debug.Log("Right Hand: " + currentRightHandAction + ", Left Hand: " + currentLeftHandAction);
             if (currentRightHandAction == currentLeftHandAction)
@@ -200,5 +200,98 @@ public class ActionInput : MonoBehaviour
         Debug.Log("Executing LeftShakkaEnd action");
         currentLeftHandAction = "";
     }
+
+    void RightClap()
+    {
+        Debug.Log("Executing RightClap action");
+        currentRightHandAction = "Clap";
+        OnButtonPressed("A", X);
+    }
+    // void LeftClap()
+    // {
+    //     Debug.Log("Executing LeftClap action");
+    //     currentLeftHandAction = "Clap";
+    //     OnButtonPressed("X", A);
+    // }
+    void RightClapEnd()
+    {
+        Debug.Log("Executing RightClapEnd action");
+        currentRightHandAction = "";
+    }
+    void LeftClapEnd()
+    {
+        Debug.Log("Executing LeftClapEnd action");
+        currentLeftHandAction = "";
+    }
+    void RightTriangle()
+    {
+        Debug.Log("Executing RightTriangle action");
+        currentRightHandAction = "Triangle";
+        OnButtonPressed("B", Y);
+    }
+    // void LeftTriangle()
+    // {
+    //     Debug.Log("Executing LeftTriangle action");
+    //     currentLeftHandAction = "Triangle";
+    //     OnButtonPressed("Y", B);
+    // }
+    void RightTriangleEnd()
+    {
+        Debug.Log("Executing RightTriangleEnd action");
+        currentRightHandAction = "";
+    }
+    void LeftTriangleEnd()
+    {
+        Debug.Log("Executing LeftTriangleEnd action");
+        currentLeftHandAction = "";
+    }
+
+    void RightCutesy()
+    {
+        Debug.Log("Executing RightCutey action");
+        currentRightHandAction = "Cutey";
+        OnButtonPressed("RG", LG);
+    }
+    // void LeftCutesy()
+    // {
+    //     Debug.Log("Executing LeftCutey action");
+    //     currentLeftHandAction = "Cutey";
+    //     OnButtonPressed("LG", RG);
+    // }
+    void RightCuteyEnd()
+    {
+        Debug.Log("Executing RightCuteyEnd action");
+        currentRightHandAction = "";
+    }
+    void LeftCuteyEnd()
+    {
+        Debug.Log("Executing LeftCuteyEnd action");
+        currentLeftHandAction = "";
+    }
+
+    void RightHeart()
+    {
+        Debug.Log("Executing RightHeart action");
+        currentRightHandAction = "Heart";
+        OnButtonPressed("RT", LT);
+    }
+
+    // void LeftHeart()
+    // {
+    //     Debug.Log("Executing LeftHeart action");
+    //     currentLeftHandAction = "Heart";
+    //     OnButtonPressed("LT", RT);
+    // }
+    void RightHeartEnd()
+    {
+        Debug.Log("Executing RightHeartEnd action");
+        currentRightHandAction = "";
+    }
+    void LeftHeartEnd()
+    {
+        Debug.Log("Executing LeftHeartEnd action");
+        currentLeftHandAction = "";
+    }
+
 
 }

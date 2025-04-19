@@ -117,7 +117,7 @@ public class BoardUI : MonoBehaviour
         glyphLessonImages.secondaryGlyphImage.sprite = spriteManager.GetGlyphSprite(secondaryGlyph);
 
         inputLessonImages.controllerImage.sprite = spriteManager.GetControlSetSprite(inputControlSet);
-        float rotationY = (GameSettings.Instance.controlType is ControlType.GestureOneHand or ControlType.GestureTwoHand or ControlType.GestureCombined) && currentInput % 2 == 1 ? 180 : 0;
+        float rotationY = (GameSettings.Instance.controlType is ControlType.GestureOneHand) && currentInput % 2 == 1 ? 180 : 0;
         inputLessonImages.controllerImage.transform.localRotation = Quaternion.Euler(
             inputLessonImages.controllerImage.transform.localRotation.eulerAngles.x,
             rotationY,
@@ -144,11 +144,19 @@ public class BoardUI : MonoBehaviour
 
     public void UpdateInputUI(ControlSet button, GlyphType inputGlyph)
     {
-        this.inputControlSet = (GameSettings.Instance.controlType == ControlType.GestureOneHand ||
-                    GameSettings.Instance.controlType == ControlType.GestureTwoHand ||
-                    GameSettings.Instance.controlType == ControlType.GestureCombined)
-                    ? ButtonMapping.MapControllerToGesture(button)
-                    : button;
+        if (GameSettings.Instance.controlType == ControlType.GestureOneHand || 
+            GameSettings.Instance.controlType == ControlType.GestureTwoHand)
+        {
+            this.inputControlSet = ButtonMapping.MapControllerToGesture(button);
+        }
+        else if (GameSettings.Instance.controlType == ControlType.GestureCombined)
+        {
+            this.inputControlSet = ButtonMapping.MapControllerToCombinedGesture(button);
+        }
+        else
+        {
+            this.inputControlSet = button;
+        }
         this.inputGlyph = inputGlyph;
 
     }
@@ -242,10 +250,13 @@ public class BoardUI : MonoBehaviour
     public bool isCorrectInput(ControlSet button)
     {
         if (GameSettings.Instance.controlType == ControlType.GestureOneHand ||
-            GameSettings.Instance.controlType == ControlType.GestureTwoHand ||
-            GameSettings.Instance.controlType == ControlType.GestureCombined)
+            GameSettings.Instance.controlType == ControlType.GestureTwoHand)
         {
             return inputControlSet == ButtonMapping.MapControllerToGesture(button);
+        }
+        else if (GameSettings.Instance.controlType == ControlType.GestureCombined)
+        {
+            return inputControlSet == ButtonMapping.MapControllerToCombinedGesture(button);
         }
         else
         {

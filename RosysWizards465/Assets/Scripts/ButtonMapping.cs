@@ -106,4 +106,20 @@ public class ButtonMapping
             _ => button
         };
     }
+
+    public static ControlSet MapControllerToCombinedGesture(ControlSet button)
+    {
+        return button switch
+        {
+            ControlSet.ButtonA => ControlSet.Clap,
+            ControlSet.ButtonB => ControlSet.Triangle,
+            ControlSet.ButtonX => ControlSet.Clap,
+            ControlSet.ButtonY => ControlSet.Triangle,
+            ControlSet.GripRight => ControlSet.Cutesy,
+            ControlSet.GripLeft => ControlSet.Cutesy,
+            ControlSet.TriggerRight => ControlSet.HeartHands,
+            ControlSet.TriggerLeft => ControlSet.HeartHands,
+            _ => button
+        };
+    }
 }

@@ -40,6 +40,10 @@ public class SpriteManager : MonoBehaviour
     private Sprite peaceSign => gestureSprites[1];
     private Sprite rocker => gestureSprites[2];
     private Sprite shakka => gestureSprites[3];
+    private Sprite clap => gestureSprites[4];
+    private Sprite triangle => gestureSprites[5];
+    private Sprite cutesy => gestureSprites[6];
+    private Sprite heartHands => gestureSprites[7];
 
     public Sprite GetGlyphSprite(GlyphType glyphType)
     {
@@ -100,15 +104,15 @@ public class SpriteManager : MonoBehaviour
             ControlSet.RockerLeft => rocker,
             ControlSet.ShakkaRight => shakka,
             ControlSet.ShakkaLeft => shakka,
-            ControlSet.HeartHands => noneImage,
-            ControlSet.Triangle => noneImage,
-            ControlSet.Cutesy => noneImage,
-            ControlSet.Clap => noneImage,
+            ControlSet.HeartHands => heartHands,
+            ControlSet.Triangle => triangle,
+            ControlSet.Cutesy => cutesy,
+            ControlSet.Clap => clap,
 
             _ => noneImage
         };
     }
-   
+
 
 }
 
