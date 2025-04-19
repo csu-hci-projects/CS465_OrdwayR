@@ -23,7 +23,7 @@ public class MainMenuUIManager : MonoBehaviour
         GameSettings.Instance.dialogueVolume = dialogueSlider.value;
         GameSettings.Instance.musicVolume = musicSlider.value;
         GameSettings.Instance.controlType = GetControlType();
-        SceneManager.LoadScene("MainWorkspace");
+        SceneManager.LoadScene(1);
     }
 
     public ControlType GetControlType()
