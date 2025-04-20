@@ -5930,7 +5930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a804e020c56f4daa65ea20e8b9947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inTestMode: 0
+  inTestMode: 1
   currentLesson: 0
   UIManager: {fileID: 57022632}
   statisticsBoardUI: {fileID: 1713855304}
@@ -61482,7 +61482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80d8bbe41535f24995606c8e4131c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputControlSet: 27
+  inputControlSet: 26
   inputGlyph: 4
   currentInput: 0
   inputLessonImages:
@@ -196019,10 +196019,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1999882817}
+  - {fileID: 57022634}
   - {fileID: 410087041}
   - {fileID: 1919207085}
   - {fileID: 832575519}
-  - {fileID: 57022634}
   - {fileID: 833758770}
   - {fileID: 1145912750}
   - {fileID: 592652015}

@@ -183,7 +183,7 @@ public class InputRouter : MonoBehaviour
         }
 
         //Mapping the button to ControlSet
-        ControlSet mappedButton = ButtonMapping.MapRawToControlSet(button); //Falls apart for gesutures
+        ControlSet mappedButton = ButtonMapping.MapRawToControlSet(button);
 
         //Display the button on the UI
         UIManager.studentInputUpdate(mappedButton, ButtonMapping.MapButtonTypeToGlyphType(ButtonMapping.MapRawToButtonType(button)));
