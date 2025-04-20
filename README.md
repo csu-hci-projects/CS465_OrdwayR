@@ -88,8 +88,8 @@ This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User
 ### 🎥 Latest Updates
 
 - YouTube Playlist: [Click here!](https://www.youtube.com/playlist?list=PLYO6QVu0t8Ly7dBXjaEkpNdKTUJd68Bv1)
-- Latest Demo: [Watch the latest demo!](https://youtu.be/3f70yvHyeRI)
-- Latest Code Breakdown: [Watch the latest code breakdown!](https://youtu.be/MBM1O5eL-UY)
+- Latest Demo: [Watch the latest demo!](https://youtu.be/1lQWYx9E4ng)
+- Latest Code Breakdown: [Watch the latest code breakdown!](https://youtu.be/dVUdwGokIAM)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
