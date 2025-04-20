@@ -5930,7 +5930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a804e020c56f4daa65ea20e8b9947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inTestMode: 1
+  inTestMode: 0
   currentLesson: 0
   UIManager: {fileID: 57022632}
   statisticsBoardUI: {fileID: 1713855304}
