@@ -104,47 +104,44 @@ This is Rose Ordway's project for CS-465-001: Multimodal Interaction for 3D User
 
 ### 🏠 Main Menu & Input Selection
 
-- Users choose their input method (**gesture-based or controller-based (one or two hannded**).
+- Users choose their input method (**gesture-based or controller-based (one or two hannded or combined**).
 - Starting the game brings them to the **"classroom"**
 
-### 🪄 Spell Creation System (Weaving) 🪄
-
-- Weaving is the process of combining threads to create glyphs to create spells.
-- Users will provide basic input and speak a phrase to start the weaving process.
-- Each of these steps will be visually confirmed to the user.
-
-#### ✨ Basic Glyph System ✨
+#### ✨ Basic Spell System ✨
 
 - There are **four basic glyphs**:
   - 🛡️ **Defense**
   - ⚔️ **Attack**
   - ❤️ **Healing**
   - ✨ **Buff**
+- There are **two connector glyphs**:
+  - ⛓️ **Link** 
+  - 🪢 **Weave** 
 - In the **"classroom"** users will learn to create **glyphs** using three basic gestures or inputs.
 - **Examples of glyph inputs**:
   - `A, B, A` (button-based example)
   - `Peace sign, rocker sign, fist` (gesture-based example)
-- These inputs are called **threads**.
+- These inputs are called **glyphs**.
 
-- **Spells are created by combining two glyphs**, making each spell a **six-input sequence**.
-- This system simplifies gameplay while still allowing for **16 unique spells**.
-- Users won't need to learn all 16 spells, just those needed to complete their lesson.
+- **Spells are created by combining three glyphs**, making each spell a **three-input sequence**.
+- This system simplifies gameplay while still allowing for **32 unique spells**.
+- Users won't need to learn all 32 spells, just those needed to complete their lesson.
 
 ### 🔮 Wizard Room Lesson & Gameplay 🔮
 
-- Players are given **spells on a blackboard** with the required thread inputs.
+- Players are given **spells on a blackboard** with the required glyph inputs.
 - They must **replicate the spell correctly**.
 - **Accuracy and time to complete each spell** are measured.
-- **Goal:** Each lesson should take **around 2 minutes**.
+- **Goal:** Each lesson should take **around 4-5 minutes**.
   - This time objective is to make sure experiment testing with every control type can be met in a timely manner.
 - Lessons will randomize the spell for objective completion.
   - The range of spells per lesson will be 8-12 as to challenge the user but not overwhelm them.
 
 ## 📖 Objective (Users will...)
 
-- Learn to form glyphs by **performing three-input threads**.
+- Learn to form spells by **performing three-input glyphs**.
 - Understand the **four basic glyphs** (Defense, Attack, Healing, Buff).
-- Learn to create spells by **combining two glyphs**.
+- Learn to create spells by **combining three glyphs**.
 - **Practice accuracy and speed** in casting spells correctly.
 - **Complete the class lesson** combining the information they have learned.
 
